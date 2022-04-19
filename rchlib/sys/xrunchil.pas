@@ -1,0 +1,5 @@
+{$IFDEF WINDOWS}
+RunChilW
+{$ELSE}
+RunChild
+{$ENDIF}

@@ -1,0 +1,338 @@
+object Form1: TForm1
+  Left = 294
+  Height = 628
+  Top = 71
+  Width = 989
+  Caption = 'Form1'
+  ClientHeight = 628
+  ClientWidth = 989
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object eArchi: TLabeledEdit
+    Left = 48
+    Height = 27
+    Top = 56
+    Width = 504
+    EditLabel.AnchorSideLeft.Control = eArchi
+    EditLabel.AnchorSideRight.Control = eArchi
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = eArchi
+    EditLabel.Left = 48
+    EditLabel.Height = 17
+    EditLabel.Top = 36
+    EditLabel.Width = 504
+    EditLabel.Caption = 'Archivo de series de datos:'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+    Text = '../SimSEE_src/src/trunk/rchlib/neuronales/series_dem_temp.txt'
+  end
+  object btSelSeries: TButton
+    Left = 48
+    Height = 48
+    Top = 104
+    Width = 240
+    Caption = 'Seleccionar Series'
+    OnClick = btSelSeriesClick
+    TabOrder = 1
+  end
+  object btCalcCovars: TButton
+    Left = 48
+    Height = 57
+    Top = 248
+    Width = 232
+    Caption = 'Calc. Covars'
+    OnClick = btCalcCovarsClick
+    TabOrder = 2
+  end
+  object eNRetardos: TLabeledEdit
+    Left = 784
+    Height = 27
+    Top = 112
+    Width = 56
+    EditLabel.AnchorSideTop.Control = eNRetardos
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eNRetardos
+    EditLabel.AnchorSideBottom.Control = eNRetardos
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 679
+    EditLabel.Height = 17
+    EditLabel.Top = 117
+    EditLabel.Width = 102
+    EditLabel.Caption = 'N° de retardos:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 3
+    Text = '0'
+  end
+  object eUmbralFiltro: TLabeledEdit
+    Left = 784
+    Height = 27
+    Top = 160
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eUmbralFiltro
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eUmbralFiltro
+    EditLabel.AnchorSideBottom.Control = eUmbralFiltro
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 689
+    EditLabel.Height = 17
+    EditLabel.Top = 165
+    EditLabel.Width = 92
+    EditLabel.Caption = 'Umbral filtro:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 4
+    Text = '-1100'
+  end
+  object btLoadSeries: TButton
+    Left = 48
+    Height = 49
+    Top = 176
+    Width = 168
+    Caption = 'Load series.'
+    OnClick = btLoadSeriesClick
+    TabOrder = 5
+  end
+  object btVerosimilitud: TButton
+    Left = 48
+    Height = 59
+    Top = 325
+    Width = 227
+    Caption = 'Verosimilitud'
+    OnClick = btVerosimilitudClick
+    TabOrder = 6
+  end
+  object eVerosimilitud: TEdit
+    Left = 296
+    Height = 27
+    Top = 336
+    Width = 112
+    TabOrder = 7
+    Text = '??'
+  end
+  object btTest01: TButton
+    Left = 288
+    Height = 50
+    Top = 176
+    Width = 139
+    Caption = 'Test01'
+    OnClick = btTest01Click
+    TabOrder = 8
+  end
+  object btCrearCerebro: TButton
+    Left = 48
+    Height = 57
+    Top = 400
+    Width = 225
+    Caption = 'Crear Cerebro'
+    OnClick = btCrearCerebroClick
+    TabOrder = 9
+  end
+  object btPerceptronSTEP: TButton
+    Left = 48
+    Height = 59
+    Top = 469
+    Width = 227
+    Caption = 'Perceptron STEP'
+    OnClick = btPerceptronSTEPClick
+    TabOrder = 10
+  end
+  object ePaso: TEdit
+    Left = 311
+    Height = 27
+    Top = 483
+    Width = 80
+    TabOrder = 11
+    Text = '1000'
+  end
+  object btDecPaso: TButton
+    Left = 400
+    Height = 25
+    Top = 483
+    Width = 27
+    Caption = '<'
+    OnClick = btDecPasoClick
+    TabOrder = 12
+  end
+  object btIncPaso: TButton
+    Left = 428
+    Height = 25
+    Top = 483
+    Width = 27
+    Caption = '>'
+    OnClick = btIncPasoClick
+    TabOrder = 13
+  end
+  object cbGuardar: TCheckBox
+    Left = 312
+    Height = 24
+    Top = 512
+    Width = 82
+    Caption = 'Guardar'
+    TabOrder = 14
+  end
+  object PaintBox1: TPaintBox
+    Left = 472
+    Height = 264
+    Top = 208
+    Width = 448
+  end
+  object eN1_bias: TLabeledEdit
+    Left = 592
+    Height = 27
+    Top = 528
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = eN1_bias
+    EditLabel.AnchorSideRight.Control = eN1_bias
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = eN1_bias
+    EditLabel.Left = 592
+    EditLabel.Height = 17
+    EditLabel.Top = 508
+    EditLabel.Width = 80
+    EditLabel.Caption = 'eN1_bias'
+    EditLabel.ParentColor = False
+    TabOrder = 15
+    Text = 'eN1_bias'
+  end
+  object eN1_ro: TLabeledEdit
+    Left = 496
+    Height = 27
+    Top = 528
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = eN1_ro
+    EditLabel.AnchorSideRight.Control = eN1_ro
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = eN1_ro
+    EditLabel.Left = 496
+    EditLabel.Height = 17
+    EditLabel.Top = 508
+    EditLabel.Width = 80
+    EditLabel.Caption = 'eN1_ro'
+    EditLabel.ParentColor = False
+    TabOrder = 16
+    Text = 'eN1_ro'
+  end
+  object eN2_bias: TLabeledEdit
+    Left = 592
+    Height = 27
+    Top = 576
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = eN2_bias
+    EditLabel.AnchorSideRight.Control = eN2_bias
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = eN2_bias
+    EditLabel.Left = 592
+    EditLabel.Height = 17
+    EditLabel.Top = 556
+    EditLabel.Width = 80
+    EditLabel.Caption = 'eN2_bias'
+    EditLabel.ParentColor = False
+    TabOrder = 17
+    Text = 'eN2_bias'
+  end
+  object eN2_ro: TLabeledEdit
+    Left = 496
+    Height = 27
+    Top = 576
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = eN2_ro
+    EditLabel.AnchorSideRight.Control = eN2_ro
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = eN2_ro
+    EditLabel.Left = 496
+    EditLabel.Height = 17
+    EditLabel.Top = 556
+    EditLabel.Width = 80
+    EditLabel.Caption = 'eN2_ro'
+    EditLabel.ParentColor = False
+    TabOrder = 18
+    Text = 'eN2_ro'
+  end
+  object eN3_bias: TLabeledEdit
+    Left = 800
+    Height = 27
+    Top = 528
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = eN3_bias
+    EditLabel.AnchorSideRight.Control = eN3_bias
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = eN3_bias
+    EditLabel.Left = 800
+    EditLabel.Height = 17
+    EditLabel.Top = 508
+    EditLabel.Width = 80
+    EditLabel.Caption = 'eN3_bias'
+    EditLabel.ParentColor = False
+    TabOrder = 19
+    Text = 'eN3_bias'
+  end
+  object eN3_ro_1: TLabeledEdit
+    Left = 704
+    Height = 27
+    Top = 528
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = eN3_ro_1
+    EditLabel.AnchorSideRight.Control = eN3_ro_1
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = eN3_ro_1
+    EditLabel.Left = 704
+    EditLabel.Height = 17
+    EditLabel.Top = 508
+    EditLabel.Width = 80
+    EditLabel.Caption = 'eN3_ro_1'
+    EditLabel.ParentColor = False
+    TabOrder = 20
+    Text = 'eN3_ro_1'
+  end
+  object eN3_ro_2: TLabeledEdit
+    Left = 704
+    Height = 27
+    Top = 576
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = eN3_ro_2
+    EditLabel.AnchorSideRight.Control = eN3_ro_2
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = eN3_ro_2
+    EditLabel.Left = 704
+    EditLabel.Height = 17
+    EditLabel.Top = 556
+    EditLabel.Width = 80
+    EditLabel.Caption = 'eN3_ro_2'
+    EditLabel.ParentColor = False
+    TabOrder = 21
+    Text = 'eN3_ro_2'
+  end
+  object cbLeerParametros: TCheckBox
+    Left = 311
+    Height = 24
+    Top = 552
+    Width = 152
+    Caption = 'cbLeerParametros'
+    Checked = True
+    State = cbChecked
+    TabOrder = 22
+  end
+  object btAgregarTIpoDia: TButton
+    Left = 321
+    Height = 41
+    Top = 105
+    Width = 143
+    Caption = 'Agregar Tipo Dia (UY)'
+    OnClick = btAgregarTIpoDiaClick
+    TabOrder = 23
+  end
+  object btWriteTiposDeDia: TButton
+    Left = 712
+    Height = 25
+    Top = 19
+    Width = 141
+    Caption = 'WriteTiposDeDia'
+    OnClick = btWriteTiposDeDiaClick
+    TabOrder = 24
+  end
+  object OpenDialog1: TOpenDialog
+    left = 605
+    top = 39
+  end
+end

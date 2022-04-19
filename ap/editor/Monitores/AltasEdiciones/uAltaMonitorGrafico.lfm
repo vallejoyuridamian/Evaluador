@@ -1,0 +1,467 @@
+inherited AltaMonitorGrafico: TAltaMonitorGrafico
+  Left = 513
+  Height = 647
+  Top = 298
+  Width = 1120
+  Caption = 'Alta de Monitor Gráfico'
+  ClientHeight = 647
+  ClientWidth = 1120
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  inherited base_editores_panel_top: TPanel
+    Width = 1120
+    ClientWidth = 1120
+  end
+  object Panel1: TPanel[1]
+    Left = 0
+    Height = 181
+    Top = 466
+    Width = 1120
+    Align = alBottom
+    ClientHeight = 181
+    ClientWidth = 1120
+    TabOrder = 1
+    object LEventoGraficar: TLabel
+      Left = 64
+      Height = 13
+      Top = 8
+      Width = 65
+      Caption = 'Graficar Cada'
+      ParentColor = False
+    end
+    object LRect: TLabel
+      Left = 64
+      Height = 13
+      Top = 56
+      Width = 88
+      Caption = 'Rectángulo Visible'
+      ParentColor = False
+    end
+    object LY1: TLabel
+      Left = 168
+      Height = 13
+      Top = 80
+      Width = 13
+      Caption = 'Y1'
+      ParentColor = False
+    end
+    object LY2: TLabel
+      Left = 168
+      Height = 13
+      Top = 112
+      Width = 13
+      Caption = 'Y2'
+      ParentColor = False
+    end
+    object LNDivx: TLabel
+      Left = 344
+      Height = 13
+      Top = 80
+      Width = 147
+      Caption = 'Número de Divisiones del eje X'
+      ParentColor = False
+    end
+    object LNDivY: TLabel
+      Left = 344
+      Height = 13
+      Top = 112
+      Width = 147
+      Caption = 'Número de Divisiones del eje Y'
+      ParentColor = False
+    end
+    object LEventoLimpiar: TLabel
+      Left = 344
+      Height = 13
+      Top = 8
+      Width = 61
+      Caption = 'Limpiar Cada'
+      ParentColor = False
+    end
+    object BAgregarMonitor: TButton
+      Left = 192
+      Height = 25
+      Top = 136
+      Width = 97
+      Caption = 'Agregar Monitor'
+      OnClick = BGuardarClick
+      TabOrder = 0
+    end
+    object BCancelar: TButton
+      Left = 392
+      Height = 25
+      Top = 136
+      Width = 75
+      Caption = 'Cancelar'
+      OnClick = BCancelarClick
+      TabOrder = 1
+    end
+    object CBEventoGraficar: TComboBox
+      Left = 64
+      Height = 21
+      Top = 24
+      Width = 200
+      ItemHeight = 13
+      OnChange = CambiosForm
+      Style = csDropDownList
+      TabOrder = 2
+    end
+    object EX1: TEdit
+      Left = 80
+      Height = 21
+      Top = 77
+      Width = 77
+      OnEnter = EditEnter
+      OnExit = EditFloatExit
+      TabOrder = 3
+    end
+    object EY1: TEdit
+      Left = 187
+      Height = 21
+      Top = 77
+      Width = 77
+      OnEnter = EditEnter
+      OnExit = EditFloatExit
+      TabOrder = 4
+    end
+    object EX2: TEdit
+      Left = 80
+      Height = 21
+      Top = 109
+      Width = 77
+      OnEnter = EditEnter
+      OnExit = EditFloatExit
+      TabOrder = 5
+    end
+    object EY2: TEdit
+      Left = 187
+      Height = 21
+      Top = 109
+      Width = 77
+      OnEnter = EditEnter
+      OnExit = EditFloatExit
+      TabOrder = 6
+    end
+    object CBGrilla: TCheckBox
+      Left = 344
+      Height = 29
+      Top = 56
+      Width = 95
+      Caption = 'Dibujar Grilla?'
+      OnClick = CBGrillaClick
+      TabOrder = 7
+    end
+    object ENDivX: TEdit
+      Left = 496
+      Height = 21
+      Top = 80
+      Width = 57
+      OnEnter = EditEnter
+      OnExit = EditNatExit
+      TabOrder = 8
+      Text = '10'
+    end
+    object ENDivY: TEdit
+      Left = 496
+      Height = 21
+      Top = 109
+      Width = 57
+      OnEnter = EditEnter
+      OnExit = EditNatExit
+      TabOrder = 9
+      Text = '10'
+    end
+    object CBEventoLimpiar: TComboBox
+      Left = 344
+      Height = 21
+      Top = 24
+      Width = 200
+      ItemHeight = 13
+      OnChange = CambiosForm
+      Style = csDropDownList
+      TabOrder = 10
+    end
+    object LX1: TLabel
+      Left = 56
+      Height = 13
+      Top = 80
+      Width = 13
+      Caption = 'X1'
+      ParentColor = False
+    end
+    object LX2: TLabel
+      Left = 56
+      Height = 13
+      Top = 112
+      Width = 13
+      Caption = 'X2'
+      ParentColor = False
+    end
+  end
+  object Panel2: TPanel[2]
+    Left = 0
+    Height = 424
+    Top = 42
+    Width = 1120
+    Align = alClient
+    ClientHeight = 424
+    ClientWidth = 1120
+    TabOrder = 2
+    object Panel5: TPanel
+      Left = 1
+      Height = 422
+      Top = 1
+      Width = 404
+      Align = alLeft
+      Caption = 'Panel5'
+      ClientHeight = 422
+      ClientWidth = 404
+      TabOrder = 0
+      object Panel4: TPanel
+        Left = 4
+        Height = 92
+        Top = 8
+        Width = 393
+        ClientHeight = 92
+        ClientWidth = 393
+        TabOrder = 0
+        object LNgrafico: TLabel
+          Left = 8
+          Height = 13
+          Top = 8
+          Width = 91
+          Caption = 'Nombre del Gráfico'
+          ParentColor = False
+        end
+        object LEtiquetax: TLabel
+          Left = 41
+          Height = 13
+          Top = 30
+          Width = 58
+          Caption = 'Título eje X:'
+          ParentColor = False
+        end
+        object LEtiquetay: TLabel
+          Left = 41
+          Height = 13
+          Top = 52
+          Width = 58
+          Caption = 'Título eje Y:'
+          ParentColor = False
+        end
+        object ENGrafico: TEdit
+          Left = 104
+          Height = 21
+          Top = 8
+          Width = 249
+          OnChange = CambiosForm
+          TabOrder = 0
+        end
+        object EEtiquetax: TEdit
+          Left = 104
+          Height = 21
+          Top = 30
+          Width = 249
+          OnChange = CambiosForm
+          TabOrder = 1
+        end
+        object EEtiquetay: TEdit
+          Left = 104
+          Height = 21
+          Top = 52
+          Width = 249
+          OnChange = CambiosForm
+          TabOrder = 2
+        end
+        object BAyuda: TButton
+          Left = 360
+          Height = 21
+          Top = 8
+          Width = 21
+          Caption = '?'
+          OnClick = BAyudaClick
+          TabOrder = 3
+        end
+      end
+      object GroupBox2: TGroupBox
+        Left = 4
+        Height = 169
+        Top = 104
+        Width = 341
+        Caption = 'Serie X:'
+        ClientHeight = 151
+        ClientWidth = 337
+        TabOrder = 1
+        object LNSeriex: TLabel
+          Left = 41
+          Height = 13
+          Top = 11
+          Width = 100
+          Caption = 'Nombre de la Serie X'
+          ParentColor = False
+        end
+        object LXIni: TLabel
+          Left = 104
+          Height = 13
+          Top = 35
+          Width = 37
+          Caption = 'X Inicial'
+          ParentColor = False
+        end
+        object LXFin: TLabel
+          Left = 109
+          Height = 13
+          Top = 56
+          Width = 32
+          Caption = 'X Final'
+          ParentColor = False
+        end
+        object LDiffX: TLabel
+          Left = 8
+          Height = 13
+          Top = 83
+          Width = 133
+          Caption = 'Diferencia Entre Pasos de X'
+          ParentColor = False
+        end
+        object LCantPtos: TLabel
+          Left = 48
+          Height = 13
+          Top = 112
+          Width = 93
+          Caption = 'Cantidad de Puntos'
+          ParentColor = False
+        end
+        object ENSerieX: TEdit
+          Left = 152
+          Height = 21
+          Top = 8
+          Width = 121
+          OnChange = CambiosForm
+          TabOrder = 0
+        end
+        object EXIni: TEdit
+          Left = 152
+          Height = 21
+          Top = 32
+          Width = 121
+          OnEnter = EditEnter
+          OnExit = EditIntExit
+          TabOrder = 1
+        end
+        object EXFin: TEdit
+          Left = 152
+          Height = 21
+          Top = 56
+          Width = 121
+          OnEnter = EditEnter
+          OnExit = EditIntExit
+          TabOrder = 2
+        end
+        object EDiffX: TEdit
+          Left = 152
+          Height = 21
+          Top = 80
+          Width = 121
+          OnEnter = EditEnter
+          OnExit = EDiffXExit
+          TabOrder = 3
+        end
+        object ECantPtos: TEdit
+          Left = 152
+          Height = 21
+          Top = 104
+          Width = 121
+          Color = cl3DLight
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 4
+        end
+      end
+    end
+    object GroupBox1: TGroupBox
+      Left = 405
+      Height = 422
+      Top = 1
+      Width = 714
+      Align = alClient
+      Caption = 'Series Y:'
+      ClientHeight = 404
+      ClientWidth = 710
+      TabOrder = 1
+      object sgVariables: TStringGrid
+        Left = 0
+        Height = 371
+        Top = 33
+        Width = 710
+        Align = alClient
+        ColCount = 7
+        DefaultColWidth = 118
+        DefaultRowHeight = 25
+        FixedCols = 0
+        FixedRows = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+        RowCount = 1
+        TabOrder = 0
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'MS Sans Serif'
+        OnDrawCell = ListadoDrawCell
+        OnMouseDown = ListadoMouseDown
+        OnMouseMove = ListadoMouseMove
+        OnMouseUp = ListadoMouseUp
+      end
+      object Panel3: TPanel
+        Left = 0
+        Height = 33
+        Top = 0
+        Width = 710
+        Align = alTop
+        ClientHeight = 33
+        ClientWidth = 710
+        TabOrder = 1
+        object BAgregarSerie: TButton
+          Left = 160
+          Height = 25
+          Top = 0
+          Width = 75
+          Caption = 'Agregar Serie'
+          OnClick = BAgregarSerieClick
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  inherited iconos: TImageList[3]
+    left = 584
+  end
+  inherited iconos2: TImageList[4]
+    left = 632
+  end
+  object ColorDialog1: TColorDialog[5]
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 696
+    top = 16
+  end
+end

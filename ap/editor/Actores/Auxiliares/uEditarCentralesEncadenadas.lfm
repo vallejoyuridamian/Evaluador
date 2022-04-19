@@ -1,0 +1,85 @@
+inherited EditarCentralesAguasArriba: TEditarCentralesAguasArriba
+  Left = 254
+  Height = 342
+  Top = 118
+  Width = 604
+  Caption = 'Editar Centrales Aguas Arriba'
+  ClientHeight = 342
+  ClientWidth = 604
+  Font.Name = 'MS Sans Serif'
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  object LCentralDescarga: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 3
+    Width = 103
+    Caption = 'Central De Descarga:'
+    ParentColor = False
+  end
+  object LCentralesAguasArriba: TLabel[1]
+    Left = 0
+    Height = 14
+    Top = 29
+    Width = 111
+    Caption = 'Centrales Aguas Arriba:'
+    ParentColor = False
+  end
+  object BAgregar: TButton[2]
+    Left = 240
+    Height = 25
+    Top = 24
+    Width = 91
+    Caption = 'Agregar Central'
+    OnClick = BAgregarClick
+    TabOrder = 0
+  end
+  object sgCentrales: TStringGrid[3]
+    Left = 0
+    Height = 194
+    Top = 48
+    Width = 584
+    DefaultRowHeight = 25
+    FixedCols = 0
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    OnDrawCell = listadoCentralesDrawCell
+    OnMouseDown = listadoCentralesMouseDown
+    OnMouseMove = listadoCentralesMouseMove
+    OnMouseUp = listadoCentralesMouseUp
+  end
+  object BGuardar: TButton[4]
+    Left = 56
+    Height = 25
+    Top = 304
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = BGuardarClick
+    TabOrder = 2
+  end
+  object BCancelar: TButton[5]
+    Left = 200
+    Height = 25
+    Top = 304
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 3
+  end
+  object CBCentralDescarga: TComboBox[6]
+    Left = 104
+    Height = 21
+    Top = 0
+    Width = 225
+    ItemHeight = 13
+    OnChange = CBCentralDescargaChange
+    Style = csDropDownList
+    TabOrder = 4
+  end
+  inherited iconos: TImageList[7]
+  end
+  inherited iconos2: TImageList[8]
+  end
+end

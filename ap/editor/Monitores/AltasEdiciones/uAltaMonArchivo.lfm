@@ -1,0 +1,220 @@
+inherited AltaMonArchivo: TAltaMonArchivo
+  Left = 279
+  Height = 544
+  Top = 99
+  Width = 474
+  Caption = 'Alta de Monitor de Archivo'
+  ClientHeight = 544
+  ClientWidth = 474
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnResize = FormResize
+  object LNMon: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 3
+    Width = 93
+    Caption = 'Nombre del Monitor'
+    ParentColor = False
+  end
+  object LNArch: TLabel[1]
+    Left = 1
+    Height = 14
+    Top = 30
+    Width = 94
+    Caption = 'Nombre del Archivo'
+    ParentColor = False
+  end
+  object LVars: TLabel[2]
+    Left = 1
+    Height = 14
+    Top = 56
+    Width = 44
+    Caption = 'Variables'
+    ParentColor = False
+  end
+  object LEventoAbrir: TLabel[3]
+    Left = 1
+    Height = 14
+    Top = 336
+    Width = 92
+    Caption = 'Abrir Archivo Cada:'
+    ParentColor = False
+  end
+  object LEventoEscribir: TLabel[4]
+    Left = 1
+    Height = 14
+    Top = 376
+    Width = 66
+    Caption = 'Escribir Cada:'
+    ParentColor = False
+  end
+  object LEventoCerrarArchivo: TLabel[5]
+    Left = 1
+    Height = 14
+    Top = 416
+    Width = 99
+    Caption = 'Cerrar Archivo Cada:'
+    ParentColor = False
+  end
+  object LEventos: TLabel[6]
+    Left = 1
+    Height = 14
+    Top = 176
+    Width = 43
+    Caption = 'Eventos:'
+    ParentColor = False
+  end
+  object LMensajes: TLabel[7]
+    Left = 0
+    Height = 14
+    Top = 198
+    Width = 46
+    Caption = 'Mensajes'
+    ParentColor = False
+  end
+  object ENMon: TEdit[8]
+    Left = 121
+    Height = 21
+    Top = 0
+    Width = 209
+    OnEnter = EditEnter
+    OnExit = EditNombreExit
+    TabOrder = 0
+  end
+  object ENArch: TEdit[9]
+    Left = 121
+    Height = 21
+    Top = 27
+    Width = 209
+    OnChange = CambiosForm
+    TabOrder = 1
+  end
+  object BElegirArchivo: TButton[10]
+    Left = 338
+    Height = 21
+    Top = 27
+    Width = 91
+    Caption = 'Elegir Archivo'
+    OnClick = BElegirArchivoClick
+    TabOrder = 2
+  end
+  object sgVariables: TStringGrid[11]
+    Left = 0
+    Height = 100
+    Top = 75
+    Width = 429
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    TabOrder = 3
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    OnDrawCell = ListadoVariablesDrawCell
+    OnMouseDown = ListadoMouseDown
+    OnMouseMove = ListadoVariablesMouseMove
+    OnMouseUp = ListadoVariablesMouseUp
+  end
+  object BAgregarVar: TButton[12]
+    Left = 338
+    Height = 25
+    Top = 51
+    Width = 91
+    Caption = 'Agregar Variable'
+    OnClick = BAgregarVarClick
+    TabOrder = 4
+  end
+  object CBEventoAbrir: TComboBox[13]
+    Left = 0
+    Height = 21
+    Top = 352
+    Width = 265
+    ItemHeight = 13
+    OnChange = CambiosForm
+    Style = csDropDownList
+    TabOrder = 5
+  end
+  object CBEventoEscribir: TComboBox[14]
+    Left = 0
+    Height = 21
+    Top = 392
+    Width = 265
+    ItemHeight = 13
+    OnChange = CambiosForm
+    Style = csDropDownList
+    TabOrder = 6
+  end
+  object CBEventoCerrar: TComboBox[15]
+    Left = 0
+    Height = 21
+    Top = 432
+    Width = 265
+    ItemHeight = 13
+    OnChange = CambiosForm
+    Style = csDropDownList
+    TabOrder = 7
+  end
+  object BAgregarMonitor: TButton[16]
+    Left = 80
+    Height = 25
+    Top = 488
+    Width = 90
+    Caption = 'Agregar Monitor'
+    OnClick = BGuardarClick
+    TabOrder = 8
+  end
+  object BCancelar: TButton[17]
+    Left = 192
+    Height = 25
+    Top = 488
+    Width = 90
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 9
+  end
+  object BAgregarMensaje: TButton[18]
+    Left = 338
+    Height = 25
+    Top = 193
+    Width = 91
+    Caption = 'Agregar Mensaje'
+    OnClick = BAgregarMensajeClick
+    TabOrder = 10
+  end
+  object sgMensajes: TStringGrid[19]
+    Left = 0
+    Height = 100
+    Top = 224
+    Width = 429
+    ColCount = 4
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    TabOrder = 11
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    OnDrawCell = listadoMensajesDrawCell
+    OnMouseDown = ListadoMouseDown
+    OnMouseMove = ListadoMensajesMouseMove
+    OnMouseUp = listadoMensajesMouseUp
+  end
+  object BAyuda: TButton[20]
+    Left = 338
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 12
+  end
+  inherited iconos: TImageList[21]
+  end
+  inherited iconos2: TImageList[22]
+  end
+  object SaveDialog1: TSaveDialog[23]
+    left = 224
+    top = 8
+  end
+end

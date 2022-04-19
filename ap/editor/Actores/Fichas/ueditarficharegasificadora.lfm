@@ -1,0 +1,391 @@
+inherited EditarfichaRegasificadora: TEditarfichaRegasificadora
+  Left = 706
+  Height = 477
+  Top = 193
+  Width = 588
+  AutoSize = True
+  Caption = 'Editar Ficha'
+  ClientHeight = 477
+  ClientWidth = 588
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  inherited e_Capa: TEdit
+    TabOrder = 6
+  end
+  object LFIni: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 72
+    Caption = 'Fecha de inicio'
+    ParentColor = False
+  end
+  object BGuardar: TButton[3]
+    Left = 168
+    Height = 25
+    Top = 408
+    Width = 105
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 2
+  end
+  object BCancelar: TButton[4]
+    Left = 313
+    Height = 25
+    Top = 408
+    Width = 105
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 3
+  end
+  object EFIni: TEdit[5]
+    Left = 145
+    Height = 21
+    Top = 0
+    Width = 181
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 0
+    Text = 'EFIni'
+  end
+  object CBPeriodicidad: TCheckBox[6]
+    Left = 0
+    Height = 29
+    Top = 24
+    Width = 80
+    Caption = 'Periodica?'
+    OnClick = CBPeriodicidadClick
+    TabOrder = 1
+  end
+  object PPeriodicidad: TPanel[7]
+    Left = 0
+    Height = 81
+    Top = 45
+    Width = 423
+    AutoSize = True
+    ClientHeight = 81
+    ClientWidth = 423
+    TabOrder = 4
+    object LFinPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 26
+      Width = 73
+      Caption = 'Fin del Periodo:'
+      ParentColor = False
+    end
+    object LIniPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 2
+      Width = 84
+      Caption = 'Inicio del Periodo:'
+      ParentColor = False
+    end
+    object LLargoPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 56
+      Width = 88
+      Caption = 'Largo del Período:'
+      ParentColor = False
+    end
+    object EFFinPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 23
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 1
+      Text = '0'
+    end
+    object EFIniPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 1
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 0
+      Text = '0'
+    end
+    object sgPeriodicidad: TStringGrid
+      Left = 221
+      Height = 79
+      Top = 1
+      Width = 201
+      ColCount = 2
+      DefaultRowHeight = 25
+      FixedRows = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goTabs]
+      RowCount = 3
+      TabOrder = 4
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      OnClick = sgChequearCambios
+      OnExit = sgChequearCambios
+      OnGetEditText = sgGetEditText
+      OnKeyDown = sgChequearCambiosKeyDown
+    end
+    object ELargoPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 53
+      Width = 41
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 2
+      Text = '1'
+    end
+    object CBLargoPeriodo: TComboBox
+      Left = 140
+      Height = 21
+      Top = 53
+      Width = 75
+      ItemHeight = 13
+      Items.Strings = (
+        'Años'
+        'Meses'
+        'Semanas'
+        'Días'
+      )
+      OnChange = cambiosForm
+      Style = csDropDownList
+      TabOrder = 3
+    end
+  end
+  object BAyuda: TButton[8]
+    Left = 332
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 5
+  end
+  object LIndicePreciosPorCombustible: TLabel[9]
+    Left = 208
+    Height = 13
+    Top = 344
+    Width = 84
+    Caption = 'Índice de precios:'
+    ParentColor = False
+  end
+  object LBornePreciosPorCombustible: TLabel[10]
+    Left = 261
+    Height = 13
+    Top = 361
+    Width = 31
+    Caption = 'Borne:'
+    ParentColor = False
+  end
+  object CBFuenteIndicePreciosCombustible: TComboBox[11]
+    Left = 306
+    Height = 21
+    Top = 336
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBFuenteIndicePreciosCombustibleChange
+    Style = csDropDownList
+    TabOrder = 7
+  end
+  object CBBorneIndicePreciosCombustible: TComboBox[12]
+    Left = 306
+    Height = 21
+    Top = 358
+    Width = 145
+    ItemHeight = 13
+    OnChange = cambiosForm
+    Style = csDropDownList
+    TabOrder = 8
+  end
+  object eQGN_Max: TLabeledEdit[13]
+    Left = 384
+    Height = 21
+    Top = 232
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eQGN_Max
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eQGN_Max
+    EditLabel.AnchorSideBottom.Control = eQGN_Max
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 295
+    EditLabel.Height = 13
+    EditLabel.Top = 236
+    EditLabel.Width = 86
+    EditLabel.Caption = 'QGN_Máx [m3/s]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 9
+  end
+  object eFD: TLabeledEdit[14]
+    Left = 120
+    Height = 21
+    Top = 136
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eFD
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eFD
+    EditLabel.AnchorSideBottom.Control = eFD
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 78
+    EditLabel.Height = 13
+    EditLabel.Top = 140
+    EditLabel.Width = 39
+    EditLabel.Caption = 'fd [p.u.]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 10
+    Text = '1'
+  end
+  object eTMR: TLabeledEdit[15]
+    Left = 384
+    Height = 21
+    Top = 136
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eTMR
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eTMR
+    EditLabel.AnchorSideBottom.Control = eTMR
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 339
+    EditLabel.Height = 13
+    EditLabel.Top = 140
+    EditLabel.Width = 42
+    EditLabel.Caption = 'TMR [h]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 11
+    Text = '0'
+  end
+  object eBOG_ca: TLabeledEdit[16]
+    Left = 120
+    Height = 21
+    Top = 168
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eBOG_ca
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eBOG_ca
+    EditLabel.AnchorSideBottom.Control = eBOG_ca
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 40
+    EditLabel.Height = 13
+    EditLabel.Top = 172
+    EditLabel.Width = 77
+    EditLabel.Caption = 'BOG_ca [m3/s]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 12
+  end
+  object eBOG_cb: TLabeledEdit[17]
+    Left = 384
+    Height = 21
+    Top = 168
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eBOG_cb
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eBOG_cb
+    EditLabel.AnchorSideBottom.Control = eBOG_cb
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 312
+    EditLabel.Height = 13
+    EditLabel.Top = 172
+    EditLabel.Width = 69
+    EditLabel.Caption = 'BOG_cb [1/s]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 13
+  end
+  object eGNL_Vmin: TLabeledEdit[18]
+    Left = 120
+    Height = 21
+    Top = 200
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eGNL_Vmin
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eGNL_Vmin
+    EditLabel.AnchorSideBottom.Control = eGNL_Vmin
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 44
+    EditLabel.Height = 13
+    EditLabel.Top = 204
+    EditLabel.Width = 73
+    EditLabel.Caption = 'GNL Vmín[m3]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 14
+  end
+  object eGNL_Vmax: TLabeledEdit[19]
+    Left = 384
+    Height = 21
+    Top = 200
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eGNL_Vmax
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eGNL_Vmax
+    EditLabel.AnchorSideBottom.Control = eGNL_Vmax
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 303
+    EditLabel.Height = 13
+    EditLabel.Top = 204
+    EditLabel.Width = 78
+    EditLabel.Caption = 'GNL VMáx [m3]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 15
+  end
+  object gbConsumosPropios: TGroupBox[20]
+    Left = 18
+    Height = 51
+    Top = 261
+    Width = 478
+    Caption = 'Consumos propios'
+    ClientHeight = 33
+    ClientWidth = 474
+    TabOrder = 16
+    object eConsumosPropios_ca: TLabeledEdit
+      Left = 112
+      Height = 21
+      Top = 0
+      Width = 80
+      EditLabel.AnchorSideTop.Control = eConsumosPropios_ca
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eConsumosPropios_ca
+      EditLabel.AnchorSideBottom.Control = eConsumosPropios_ca
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 33
+      EditLabel.Height = 13
+      EditLabel.Top = 4
+      EditLabel.Width = 76
+      EditLabel.Caption = 'Fijos GN [m3/s]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 0
+    end
+    object eConsumosPropios_cb: TLabeledEdit
+      Left = 344
+      Height = 21
+      Top = 0
+      Width = 80
+      EditLabel.AnchorSideTop.Control = eConsumosPropios_cb
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eConsumosPropios_cb
+      EditLabel.AnchorSideBottom.Control = eConsumosPropios_cb
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 231
+      EditLabel.Height = 13
+      EditLabel.Top = 4
+      EditLabel.Width = 110
+      EditLabel.Caption = 'Variables GN [m3/m3.]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 1
+    end
+  end
+  inherited iconos: TImageList[21]
+  end
+  inherited iconos2: TImageList[22]
+  end
+end

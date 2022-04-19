@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="testMiner2012.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="24"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="utestminer2012.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormMiner2012"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="utestMiner2012"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="65"/>
+        <CursorPos Y="83"/>
+        <UsageCount Value="24"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\xmatdefs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="24"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\fc\excel\uExcelFile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="24"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\uproblema.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="24"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\fc\base\ulogosimsee.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UsageCount Value="24"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uejemplo1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEjemplo1"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="103"/>
+        <CursorPos X="19" Y="94"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\fc\excel\u_ExcelFile.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1090"/>
+        <CursorPos Y="1108"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\freepascal\laz\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2739"/>
+        <CursorPos Y="2756"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+    </Units>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="9" Column="100"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="45" Column="115" TopLine="26"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="93" Column="31" TopLine="73"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="93" Column="31" TopLine="73"/>
+      </Position4>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

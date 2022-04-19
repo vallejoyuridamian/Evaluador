@@ -1,0 +1,23 @@
+object FormSimCalc: TFormSimCalc
+  Left = 402
+  Height = 646
+  Top = 94
+  Width = 940
+  Caption = 'FormSimCalc'
+  ClientHeight = 646
+  ClientWidth = 940
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object StringGrid1: TStringGrid
+    Left = 56
+    Height = 443
+    Top = 46
+    Width = 448
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goAutoAddRows, goSmoothScroll]
+    TabOrder = 0
+    OnDblClick = StringGrid1DblClick
+    OnDrawCell = StringGrid1DrawCell
+    OnMouseUp = StringGrid1MouseUp
+    OnSelectCell = StringGrid1SelectCell
+  end
+end

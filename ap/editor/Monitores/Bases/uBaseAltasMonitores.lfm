@@ -1,0 +1,5 @@
+inherited BaseAltasMonitores: TBaseAltasMonitores
+  Left = 483
+  Top = 234
+  Caption = 'BaseAltasMonitores'
+end

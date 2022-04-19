@@ -1,0 +1,250 @@
+inherited AltaEdicionPrintCronVar_histograma_text: TAltaEdicionPrintCronVar_histograma_text
+  Height = 271
+  Width = 576
+  Caption = 'AltaEdicionPrintCronVar_histograma_text'
+  ClientHeight = 271
+  ClientWidth = 576
+  OnCloseQuery = FormCloseQuery
+  object lTitulo: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 49
+    Width = 31
+    Caption = 'Título:'
+    ParentColor = False
+  end
+  object lCronVar: TLabel[1]
+    Left = 0
+    Height = 14
+    Top = 3
+    Width = 82
+    Caption = 'Variable Crónica:'
+    ParentColor = False
+  end
+  object lNombreHoja: TLabel[2]
+    Left = 0
+    Height = 14
+    Top = 27
+    Width = 71
+    Caption = 'Archivo salida:'
+    ParentColor = False
+  end
+  object lUnidades: TLabel[3]
+    Left = 0
+    Height = 14
+    Top = 73
+    Width = 49
+    Caption = 'Unidades:'
+    ParentColor = False
+  end
+  object lDigitos: TLabel[4]
+    Left = 0
+    Height = 14
+    Top = 95
+    Width = 37
+    Caption = 'Dígitos:'
+    ParentColor = False
+  end
+  object lDecimales: TLabel[5]
+    Left = 0
+    Height = 14
+    Top = 117
+    Width = 52
+    Caption = 'Decimales:'
+    ParentColor = False
+  end
+  object lPrintProbsAisladas: TLabel[6]
+    Left = 0
+    Height = 14
+    Top = 136
+    Width = 181
+    Caption = 'Impresión de Probabilidades Aisladas:'
+    ParentColor = False
+  end
+  object lCantidad: TLabel[7]
+    Left = 0
+    Height = 14
+    Top = 158
+    Width = 48
+    Caption = 'Cantidad:'
+    ParentColor = False
+  end
+  object lProbs: TLabel[8]
+    Left = 0
+    Height = 14
+    Top = 182
+    Width = 116
+    Caption = 'Probabilidades Aisladas:'
+    ParentColor = False
+  end
+  object eTitulo: TEdit[9]
+    Left = 95
+    Height = 21
+    Top = 46
+    Width = 178
+    OnEnter = EditEnter
+    OnExit = EditStringExit
+    TabOrder = 0
+  end
+  object cbCronVar: TComboBox[10]
+    Left = 95
+    Height = 21
+    Top = 0
+    Width = 178
+    ItemHeight = 13
+    OnChange = cbCronVarChange
+    OnEnter = cbCronVarEnter
+    TabOrder = 1
+  end
+  object sgPrintProbsAisladas: TStringGrid[11]
+    Left = 0
+    Height = 27
+    Top = 198
+    Width = 81
+    ColCount = 1
+    DefaultColWidth = 40
+    DefaultRowHeight = 25
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+    RowCount = 1
+    TabOrder = 2
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object eArchi: TEdit[12]
+    Left = 95
+    Height = 21
+    Top = 19
+    Width = 354
+    OnEnter = EditEnter
+    OnExit = EditStringExit
+    TabOrder = 3
+  end
+  object eUnidades: TEdit[13]
+    Left = 95
+    Height = 21
+    Top = 70
+    Width = 46
+    OnEnter = EditEnter
+    OnExit = EditStringExit
+    TabOrder = 4
+  end
+  object eDigitos: TEdit[14]
+    Left = 95
+    Height = 21
+    Top = 92
+    Width = 46
+    OnEnter = EditEnter
+    OnExit = EditDigitosExit
+    TabOrder = 5
+  end
+  object eDecimales: TEdit[15]
+    Left = 95
+    Height = 21
+    Top = 114
+    Width = 46
+    OnEnter = EditEnter
+    OnExit = eDecimalesExit
+    TabOrder = 6
+  end
+  object cbPrintPromedio: TCheckBox[16]
+    Left = 384
+    Height = 19
+    Top = 100
+    Width = 112
+    Caption = 'Imprimir Promedio?'
+    Checked = True
+    OnClick = cambiosForm
+    State = cbChecked
+    TabOrder = 7
+  end
+  object bGuardar: TButton[17]
+    Left = 195
+    Height = 25
+    Top = 233
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 8
+  end
+  object bCancelar: TButton[18]
+    Left = 295
+    Height = 25
+    Top = 233
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 9
+  end
+  object BAyuda: TButton[19]
+    Left = 482
+    Height = 21
+    Top = 22
+    Width = 21
+    Anchors = [akTop, akRight]
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 10
+  end
+  object eNroProbsAisladas: TEdit[20]
+    Left = 95
+    Height = 21
+    Top = 155
+    Width = 46
+    OnChange = eTamSGVectorDeRealesChange
+    OnEnter = EditEnter
+    OnExit = EditTamExit
+    OnKeyDown = eNroProbsAisladasKeyDown
+    TabOrder = 11
+    Text = '0'
+  end
+  object cbPrintTodas: TCheckBox[21]
+    Left = 384
+    Height = 19
+    Top = 84
+    Width = 185
+    Caption = 'Imprimir Todas las Probabilidades?'
+    OnClick = cambiosForm
+    TabOrder = 12
+  end
+  object cbPreOrdenar: TCheckBox[22]
+    Left = 384
+    Height = 19
+    Top = 117
+    Width = 82
+    Caption = 'Pre-Ordenar'
+    Checked = True
+    State = cbChecked
+    TabOrder = 13
+  end
+  object rbg_TipoImpresion: TRadioGroup[23]
+    Left = 361
+    Height = 77
+    Top = 139
+    Width = 163
+    AutoFill = True
+    Caption = 'Tipo de impresión'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 59
+    ClientWidth = 159
+    ItemIndex = 0
+    Items.Strings = (
+      'Probabilidad de Excedencia.'
+      'Valor en Riesgo.'
+    )
+    TabOrder = 14
+  end
+  inherited iconos: TImageList[24]
+  end
+  inherited iconos2: TImageList[25]
+  end
+end

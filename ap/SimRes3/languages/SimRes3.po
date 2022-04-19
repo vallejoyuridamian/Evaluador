@@ -1,0 +1,89 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tsimres3main.bbuscar.caption
+msgid "Buscar"
+msgstr ""
+
+#: tsimres3main.bejecutar.caption
+msgid "Ejecutar"
+msgstr ""
+
+#: tsimres3main.caption
+msgctxt "TSIMRES3MAIN.CAPTION"
+msgid "SimRes 3 - vX.YY"
+msgstr ""
+
+#: tsimres3main.l0.caption
+msgid "0%"
+msgstr ""
+
+#: tsimres3main.l100.caption
+msgid "100%"
+msgstr ""
+
+#: tsimres3main.l25.caption
+msgid "25%"
+msgstr ""
+
+#: tsimres3main.l50.caption
+msgid "50%"
+msgstr ""
+
+#: tsimres3main.l75.caption
+msgid "75%"
+msgstr ""
+
+#: tsimres3main.larchidefs.caption
+msgid "Archivo de Definiciones:"
+msgstr ""
+
+#: tsimres3main.lprogresoprint.caption
+msgid "Progreso:"
+msgstr ""
+
+#: uactores.rsinformacionadicional
+msgid "Información adicional"
+msgstr ""
+
+#: uactores.rsnombre
+msgid "Nombre"
+msgstr ""
+
+#: uactores.rstipodeactor
+msgid "Tipo de actor"
+msgstr ""
+
+#: ucosa.rs_elarchivo
+msgid "El archivo"
+msgstr ""
+
+#: ucosa.rs_noinstanciasde
+msgid "No hay instancias de cosas de la clase"
+msgstr ""
+
+#: ucosa.rs_noseencuentraarchivo
+msgctxt "ucosa.rs_noseencuentraarchivo"
+msgid "No se encuentra el archivo: "
+msgstr ""
+
+#: ucosa.rs_versionposterior
+msgid "esta escrito con una versión posterior a la instalada. Debe actualizar el software."
+msgstr ""
+
+#: uesclavizadorsubmuestreado.ms_lafuente
+msgid "La fuente"
+msgstr ""
+
+#: uesclavizadorsubmuestreado.ms_tienepasodetiemponocompatible
+msgid "tiene un paso de tiempo de sorteo que no es un divisor exacto del paso de tiempo de simulación por lo que no puede ser usada en esta sála."
+msgstr ""
+
+#: ufichaslpd.exnotieneficha
+msgid " no tiene fichas."
+msgstr ""
+
+#: ufichaslpd.meselactor
+msgid "El actor "
+msgstr ""
+

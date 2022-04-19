@@ -1,0 +1,91 @@
+inherited AltaEdicionTCronOper_sumaProductoConDurposHasta: TAltaEdicionTCronOper_sumaProductoConDurposHasta
+  Height = 203
+  Width = 461
+  AutoSize = True
+  Caption = 'AltaEdicionTCronOper_sumaProductoConDurposHasta'
+  ClientHeight = 203
+  ClientWidth = 461
+  OnCloseQuery = FormCloseQuery
+  object lResultado: TLabel[0]
+    Left = 0
+    Height = 13
+    Top = 30
+    Width = 52
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+  object lIndice: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 57
+    Width = 33
+    Caption = 'Indice:'
+    ParentColor = False
+  end
+  object lkPosteHasta: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 84
+    Width = 67
+    Caption = 'kPoste Hasta:'
+    ParentColor = False
+  end
+  object cbRes: TComboBox[3]
+    Left = 71
+    Height = 21
+    Top = 27
+    Width = 313
+    ItemHeight = 13
+    OnChange = CBCronVarChange
+    TabOrder = 0
+  end
+  object cbParam1: TComboBox[4]
+    Left = 71
+    Height = 21
+    Top = 54
+    Width = 313
+    ItemHeight = 13
+    OnChange = CBIndiceChange
+    TabOrder = 1
+  end
+  object bGuardar: TButton[5]
+    Left = 104
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[6]
+    Left = 214
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[7]
+    Left = 280
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  object eKPosteHasta: TEdit[8]
+    Left = 71
+    Height = 21
+    Top = 80
+    Width = 101
+    OnEnter = EditEnter
+    OnExit = EditIntExit
+    TabOrder = 5
+  end
+  inherited iconos: TImageList[9]
+  end
+  inherited iconos2: TImageList[10]
+  end
+end

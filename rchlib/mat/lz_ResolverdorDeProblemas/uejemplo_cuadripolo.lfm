@@ -1,0 +1,710 @@
+object Form2: TForm2
+  Left = 456
+  Height = 515
+  Top = 97
+  Width = 893
+  Caption = 'Resolución de cuadripolos pasivos ( C= (AD-1)/B )  ( Ver.2.0 - Proyecto SimSEE - 2012)'
+  ClientHeight = 515
+  ClientWidth = 893
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 137
+    Top = 8
+    Width = 601
+    Caption = 'Datos del Cuadripolo'
+    ClientHeight = 122
+    ClientWidth = 597
+    TabOrder = 0
+    object Label3: TLabel
+      Left = 56
+      Height = 13
+      Top = 37
+      Width = 106
+      Caption = 'A [adimensionado]'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 82
+      Height = 13
+      Top = 76
+      Width = 38
+      Caption = 'alfa [º]'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 173
+      Height = 13
+      Top = 37
+      Width = 45
+      Caption = 'B [ohm]'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 179
+      Height = 13
+      Top = 76
+      Width = 42
+      Caption = 'beta [º]'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 264
+      Height = 13
+      Top = 37
+      Width = 45
+      Caption = 'C [mho]'
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 264
+      Height = 13
+      Top = 76
+      Width = 60
+      Caption = 'gamma [º]'
+      ParentColor = False
+    end
+    object cb_simetrico: TCheckBox
+      Left = 360
+      Height = 24
+      Top = 17
+      Width = 214
+      Caption = 'Marque si es simétrico. D=A'
+      OnClick = cb_simetricoClick
+      TabOrder = 0
+    end
+    object e_A: TEdit
+      Left = 82
+      Height = 23
+      Top = 50
+      Width = 46
+      OnChange = e_AClick
+      TabOrder = 1
+      Text = 'e_A'
+    end
+    object e_Alfa: TEdit
+      Left = 82
+      Height = 23
+      Top = 89
+      Width = 46
+      OnChange = e_AClick
+      TabOrder = 2
+      Text = 'e_Alfa'
+    end
+    object e_B: TEdit
+      Left = 173
+      Height = 23
+      Top = 50
+      Width = 46
+      OnChange = e_AClick
+      TabOrder = 3
+      Text = 'e_B'
+    end
+    object e_beta: TEdit
+      Left = 173
+      Height = 23
+      Top = 89
+      Width = 46
+      OnChange = e_AClick
+      TabOrder = 4
+      Text = 'e_beta'
+    end
+    object e_C: TEdit
+      Left = 264
+      Height = 23
+      Top = 50
+      Width = 46
+      Color = clAppWorkspace
+      ReadOnly = True
+      TabOrder = 5
+      Text = 'e_C'
+    end
+    object e_gamma: TEdit
+      Left = 264
+      Height = 23
+      Top = 95
+      Width = 46
+      Color = clAppWorkspace
+      ReadOnly = True
+      TabOrder = 6
+      Text = 'e_gamma'
+    end
+    object panel_D: TPanel
+      Left = 358
+      Height = 84
+      Top = 37
+      Width = 107
+      ClientHeight = 84
+      ClientWidth = 107
+      TabOrder = 7
+      object Label1: TLabel
+        Left = 8
+        Height = 13
+        Top = 3
+        Width = 106
+        Caption = 'D [adimensionado]'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 8
+        Height = 13
+        Top = 42
+        Width = 45
+        Caption = 'delta [º]'
+        ParentColor = False
+      end
+      object e_D: TEdit
+        Left = 8
+        Height = 23
+        Top = 14
+        Width = 49
+        OnChange = e_AClick
+        TabOrder = 0
+        Text = 'e_D'
+      end
+      object e_delta: TEdit
+        Left = 8
+        Height = 23
+        Top = 54
+        Width = 49
+        OnChange = e_AClick
+        TabOrder = 1
+        Text = 'e_delta'
+      end
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 250
+    Top = 151
+    Width = 201
+    Caption = 'Entrada'
+    ClientHeight = 235
+    ClientWidth = 197
+    TabOrder = 1
+    object Label9: TLabel
+      Left = 78
+      Height = 13
+      Top = 20
+      Width = 15
+      Caption = 'U1'
+      ParentColor = False
+    end
+    object e_U1: TEdit
+      Left = 20
+      Height = 23
+      Top = 20
+      Width = 52
+      TabOrder = 0
+      Text = '0'
+    end
+    object cb_U1: TCheckBox
+      Left = 111
+      Height = 24
+      Top = 20
+      Width = 77
+      Caption = 'Es dato'
+      TabOrder = 1
+    end
+    object Panel1: TPanel
+      Left = 3
+      Height = 87
+      Top = 152
+      Width = 185
+      ClientHeight = 87
+      ClientWidth = 185
+      TabOrder = 2
+      object Label14: TLabel
+        Left = 66
+        Height = 13
+        Top = 58
+        Width = 29
+        Caption = 'FI1[º]'
+        ParentColor = False
+      end
+      object Label17: TLabel
+        Left = 64
+        Height = 13
+        Top = 31
+        Width = 43
+        Caption = 'Abs(S1)'
+        ParentColor = False
+      end
+      object e_FI1: TEdit
+        Left = 8
+        Height = 23
+        Top = 52
+        Width = 52
+        Enabled = False
+        OnChange = e_roS1Change
+        TabOrder = 0
+        Text = '0'
+      end
+      object cb_FI1: TCheckBox
+        Left = 108
+        Height = 24
+        Top = 58
+        Width = 77
+        Caption = 'Es dato'
+        Enabled = False
+        TabOrder = 1
+      end
+      object e_roS1: TEdit
+        Left = 6
+        Height = 23
+        Top = 25
+        Width = 52
+        Enabled = False
+        OnChange = e_roS1Change
+        TabOrder = 2
+        Text = 'e_roS1'
+      end
+      object cb_roS1: TCheckBox
+        Left = 108
+        Height = 24
+        Top = 27
+        Width = 77
+        Caption = 'Es dato'
+        Enabled = False
+        TabOrder = 3
+      end
+      object rb_S1_roFi: TRadioButton
+        Left = 6
+        Height = 24
+        Top = 8
+        Width = 24
+        Checked = True
+        OnClick = rb_S1_roFiClick
+        TabOrder = 4
+      end
+    end
+    object Panel2: TPanel
+      Left = 3
+      Height = 82
+      Top = 64
+      Width = 185
+      ClientHeight = 82
+      ClientWidth = 185
+      TabOrder = 3
+      object Label10: TLabel
+        Left = 65
+        Height = 13
+        Top = 31
+        Width = 14
+        Caption = 'P1'
+        ParentColor = False
+      end
+      object Label11: TLabel
+        Left = 65
+        Height = 13
+        Top = 51
+        Width = 16
+        Caption = 'Q1'
+        ParentColor = False
+      end
+      object rb_S1_PQ: TRadioButton
+        Left = 8
+        Height = 24
+        Top = 8
+        Width = 24
+        Checked = True
+        OnClick = rb_S1_PQClick
+        TabOrder = 0
+        TabStop = True
+      end
+      object e_P1: TEdit
+        Left = 7
+        Height = 23
+        Top = 31
+        Width = 52
+        OnChange = e_P1Change
+        TabOrder = 1
+        Text = '0'
+      end
+      object e_Q1: TEdit
+        Left = 7
+        Height = 23
+        Top = 51
+        Width = 52
+        OnChange = e_P1Change
+        TabOrder = 2
+        Text = '0'
+      end
+      object cb_P1: TCheckBox
+        Left = 98
+        Height = 24
+        Top = 31
+        Width = 77
+        Caption = 'Es dato'
+        TabOrder = 3
+      end
+      object cb_Q1: TCheckBox
+        Left = 98
+        Height = 24
+        Top = 51
+        Width = 77
+        Caption = 'Es dato'
+        TabOrder = 4
+      end
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 399
+    Height = 250
+    Top = 151
+    Width = 210
+    Caption = 'Salida'
+    ClientHeight = 235
+    ClientWidth = 206
+    TabOrder = 2
+    object Label12: TLabel
+      Left = 78
+      Height = 13
+      Top = 20
+      Width = 15
+      Caption = 'U2'
+      ParentColor = False
+    end
+    object e_U2: TEdit
+      Left = 20
+      Height = 23
+      Top = 20
+      Width = 52
+      TabOrder = 0
+      Text = '0'
+    end
+    object cb_U2: TCheckBox
+      Left = 114
+      Height = 24
+      Top = 20
+      Width = 77
+      Caption = 'Es dato'
+      TabOrder = 1
+    end
+    object Panel3: TPanel
+      Left = 3
+      Height = 81
+      Top = 64
+      Width = 196
+      ClientHeight = 81
+      ClientWidth = 196
+      TabOrder = 2
+      object Label13: TLabel
+        Left = 62
+        Height = 13
+        Top = 31
+        Width = 14
+        Caption = 'P2'
+        ParentColor = False
+      end
+      object Label15: TLabel
+        Left = 62
+        Height = 13
+        Top = 51
+        Width = 16
+        Caption = 'Q2'
+        ParentColor = False
+      end
+      object e_P2: TEdit
+        Left = 4
+        Height = 23
+        Top = 31
+        Width = 52
+        OnChange = e_P2Change
+        TabOrder = 0
+        Text = '0'
+      end
+      object cb_P2: TCheckBox
+        Left = 98
+        Height = 24
+        Top = 31
+        Width = 77
+        Caption = 'Es dato'
+        TabOrder = 1
+      end
+      object e_Q2: TEdit
+        Left = 4
+        Height = 23
+        Top = 51
+        Width = 52
+        OnChange = e_P2Change
+        TabOrder = 2
+        Text = '0'
+      end
+      object cb_Q2: TCheckBox
+        Left = 98
+        Height = 24
+        Top = 51
+        Width = 77
+        Caption = 'Es dato'
+        TabOrder = 3
+      end
+      object rb_S2_PQ: TRadioButton
+        Left = 8
+        Height = 24
+        Top = 8
+        Width = 24
+        Checked = True
+        OnClick = rb_S2_PQClick
+        TabOrder = 4
+        TabStop = True
+      end
+    end
+    object Panel4: TPanel
+      Left = 3
+      Height = 90
+      Top = 151
+      Width = 196
+      ClientHeight = 90
+      ClientWidth = 196
+      TabOrder = 3
+      object Label16: TLabel
+        Left = 62
+        Height = 13
+        Top = 63
+        Width = 29
+        Caption = 'FI2[º]'
+        ParentColor = False
+      end
+      object Label18: TLabel
+        Left = 63
+        Height = 13
+        Top = 31
+        Width = 43
+        Caption = 'Abs(S2)'
+        ParentColor = False
+      end
+      object cb_FI2: TCheckBox
+        Left = 106
+        Height = 24
+        Top = 62
+        Width = 77
+        Caption = 'Es dato'
+        Enabled = False
+        TabOrder = 0
+      end
+      object e_FI2: TEdit
+        Left = 4
+        Height = 23
+        Top = 55
+        Width = 52
+        Enabled = False
+        OnChange = e_roS2Change
+        TabOrder = 1
+        Text = '0'
+      end
+      object rb_S2_roFi: TRadioButton
+        Left = 8
+        Height = 24
+        Top = 8
+        Width = 24
+        Checked = True
+        OnClick = rb_S2_roFiClick
+        TabOrder = 2
+      end
+      object e_roS2: TEdit
+        Left = 4
+        Height = 23
+        Top = 31
+        Width = 53
+        Enabled = False
+        OnChange = e_roS2Change
+        TabOrder = 3
+        Text = 'e_roS2'
+      end
+      object cb_roS2: TCheckBox
+        Left = 107
+        Height = 24
+        Top = 31
+        Width = 77
+        Caption = 'Es dato'
+        Enabled = False
+        TabOrder = 4
+      end
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 215
+    Height = 88
+    Top = 151
+    Width = 178
+    Caption = 'adelanto de U2 respecto de U1'
+    ClientHeight = 73
+    ClientWidth = 174
+    TabOrder = 3
+    object Label19: TLabel
+      Left = 102
+      Height = 13
+      Top = 28
+      Width = 42
+      Caption = 'theta[º]'
+      ParentColor = False
+    end
+    object e_theta: TEdit
+      Left = 31
+      Height = 23
+      Top = 28
+      Width = 59
+      TabOrder = 0
+      Text = '0'
+    end
+    object cb_theta: TCheckBox
+      Left = 50
+      Height = 24
+      Top = 55
+      Width = 77
+      Caption = 'Es dato'
+      TabOrder = 1
+    end
+  end
+  object Button2: TButton
+    Left = 215
+    Height = 25
+    Top = 352
+    Width = 153
+    Caption = 'Resolver por Newton Rapson'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Panel_Ayuda: TPanel
+    Left = 8
+    Height = 496
+    Top = 8
+    Width = 616
+    Caption = 'Panel_Ayuda'
+    ClientHeight = 496
+    ClientWidth = 616
+    TabOrder = 5
+    Visible = False
+    object Memo1: TMemo
+      Left = 1
+      Height = 494
+      Top = 1
+      Width = 614
+      Align = alClient
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      Lines.Strings = (
+        ''
+        'Un cuadripolo queda definido por cuatro parámetros complejos'
+        'A, B, C y D conocidos como constantes del cuadripolo.'
+        ''
+        'estos parámetros relacionan la tensión y corriente a la'
+        'entrada con la tensión y corriente de salida de la siguiente'
+        'forma:'
+        ''
+        '   I1    +-----------+   I2'
+        '-------->|           |------->'
+        '    U1   |  A,B,C,D  |  U2'
+        '---------|           |---------'
+        '         +-----------+'
+        'P1+jQ1=U1*cc(I1)        P2+jQ2=U2+cc(I2)'
+        ''
+        'Ecuaciones del cuadripolo:'
+        'U1 = A U2 + B I2'
+        'I1 = C U2 + D I2'
+        ''
+        'Si es pasivo, se cumple AD-BC=1'
+        'Si D=A, decimos que el cuadripolo es simétrico'
+        ''
+        'Despejando de las ecuaciones del cuadripolo podemos escribir la'
+        'ecuación que permite calcular las corrientes entrante a un sistema'
+        'en función de la tensión en sus nodos:'
+        ''
+        'I1 = D/B U1 + ( C-D*A/B ) U2'
+        '(-I2) = -1/B U1 + A/B U2'
+        ''
+        'La matriz de admitancias es entonces:'
+        '    | D/B       (C-D*A/B) |'
+        'Y = |                     |'
+        '    | -1/B         A/B    |'
+        ''
+        ''
+        'U1 * cc(I1 ) = S1 = P1+jQ1'
+        'U2 * cc( -I2 ) = S2 = -( P2+jQ2)'
+        ''
+        'Consideramos I1, P1 y Q1 entrantes al cuadripolo'
+        'e I2, P2, Q2 salientes del cualdripolo'
+        'S1 y S2 los consideramos entrantes por eso S2 = -(P2+jQ2)'
+        ''
+        'Las variables que consideramos para la solucion del problema son'
+        'U1, U2, S1, S2'
+        ''
+        'U1 y U2 con representación POLAR'
+        'S1 y S2 con representación RECTANGULAR'
+        ''
+        'ECUACIONES COMPLEJAS'
+        ''
+        'IiConj[i] = cc( sum( yik, Vk ); k=1..NNodos )'
+        ''
+        'fi[i]= V[iNodo]* IiConj[i] - S[iNodo] = 0'
+        ''
+        'DERIVADAS'
+        ''
+        'd(fi[i])/d(ro_kvar) = (i= kvar).( exp(j alfa_kvar) * IiConj[i] )'
+        '                     + V[i]* d(IiConj[i])/d(ro_kvar)'
+        ''
+        'd(fi[i])/d(alfa_kvar)= (i=kvar).(j ro_kvar * IiConj[i] )'
+        '                     + V[i]* d(IiConj[i])/d(alfa_kvar)'
+        ''
+        'd(fi[i])/d(P_kvar) = -1'
+        'd(fi[i])/d(Q_kvar) = -j'
+        ''
+        ''
+        '----'
+        'd(IiConj[i])/d(ro_kvar) = cc( y[i,k_var] * exp( j alfa_kvar ) )'
+        'd(IiConj[i])/d(alfa_kvar) = cc( y[i,k_var] * ( j ro_kvar ) )'
+        ''
+        '-----'
+        ''
+        ''
+        'El ejemplo por defecto es'
+        '   --------( 2 ohm )---+---'
+        '                       |'
+        '                       *'
+        ' 220V                  * 20 ohm'
+        '                       *'
+        '                       |'
+        '                       |'
+        ''
+        ' i  = U2/20'
+        ' U1= U2 + (I2+U2/20)*2 = 22/20 U1 + 2 I2'
+        ' I1= (1/20) U2 + I2'
+        ''
+        ' A= 22/20'
+        ' B= 2'
+        ' C= 1/20'
+        ' D= 1'
+        ''
+        ' AD -BC = 22/20 - 2/20 =1 (verificación)'
+        ''
+        ''
+        '***********************'
+        'Proyecto SimSEE.'
+        'Setiembre 2012 - Ruben Chaer.'
+        'Instituto de Ingeniería Eléctrica - FING - UDELAR'
+        '================'
+        'SOFTWARE LIBRE'
+        ''
+      )
+      ParentFont = False
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+    end
+  end
+  object ToggleBox1: TToggleBox
+    Left = 648
+    Height = 23
+    Top = 24
+    Width = 34
+    Caption = '?'
+    OnChange = ToggleBox1Change
+    TabOrder = 6
+  end
+end

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8ba61ddc-267f-4bbc-b300-6062509813c5}</ProjectGuid>
+    <MainSource>SimSEESimulador.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\..\..\..\bin\SimSEESimulador.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_IOChecking>False</DCC_IOChecking>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>\simsee\bin</DCC_ExeOutput>
+    <DCC_DcuOutput>\simsee\dcus\simulador</DCC_DcuOutput>
+    <DCC_ObjOutput>\simsee\dcus\simulador</DCC_ObjOutput>
+    <DCC_HppOutput>\simsee\dcus\simulador</DCC_HppOutput>
+    <DCC_Define>MIPSimplex;MONITORES;RNODO_IGUALDAD;MODOGRAFICO;PUBLIVARS;xESTADO_HIDRO_UTE;xESTADO_HIDRO_ISOPROB;COSTOSHIDROPOSITIVOS;REDUCCIONCOTAQE;AYUDA_INDEPENDIENTE;HOLGURA_FALLA;ITERAR</DCC_Define>
+    <DCC_CONSTRUCTING_ABSTRACT>False</DCC_CONSTRUCTING_ABSTRACT>
+    <DCC_UnitSearchPath>..\..\fc\base\;..\..\fc\rch30;..\..\fc\actores;..\..\fc\monitores</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\..\fc\base\;..\..\fc\rch30;..\..\fc\actores;..\..\fc\monitores</DCC_ResourcePath>
+    <DCC_ObjPath>..\..\fc\base\;..\..\fc\rch30;..\..\fc\actores;..\..\fc\monitores</DCC_ObjPath>
+    <DCC_IncludePath>..\..\fc\base\;..\..\fc\rch30;..\..\fc\actores;..\..\fc\monitores</DCC_IncludePath>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_ExeOutput>\simsee\bin</DCC_ExeOutput>
+    <DCC_DcuOutput>\simsee\dcus\simulador</DCC_DcuOutput>
+    <DCC_ObjOutput>\simsee\dcus\simulador</DCC_ObjOutput>
+    <DCC_HppOutput>\simsee\dcus\simulador</DCC_HppOutput>
+    <DCC_Define>MIPSimplex;MONITORES;RNODO_IGUALDAD;MODOGRAFICO;PUBLIVARS;xESTADO_HIDRO_UTE;xESTADO_HIDRO_ISOPROB;COSTOSHIDROPOSITIVOS;REDUCCIONCOTAQE;AYUDA_INDEPENDIENTE;xDEBUG;HOLGURA_FALLA;ITERAR;xDBG;DEBUG_MULTI_HILO;DEBUG_HistoCF0CF1;PDE_RIESGO</DCC_Define>
+    <DCC_CONSTRUCTING_ABSTRACT>False</DCC_CONSTRUCTING_ABSTRACT>
+    <DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_UnitSearchPath>..\..\fc\base\;..\..\fc\actores;..\..\fc\monitores;..\..\rchlib\mat;..\..\rchlib\trazosxy</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\..\fc\base\;..\..\fc\actores;..\..\fc\monitores;..\..\rchlib\mat;..\..\rchlib\trazosxy</DCC_ResourcePath>
+    <DCC_ObjPath>..\..\fc\base\;..\..\fc\actores;..\..\fc\monitores;..\..\rchlib\mat;..\..\rchlib\trazosxy</DCC_ObjPath>
+    <DCC_IncludePath>..\..\fc\base\;..\..\fc\actores;..\..\fc\monitores;..\..\rchlib\mat;..\..\rchlib\trazosxy</DCC_IncludePath>
+    <DCC_ConsoleTarget>True</DCC_ConsoleTarget>
+    <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">14346</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">SimSEESimulador.dpr</Source></Source><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+    </Excluded_Packages></Delphi.Personality><ModelSupport>False</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="SimSEESimulador.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="..\..\fc\actores\uActores.pas" />
+    <DCCReference Include="..\..\fc\actores\uActorNodal.pas" />
+    <DCCReference Include="..\..\fc\actores\uArcos.pas" />
+    <DCCReference Include="..\..\fc\actores\uBaseMercadoSpot.pas" />
+    <DCCReference Include="..\..\fc\actores\uComercioInternacional.pas" />
+    <DCCReference Include="..\..\fc\actores\ucontratomodalidaddevolucion.pas" />
+    <DCCReference Include="..\..\fc\actores\uDemandaAnioBaseEIndices.pas" />
+    <DCCReference Include="..\..\fc\actores\udemandadetallada.pas" />
+    <DCCReference Include="..\..\fc\actores\uDemandas.pas" />
+    <DCCReference Include="..\..\fc\actores\udemandas01.pas" />
+    <DCCReference Include="..\..\fc\actores\uGeneradores.pas" />
+    <DCCReference Include="..\..\fc\actores\uGTer.pas" />
+    <DCCReference Include="..\..\fc\actores\ugter_arranqueparada.pas" />
+    <DCCReference Include="..\..\fc\actores\ugter_arranqueparada_noopt.pas" />
+    <DCCReference Include="..\..\fc\actores\ugter_basico.pas" />
+    <DCCReference Include="..\..\fc\actores\ugter_basico_PyCVariable.pas" />
+    <DCCReference Include="..\..\fc\actores\ugter_basico_trep.pas" />
+    <DCCReference Include="..\..\fc\actores\ugter_onoffporpaso.pas" />
+    <DCCReference Include="..\..\fc\actores\ugter_onoffporpaso_conrestricciones.pas" />
+    <DCCReference Include="..\..\fc\actores\ugter_onoffporposte.pas" />
+    <DCCReference Include="..\..\fc\actores\uHidroConBombeo.pas" />
+    <DCCReference Include="..\..\fc\actores\uHidroConEmbalse.pas" />
+    <DCCReference Include="..\..\fc\actores\uHidroConEmbalseBinacional.pas" />
+    <DCCReference Include="..\..\fc\actores\uHidroDePasada.pas" />
+    <DCCReference Include="..\..\fc\actores\uMercadoSpot.pas" />
+    <DCCReference Include="..\..\fc\actores\uMercadoSpotConDetalleHorarioSemanal.pas" />
+    <DCCReference Include="..\..\fc\actores\uMercadoSpot_postizado.pas" />
+    <DCCReference Include="..\..\fc\actores\unodos.pas" />
+    <DCCReference Include="..\..\fc\actores\uParqueEolico.pas" />
+    <DCCReference Include="..\..\fc\actores\uParqueEolico_vxy.pas" />
+    <DCCReference Include="..\..\fc\base\uActualizadorLPD.pas" />
+    <DCCReference Include="..\..\fc\base\uauxiliares.pas" />
+    <DCCReference Include="..\..\fc\base\uconstantesSimSEE.pas" />
+    <DCCReference Include="..\..\fc\base\uCosa.pas" />
+    <DCCReference Include="..\..\fc\base\uCosaConNombre.pas" />
+    <DCCReference Include="..\..\fc\base\ucronometros.pas" />
+    <DCCReference Include="..\..\fc\base\uDatosHistoricos.pas" />
+    <DCCReference Include="..\..\fc\base\udatoshorariosdetallados.pas" />
+    <DCCReference Include="..\..\fc\base\udbgutil.pas" />
+    <DCCReference Include="..\..\fc\base\uEsclavizador.pas" />
+    <DCCReference Include="..\..\fc\base\uEsclavizadorSobreMuestreado.pas" />
+    <DCCReference Include="..\..\fc\base\uEsclavizadorSubMuestreado.pas" />
+    <DCCReference Include="..\..\fc\base\uEstados.pas" />
+    <DCCReference Include="..\..\fc\base\uevapUruguay.pas" />
+    <DCCReference Include="..\..\fc\base\ufechas.pas" />
+    <DCCReference Include="..\..\fc\base\ufichasLPD.pas" />
+    <DCCReference Include="..\..\fc\base\uFuenteCombinacion.pas" />
+    <DCCReference Include="..\..\fc\base\uFuenteConstante.pas" />
+    <DCCReference Include="..\..\fc\base\uFuenteGaussiana.pas" />
+    <DCCReference Include="..\..\fc\base\uFuenteProducto.pas" />
+    <DCCReference Include="..\..\fc\base\uFuentesAleatorias.pas" />
+    <DCCReference Include="..\..\fc\base\uFuenteSintetizador.pas" />
+    <DCCReference Include="..\..\fc\base\ufuentetiempo.pas" />
+    <DCCReference Include="..\..\fc\base\uFuenteUniforme.pas" />
+    <DCCReference Include="..\..\fc\base\uFuenteWeibull.pas" />
+    <DCCReference Include="..\..\fc\base\uFuncionesReales.pas" />
+    <DCCReference Include="..\..\fc\base\ugestorsalasmh.pas" />
+    <DCCReference Include="..\..\fc\base\uglobs.pas" />
+    <DCCReference Include="..\..\fc\base\uInicioYFinal.pas" />
+    <DCCReference Include="..\..\fc\base\umodelosintcegh.pas" />
+    <DCCReference Include="..\..\fc\base\uodt_types.pas" />
+    <DCCReference Include="..\..\fc\base\upreprocesador.pas" />
+    <DCCReference Include="..\..\fc\base\uranddispos.pas" />
+    <DCCReference Include="..\..\fc\base\uRobotCalculoOptimizadorMulticore.pas" />
+    <DCCReference Include="..\..\fc\base\uRobotEscritorOptimizadorMulticore.pas" />
+    <DCCReference Include="..\..\fc\base\usalasdejuego.pas" />
+    <DCCReference Include="..\..\fc\base\uVarDefs.pas" />
+    <DCCReference Include="..\..\fc\base\uverdoc.pas">
+      <Form>formVerDoc</Form>
+    </DCCReference>
+    <DCCReference Include="..\..\fc\base\uversiones.pas" />
+    <DCCReference Include="..\..\fc\monitores\uEventosOptSim.pas" />
+    <DCCReference Include="..\..\fc\monitores\uManejadoresDeMonitores.pas" />
+    <DCCReference Include="..\..\fc\monitores\uMonitorArchivo.pas" />
+    <DCCReference Include="..\..\fc\monitores\uMonitorConsola.pas" />
+    <DCCReference Include="..\..\fc\monitores\uMonitores.pas" />
+    <DCCReference Include="..\..\fc\monitores\uMonitorGraficoSimple.pas" />
+    <DCCReference Include="..\..\fc\monitores\uMonitorHistograma.pas" />
+    <DCCReference Include="..\..\fc\monitores\uMonitorSimRes.pas" />
+    <DCCReference Include="..\..\fc\monitores\uReferenciaMonArchivo.pas" />
+    <DCCReference Include="..\..\fc\monitores\uReferenciaMonHistograma.pas" />
+    <DCCReference Include="..\..\fc\monitores\uReferenciaMonitor.pas" />
+    <DCCReference Include="..\..\fc\monitores\uReferenciaMonitorConsola.pas" />
+    <DCCReference Include="..\..\fc\monitores\uReferenciaMonitorGraficoSimple.pas" />
+    <DCCReference Include="..\..\fc\monitores\uReferenciaMonSimRes.pas" />
+    <DCCReference Include="..\..\fc\PA10\TVectors.pas" />
+    <DCCReference Include="..\..\fc\PA10\uMIPSimplexIteradorNoLineal.pas" />
+    <DCCReference Include="..\..\fc\PA10\utilidades.pas" />
+    <DCCReference Include="..\..\fc\PA10\winLinuxUtils.pas" />
+    <DCCReference Include="..\..\fc\simres\uSustituirVariablesPlantilla.pas" />
+    <DCCReference Include="..\..\src_libnettopos\fctopos\IPC\Win32\ipcthrd.pas" />
+    <DCCReference Include="..\..\src_nettopos\src_libnettopos\fctopos\IPC\Win32\ipcthrd.pas" />
+    <DCCReference Include="uSimSEE.PAS">
+      <Form>fSimSEE</Form>
+    </DCCReference>
+  </ItemGroup>
+</Project>

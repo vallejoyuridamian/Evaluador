@@ -1,0 +1,337 @@
+inherited EditarFichaBancoDeBaterias01: TEditarFichaBancoDeBaterias01
+  Left = 671
+  Height = 504
+  Top = 122
+  Width = 561
+  AutoSize = True
+  Caption = 'EditarFichaBancoDeBaterias01'
+  ClientHeight = 504
+  ClientWidth = 561
+  Font.Name = 'Tahoma'
+  OnCloseQuery = FormCloseQuery
+  inherited base_editores_panel_top: TPanel
+    Width = 561
+    ClientWidth = 561
+    TabOrder = 7
+    inherited lbo_capa: TLabel
+      Width = 33
+    end
+    inherited e_Capa: TEdit
+      Height = 23
+    end
+  end
+  object LFIni: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 83
+    Caption = 'Fecha de inicio'
+    ParentColor = False
+  end
+  object BGuardar: TButton[2]
+    Left = 88
+    Height = 25
+    Top = 416
+    Width = 105
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 0
+  end
+  object BCancelar: TButton[3]
+    Left = 208
+    Height = 25
+    Top = 416
+    Width = 105
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 1
+  end
+  object EFIni: TEdit[4]
+    Left = 145
+    Height = 23
+    Top = 0
+    Width = 97
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+  end
+  object CBPeriodicidad: TCheckBox[5]
+    Left = 0
+    Height = 24
+    Top = 24
+    Width = 96
+    Caption = 'Periodica?'
+    OnClick = CBPeriodicidadClick
+    TabOrder = 3
+  end
+  object PPeriodicidad: TPanel[6]
+    Left = 0
+    Height = 85
+    Top = 45
+    Width = 423
+    AutoSize = True
+    ClientHeight = 85
+    ClientWidth = 423
+    TabOrder = 4
+    object LFinPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 26
+      Width = 87
+      Caption = 'Fin del Periodo:'
+      ParentColor = False
+    end
+    object LIniPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 2
+      Width = 101
+      Caption = 'Inicio del Periodo:'
+      ParentColor = False
+    end
+    object LLargoPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 56
+      Width = 104
+      Caption = 'Largo del Período:'
+      ParentColor = False
+    end
+    object EFFinPeriodo: TEdit
+      Left = 94
+      Height = 23
+      Top = 23
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 0
+      Text = '0'
+    end
+    object EFIniPeriodo: TEdit
+      Left = 94
+      Height = 23
+      Top = 1
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 1
+      Text = '0'
+    end
+    object sgPeriodicidad: TStringGrid
+      Left = 221
+      Height = 79
+      Top = 1
+      Width = 201
+      ColCount = 2
+      DefaultRowHeight = 25
+      FixedRows = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goTabs]
+      RowCount = 3
+      TabOrder = 2
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      OnClick = sgChequearCambios
+      OnExit = sgChequearCambios
+      OnGetEditText = sgGetEditText
+      OnKeyDown = sgChequearCambiosKeyDown
+    end
+    object ELargoPeriodo: TEdit
+      Left = 94
+      Height = 23
+      Top = 53
+      Width = 41
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 3
+      Text = '1'
+    end
+    object CBLargoPeriodo: TComboBox
+      Left = 140
+      Height = 31
+      Top = 53
+      Width = 75
+      ItemHeight = 0
+      Items.Strings = (
+        'Años'
+        'Meses'
+        'Semanas'
+        'Días'
+      )
+      OnChange = cambiosForm
+      Style = csDropDownList
+      TabOrder = 4
+    end
+  end
+  object BAyuda: TButton[7]
+    Left = 244
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    TabOrder = 5
+  end
+  object GroupBox1: TGroupBox[8]
+    Left = 0
+    Height = 272
+    Top = 136
+    Width = 480
+    Caption = 'Parámetros de una unidad del banco de baterías.'
+    ClientHeight = 257
+    ClientWidth = 476
+    TabOrder = 6
+    object Label1: TLabel
+      Left = 119
+      Height = 13
+      Top = 13
+      Width = 152
+      Caption = 'Capacidad máxima [MWh]:'
+      ParentColor = False
+    end
+    object eCapacidadMaxima: TEdit
+      Left = 288
+      Height = 23
+      Top = 8
+      Width = 80
+      TabOrder = 0
+      Text = '0.0'
+    end
+    object Label2: TLabel
+      Left = 72
+      Height = 13
+      Top = 40
+      Width = 208
+      Caption = 'Potencia máxima de descarga [MW]:'
+      ParentColor = False
+    end
+    object ePMax_Gen: TEdit
+      Left = 288
+      Height = 23
+      Top = 37
+      Width = 80
+      TabOrder = 1
+      Text = '0.0'
+    end
+    object Label3: TLabel
+      Left = 90
+      Height = 13
+      Top = 91
+      Width = 188
+      Caption = 'Potencia máxima de carga [MW]:'
+      ParentColor = False
+    end
+    object ePMax_Dem: TEdit
+      Left = 288
+      Height = 23
+      Top = 88
+      Width = 80
+      TabOrder = 2
+      Text = '0.0'
+    end
+    object Label4: TLabel
+      Left = 120
+      Height = 13
+      Top = 61
+      Width = 149
+      Caption = 'Rendimiento de descarga:'
+      ParentColor = False
+    end
+    object eRen_Gen: TEdit
+      Left = 288
+      Height = 23
+      Top = 61
+      Width = 80
+      TabOrder = 3
+      Text = '0.8'
+    end
+    object Label5: TLabel
+      Left = 137
+      Height = 13
+      Top = 114
+      Width = 129
+      Caption = 'Rendimiento de carga:'
+      ParentColor = False
+    end
+    object eRen_Dem: TEdit
+      Left = 288
+      Height = 23
+      Top = 112
+      Width = 80
+      TabOrder = 4
+      Text = '0.8'
+    end
+    object Label6: TLabel
+      Left = 109
+      Height = 13
+      Top = 137
+      Width = 161
+      Caption = 'Disponibilidad fortuita [p.u.]:'
+      ParentColor = False
+    end
+    object efd: TEdit
+      Left = 288
+      Height = 23
+      Top = 136
+      Width = 80
+      TabOrder = 5
+      Text = '1'
+    end
+    object Label7: TLabel
+      Left = 89
+      Height = 13
+      Top = 165
+      Width = 188
+      Caption = 'Tiempo Medio de Reparación [h]:'
+      ParentColor = False
+    end
+    object etmr: TEdit
+      Left = 288
+      Height = 23
+      Top = 161
+      Width = 80
+      TabOrder = 6
+      Text = 'etmr'
+    end
+    object eCV_MWh_ValorizadoManual: TLabeledEdit
+      Left = 288
+      Height = 23
+      Top = 184
+      Width = 80
+      EditLabel.AnchorSideLeft.Side = asrBottom
+      EditLabel.AnchorSideTop.Control = eCV_MWh_ValorizadoManual
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eCV_MWh_ValorizadoManual
+      EditLabel.AnchorSideBottom.Control = eCV_MWh_ValorizadoManual
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 34
+      EditLabel.Height = 13
+      EditLabel.Top = 189
+      EditLabel.Width = 251
+      EditLabel.Caption = 'Valor de la energía almacenada [USD/MWh]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 7
+      Text = '0'
+    end
+    object Label8: TLabel
+      Left = 96
+      Height = 13
+      Top = 212
+      Width = 186
+      Caption = 'Pago disponibilidad [USD/MWhh]:'
+      ParentColor = False
+    end
+    object ePagoPorDisponibilidad: TEdit
+      Left = 288
+      Height = 23
+      Top = 208
+      Width = 80
+      TabOrder = 8
+      Text = '0'
+    end
+  end
+  inherited iconos: TImageList[9]
+  end
+  inherited iconos2: TImageList[10]
+  end
+end

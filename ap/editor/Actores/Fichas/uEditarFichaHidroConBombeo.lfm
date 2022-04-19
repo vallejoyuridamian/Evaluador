@@ -1,0 +1,757 @@
+inherited EditarFichaHidroConBombeo: TEditarFichaHidroConBombeo
+  Left = 182
+  Height = 750
+  Top = 32
+  Width = 1030
+  HorzScrollBar.Page = 968
+  VertScrollBar.Page = 750
+  ActiveControl = sgFicha
+  AutoScroll = True
+  Caption = 'Editar Ficha de Generador Hidráulico Con Bombeo'
+  ClientHeight = 750
+  ClientWidth = 1030
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnResize = FormResize
+  inherited base_editores_panel_top: TPanel
+    Width = 1030
+    ClientWidth = 1030
+    TabOrder = 23
+    inherited e_Capa: TEdit
+      Height = 21
+    end
+  end
+  object LFIni: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 72
+    Caption = 'Fecha de inicio'
+    ParentColor = False
+  end
+  object lCotaActivacionControlCrecida: TLabel[2]
+    Left = 820
+    Height = 13
+    Top = 432
+    Width = 25
+    Caption = 'Inicio'
+    ParentColor = False
+  end
+  object lPenalidadControlCrecida: TLabel[3]
+    Left = 828
+    Height = 13
+    Top = 480
+    Width = 14
+    Caption = 'Fin'
+    ParentColor = False
+  end
+  object Label4: TLabel[4]
+    Left = 490
+    Height = 13
+    Top = 91
+    Width = 131
+    Caption = 'Salto mínimo operativo: [m]:'
+    ParentColor = False
+  end
+  object sgFicha: TStringGrid[5]
+    Left = 16
+    Height = 478
+    Top = 152
+    Width = 420
+    ColCount = 2
+    DefaultColWidth = 180
+    DefaultRowHeight = 25
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goTabs]
+    RowCount = 19
+    TabOrder = 0
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    OnGetEditText = sgGetEditText
+    OnMouseMove = sgFichaMouseMove
+  end
+  object BGuardar: TButton[6]
+    Left = 139
+    Height = 25
+    Top = 760
+    Width = 105
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 1
+  end
+  object BCancelar: TButton[7]
+    Left = 275
+    Height = 25
+    Top = 760
+    Width = 105
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 2
+  end
+  object EFIni: TEdit[8]
+    Left = 145
+    Height = 21
+    Top = 0
+    Width = 97
+    OnEnter = EditEnter
+    TabOrder = 3
+    Text = 'EFIni'
+  end
+  object CBPeriodicidad: TCheckBox[9]
+    Left = 0
+    Height = 19
+    Top = 24
+    Width = 70
+    Caption = 'Periodica?'
+    OnClick = CBPeriodicidadClick
+    TabOrder = 4
+  end
+  object PPeriodicidad: TPanel[10]
+    Left = 8
+    Height = 83
+    Top = 48
+    Width = 468
+    AutoSize = True
+    ClientHeight = 83
+    ClientWidth = 468
+    TabOrder = 5
+    object LFinPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 26
+      Width = 73
+      Caption = 'Fin del Periodo:'
+      ParentColor = False
+    end
+    object LIniPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 2
+      Width = 84
+      Caption = 'Inicio del Periodo:'
+      ParentColor = False
+    end
+    object LLargoPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 56
+      Width = 88
+      Caption = 'Largo del Período:'
+      ParentColor = False
+    end
+    object EFFinPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 23
+      Width = 120
+      OnEnter = EditEnter
+      TabOrder = 0
+      Text = '0'
+    end
+    object EFIniPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 1
+      Width = 120
+      OnEnter = EditEnter
+      TabOrder = 1
+      Text = '0'
+    end
+    object sgPeriodicidad: TStringGrid
+      Left = 248
+      Height = 79
+      Top = 3
+      Width = 219
+      ColCount = 2
+      DefaultRowHeight = 25
+      FixedRows = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goTabs]
+      RowCount = 3
+      TabOrder = 2
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      OnGetEditText = sgGetEditText
+    end
+    object ELargoPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 53
+      Width = 41
+      OnEnter = EditEnter
+      TabOrder = 3
+      Text = '1'
+    end
+    object CBLargoPeriodo: TComboBox
+      Left = 140
+      Height = 21
+      Top = 53
+      Width = 75
+      ItemHeight = 13
+      Items.Strings = (
+        'Años'
+        'Meses'
+        'Semanas'
+        'Días'
+      )
+      OnChange = CambiosForm
+      Style = csDropDownList
+      TabOrder = 4
+    end
+  end
+  object BEditarCentralesAguasArriba: TButton[11]
+    Left = 443
+    Height = 25
+    Top = 760
+    Width = 185
+    Caption = 'Editar Centrales Encadenadas'
+    OnClick = BEditarCentralesAguasArribaClick
+    TabOrder = 6
+  end
+  object CBRestrEMax: TCheckBox[12]
+    Left = 490
+    Height = 19
+    Hint = 'Restricción a la Energía Máxima Generada En Un Paso[MWh]'
+    Top = 356
+    Width = 103
+    Caption = 'EMaxPaso[MWh]'
+    OnClick = CBRestrEMaxClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 7
+  end
+  object CBRestrQTMin: TCheckBox[13]
+    Left = 490
+    Height = 19
+    Hint = 'Restricción al Caudal Mínimo Turbinado En Un Paso'
+    Top = 378
+    Width = 141
+    Caption = 'QErogado mínimo[m^3/s]'
+    OnClick = CBRestrQTMinClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 8
+  end
+  object ERestrEMax: TEdit[14]
+    Left = 641
+    Height = 21
+    Top = 352
+    Width = 65
+    OnEnter = EditEnter
+    TabOrder = 9
+  end
+  object ERestrQTMin: TEdit[15]
+    Left = 641
+    Height = 21
+    Top = 378
+    Width = 65
+    OnEnter = EditEnter
+    TabOrder = 10
+  end
+  object BAyuda: TButton[16]
+    Left = 244
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 11
+  end
+  object GroupBox1: TGroupBox[17]
+    Left = 472
+    Height = 129
+    Top = 112
+    Width = 432
+    Caption = 'Control de cota objetivo en la simulación'
+    ClientHeight = 111
+    ClientWidth = 428
+    TabOrder = 12
+    object Label1: TLabel
+      Left = 72
+      Height = 13
+      Top = 56
+      Width = 85
+      Caption = 'Cota objetivo  [m]:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 12
+      Height = 13
+      Top = 80
+      Width = 159
+      Caption = 'Delta Valor del Agua [USD/Hm3]:'
+      ParentColor = False
+    end
+    object ehObjetivo: TEdit
+      Left = 177
+      Height = 21
+      Top = 48
+      Width = 76
+      OnEnter = EditEnter
+      TabOrder = 0
+      Text = '0'
+    end
+    object eDeltaCVA: TEdit
+      Left = 177
+      Height = 21
+      Top = 75
+      Width = 76
+      OnEnter = EditEnter
+      TabOrder = 1
+      Text = '0'
+    end
+    object cb_controlarCotaPorDebajoDelObjetivo_sim: TCheckBox
+      Left = 12
+      Height = 19
+      Top = 0
+      Width = 167
+      Caption = 'Activar si( h < h_Objetivo )(Sim)'
+      OnClick = CambiosForm
+      TabOrder = 2
+    end
+    object cb_ControlarCotaPorEncimaDelObjetivo_sim: TCheckBox
+      Left = 12
+      Height = 19
+      Top = 20
+      Width = 167
+      Caption = 'Activar si (h > h_Objetivo) (Sim)'
+      OnClick = CambiosForm
+      TabOrder = 3
+    end
+    object cb_controlarCotaPorDebajoDelObjetivo_opt: TCheckBox
+      Left = 208
+      Height = 19
+      Top = 0
+      Width = 170
+      Caption = 'Activar si: (h < h_Objetivo) (Opt)'
+      OnClick = CambiosForm
+      TabOrder = 4
+    end
+    object cb_ControlarCotaPorEncimaDelObjetivo_opt: TCheckBox
+      Left = 208
+      Height = 19
+      Top = 20
+      Width = 170
+      Caption = 'Activar si:( h > h_Objetivo) (Opt)'
+      OnClick = CambiosForm
+      TabOrder = 5
+    end
+    object cbActivarValorAguaExacto_hObjetivo: TCheckBox
+      Left = 305
+      Height = 19
+      Top = 65
+      Width = 114
+      Caption = 'Valor Agua Exacto?'
+      TabOrder = 6
+    end
+  end
+  object GroupBox2: TGroupBox[18]
+    Left = 744
+    Height = 40
+    Top = 232
+    Width = 208
+    Caption = 'Valorización Manual'
+    ClientHeight = 22
+    ClientWidth = 204
+    TabOrder = 13
+    object Label3: TLabel
+      Left = 3
+      Height = 13
+      Top = 0
+      Width = 120
+      Caption = 'cva Manulal [USD/Hm3]:'
+      ParentColor = False
+    end
+    object ecvl_USD_Hm3_ValorizadoManual: TEdit
+      Left = 134
+      Height = 21
+      Top = -1
+      Width = 58
+      OnEnter = EditEnter
+      TabOrder = 0
+      Text = '0'
+    end
+  end
+  object gbManejoCotaReal: TGroupBox[19]
+    Left = 744
+    Height = 89
+    Top = 280
+    Width = 208
+    Caption = 'Manejo de Cota Real'
+    ClientHeight = 71
+    ClientWidth = 204
+    TabOrder = 14
+    object lFuente: TLabel
+      Left = 12
+      Height = 13
+      Top = 21
+      Width = 36
+      Caption = 'Fuente:'
+      ParentColor = False
+    end
+    object lBorne: TLabel
+      Left = 12
+      Height = 13
+      Top = 48
+      Width = 31
+      Caption = 'Borne:'
+      ParentColor = False
+    end
+    object cbTomarDeLaFuente: TCheckBox
+      Left = 12
+      Height = 19
+      Top = 0
+      Width = 118
+      Caption = 'Tomar de la Fuente?'
+      OnClick = cbTomarDeLaFuenteClick
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object cbFuente: TComboBox
+      Left = 54
+      Height = 21
+      Top = 19
+      Width = 141
+      ItemHeight = 13
+      OnChange = cbFuenteChange
+      TabOrder = 1
+    end
+    object cbBorne: TComboBox
+      Left = 54
+      Height = 21
+      Top = 45
+      Width = 141
+      ItemHeight = 13
+      OnChange = CambiosForm
+      TabOrder = 2
+    end
+  end
+  object cbImponerQTMinPorPoste: TCheckBox[20]
+    Left = 712
+    Height = 19
+    Top = 379
+    Width = 182
+    Caption = 'Imponer QErogadoMín por Poste?'
+    OnClick = CambiosForm
+    TabOrder = 15
+  end
+  object ecotaControlCrecida_inicio: TEdit[21]
+    Left = 851
+    Height = 21
+    Top = 432
+    Width = 42
+    OnEnter = EditEnter
+    TabOrder = 16
+  end
+  object ecotaControlCrecida_pleno: TEdit[22]
+    Left = 851
+    Height = 21
+    Top = 480
+    Width = 42
+    OnEnter = EditEnter
+    TabOrder = 17
+  end
+  object eSaltoMinimoOperativo: TEdit[23]
+    Left = 627
+    Height = 21
+    Top = 88
+    Width = 36
+    TabOrder = 18
+    Text = '0'
+  end
+  object GroupBox3: TGroupBox[24]
+    Left = 472
+    Height = 121
+    Top = 232
+    Width = 223
+    Caption = 'Bombeo'
+    ClientHeight = 103
+    ClientWidth = 219
+    TabOrder = 19
+    object Label5: TLabel
+      Left = 47
+      Height = 13
+      Top = 0
+      Width = 59
+      Caption = 'PMáx [MW]:'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 42
+      Height = 13
+      Top = 34
+      Width = 64
+      Caption = 'QMáx [m3/s]:'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 28
+      Height = 13
+      Top = 64
+      Width = 89
+      Caption = 'Rendimiento [p.u.]:'
+      ParentColor = False
+    end
+    object ePmaxBombeo: TEdit
+      Left = 112
+      Height = 21
+      Top = 0
+      Width = 69
+      TabOrder = 0
+      Text = 'ePmaxBombeo'
+    end
+    object eQmaxBombeo: TEdit
+      Left = 112
+      Height = 21
+      Top = 30
+      Width = 69
+      TabOrder = 1
+      Text = 'eQmaxBombeo'
+    end
+    object eRenBombeo: TEdit
+      Left = 123
+      Height = 21
+      Top = 62
+      Width = 45
+      TabOrder = 2
+      Text = 'eRenBombeo'
+    end
+  end
+  object cbCalcularEvaporacionDelLago: TCheckBox[25]
+    Left = 475
+    Height = 19
+    Top = 511
+    Width = 167
+    Caption = 'Calcular evaporación del Lago.'
+    Checked = True
+    OnChange = cbCalcularEvaporacionDelLagoChange
+    State = cbChecked
+    TabOrder = 20
+  end
+  object cbCalcularFiltracionLago: TCheckBox[26]
+    Left = 475
+    Height = 19
+    Top = 535
+    Width = 143
+    Caption = 'Calcular filtración del lago.'
+    Checked = True
+    OnChange = cbCalcularFiltracionLagoChange
+    State = cbChecked
+    TabOrder = 21
+  end
+  object eControlDeCrecidaCaudalAPleno: TEdit[27]
+    Left = 900
+    Height = 21
+    Top = 480
+    Width = 41
+    TabOrder = 22
+    Text = '0'
+  end
+  object GroupBox4: TGroupBox[28]
+    Left = 680
+    Height = 80
+    Top = 512
+    Width = 264
+    Caption = 'Pagos (no considerados en el despacho)'
+    ClientHeight = 62
+    ClientWidth = 260
+    TabOrder = 24
+    object Label9: TLabel
+      Left = 6
+      Height = 13
+      Top = 8
+      Width = 196
+      Caption = 'Pago por disponibilidad [USD/(unidad-h)]:'
+      ParentColor = False
+    end
+    object Label10: TLabel
+      Left = 9
+      Height = 13
+      Top = 32
+      Width = 150
+      Caption = 'Pago por energia  [USD/MWh]:'
+      ParentColor = False
+    end
+    object ePagoPorDisponibilidad: TEdit
+      Left = 207
+      Height = 21
+      Top = 1
+      Width = 40
+      TabOrder = 0
+      Text = '0'
+    end
+    object ePagoPorEnergia: TEdit
+      Left = 170
+      Height = 21
+      Top = 28
+      Width = 48
+      TabOrder = 1
+      Text = '0'
+    end
+  end
+  object GroupBox5: TGroupBox[29]
+    Left = 480
+    Height = 88
+    Top = 592
+    Width = 488
+    Caption = 'Control Crecida por Cota vs. Aportes'
+    ClientHeight = 70
+    ClientWidth = 484
+    TabOrder = 25
+    object eControlCrecidasCotaAportes_h: TLabeledEdit
+      Left = 80
+      Height = 21
+      Top = 8
+      Width = 240
+      EditLabel.AnchorSideTop.Control = eControlCrecidasCotaAportes_h
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eControlCrecidasCotaAportes_h
+      EditLabel.AnchorSideBottom.Control = eControlCrecidasCotaAportes_h
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 30
+      EditLabel.Height = 13
+      EditLabel.Top = 12
+      EditLabel.Width = 47
+      EditLabel.Caption = 'Cotas [m]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 0
+      Text = '35.5; 35.39; 35.04'
+    end
+    object eControlCrecidasCotaAportes_QA: TLabeledEdit
+      Left = 80
+      Height = 21
+      Top = 36
+      Width = 240
+      EditLabel.AnchorSideTop.Control = eControlCrecidasCotaAportes_QA
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eControlCrecidasCotaAportes_QA
+      EditLabel.AnchorSideBottom.Control = eControlCrecidasCotaAportes_QA
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 5
+      EditLabel.Height = 13
+      EditLabel.Top = 40
+      EditLabel.Width = 72
+      EditLabel.Caption = 'Aportes [m3/s]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 1
+      Text = '1000; 4000; 8000'
+    end
+    object cbActivar_ControlCrecidaCotaAportes: TCheckBox
+      Left = 352
+      Height = 19
+      Top = 8
+      Width = 91
+      Caption = 'Activar control.'
+      TabOrder = 2
+    end
+  end
+  object Label11: TLabel[30]
+    Left = 828
+    Height = 13
+    Top = 400
+    Width = 129
+    Caption = 'Control de Crecida por cota'
+    ParentColor = False
+  end
+  object Label12: TLabel[31]
+    Left = 844
+    Height = 13
+    Top = 416
+    Width = 39
+    Caption = 'Cota [m]'
+    ParentColor = False
+  end
+  object Label13: TLabel[32]
+    Left = 892
+    Height = 13
+    Top = 416
+    Width = 73
+    Caption = 'Erogado [m3/s]'
+    ParentColor = False
+  end
+  object eControlDeCrecidaCaudalInicio: TEdit[33]
+    Left = 900
+    Height = 21
+    Top = 432
+    Width = 41
+    TabOrder = 26
+    Text = '0'
+  end
+  object ecotaControlCrecida_Medio: TEdit[34]
+    Left = 851
+    Height = 21
+    Top = 456
+    Width = 42
+    OnEnter = EditEnter
+    TabOrder = 27
+  end
+  object eControlDeCrecidaCaudalMedio: TEdit[35]
+    Left = 900
+    Height = 21
+    Top = 456
+    Width = 41
+    TabOrder = 28
+    Text = '0'
+  end
+  object lCotaActivacionControlCrecida1: TLabel[36]
+    Left = 816
+    Height = 13
+    Top = 456
+    Width = 29
+    Caption = 'Medio'
+    ParentColor = False
+  end
+  object CBActivarCtrlCrecida: TCheckBox[37]
+    Left = 784
+    Height = 19
+    Top = 416
+    Width = 53
+    Caption = 'Activar'
+    OnClick = CBActivarCtrlCrecidaClick
+    TabOrder = 29
+  end
+  object CBRestrQTMinFalla: TCheckBox[38]
+    Left = 448
+    Height = 19
+    Hint = 'Restricción al Caudal Mínimo Turbinado En Un Paso'
+    Top = 408
+    Width = 187
+    Caption = 'QErogado mínimo con falla [m^3/s]'
+    OnClick = CBRestrQTMinFallaClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 30
+  end
+  object ERestrQTMinFalla: TEdit[39]
+    Left = 641
+    Height = 21
+    Top = 408
+    Width = 65
+    OnEnter = EditEnter
+    TabOrder = 31
+  end
+  object Label8: TLabel[40]
+    Left = 504
+    Height = 13
+    Top = 439
+    Width = 113
+    Caption = 'USD/hm3 falla Erogado'
+    ParentColor = False
+  end
+  object EUSD_hm3_falla: TEdit[41]
+    Left = 641
+    Height = 21
+    Top = 439
+    Width = 65
+    OnEnter = EditEnter
+    TabOrder = 32
+  end
+  inherited iconos: TImageList[42]
+  end
+  inherited iconos2: TImageList[43]
+  end
+end

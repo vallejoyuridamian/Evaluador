@@ -1,0 +1,150 @@
+inherited AltaMonitorHistograma: TAltaMonitorHistograma
+  Left = 170
+  Height = 241
+  Top = 164
+  Width = 1014
+  Caption = 'Alta de Monitor de Histograma'
+  ClientHeight = 241
+  ClientWidth = 1014
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnResize = FormResize
+  object LNombre_Y_Clase: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 144
+    Width = 104
+    Caption = 'Actor (Clase, Nombre)'
+    ParentColor = False
+  end
+  object LNVar: TLabel[1]
+    Left = 215
+    Height = 14
+    Top = 144
+    Width = 105
+    Caption = 'Nombre de la Variable'
+    ParentColor = False
+  end
+  object LEvento: TLabel[2]
+    Left = 518
+    Height = 14
+    Top = 144
+    Width = 93
+    Caption = 'Asignado al Evento'
+    ParentColor = False
+  end
+  object LNMon: TLabel[3]
+    Left = 0
+    Height = 14
+    Top = 3
+    Width = 93
+    Caption = 'Nombre del Monitor'
+    ParentColor = False
+  end
+  object LNIntervalos: TLabel[4]
+    Left = 0
+    Height = 14
+    Top = 43
+    Width = 222
+    Caption = 'Número de Intervalos  [x1,x2);[x2,x3)...[xn-1,xn)'
+    ParentColor = False
+  end
+  object CBNombre_Y_Clase: TComboBox[5]
+    Left = 0
+    Height = 21
+    Top = 163
+    Width = 200
+    ItemHeight = 13
+    OnChange = CBNombre_Y_ClaseChange
+    Style = csDropDownList
+    TabOrder = 3
+  end
+  object CBVariable: TComboBox[6]
+    Left = 215
+    Height = 21
+    Top = 163
+    Width = 290
+    ItemHeight = 13
+    OnChange = CBVariableChange
+    Style = csDropDownList
+    TabOrder = 4
+  end
+  object BAgregarMonitor: TButton[7]
+    Left = 215
+    Height = 25
+    Top = 200
+    Width = 97
+    Caption = 'Agregar Monitor'
+    OnClick = BGuardarClick
+    TabOrder = 6
+  end
+  object BCancelar: TButton[8]
+    Left = 439
+    Height = 25
+    Top = 200
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 7
+  end
+  object CBEvento: TComboBox[9]
+    Left = 518
+    Height = 21
+    Top = 163
+    Width = 200
+    ItemHeight = 13
+    OnChange = CambiosForm
+    Style = csDropDownList
+    TabOrder = 5
+  end
+  object ENMon: TEdit[10]
+    Left = 104
+    Height = 21
+    Top = 0
+    Width = 161
+    OnChange = EditEnter
+    OnExit = EditNombreExit
+    TabOrder = 0
+  end
+  object sgIntervalos: TStringGrid[11]
+    Left = 0
+    Height = 54
+    Top = 72
+    Width = 1009
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+    RowCount = 2
+    TabOrder = 2
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    OnClick = sgValidarCambio
+    OnDrawCell = sgIntervalosDrawCell
+    OnExit = sgValidarCambio
+    OnGetEditText = sgGetEditText
+    OnKeyDown = sgIntervalosKeyDown
+  end
+  object ENIntervalos: TEdit[12]
+    Left = 232
+    Height = 21
+    Top = 40
+    Width = 97
+    OnEnter = EditEnter
+    OnExit = EditTamTablaExit
+    TabOrder = 1
+  end
+  object BAyuda: TButton[13]
+    Left = 268
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 8
+  end
+  inherited iconos: TImageList[14]
+  end
+  inherited iconos2: TImageList[15]
+  end
+end

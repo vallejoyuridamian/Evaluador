@@ -1,0 +1,5 @@
+inherited BaseEditoresCosasConNombre: TBaseEditoresCosasConNombre
+  Left = 500
+  Top = 307
+  Caption = 'BaseEditoresCosasConNombre'
+end

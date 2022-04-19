@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 231
+  Height = 181
+  Top = 141
+  Width = 791
+  Caption = 'Form1'
+  ClientHeight = 181
+  ClientWidth = 791
+  OnCreate = FormCreate
+  LCLVersion = '1.6.2.0'
+  object LArchiDefs: TLabel
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 190
+    Caption = 'Archivo de Definiciones:'
+    ParentColor = False
+  end
+  object LProgresoPrint: TLabel
+    Left = 24
+    Height = 25
+    Top = 48
+    Width = 76
+    Caption = 'Progreso:'
+    ParentColor = False
+  end
+  object BEjecutar: TButton
+    Left = 272
+    Height = 40
+    Top = 80
+    Width = 115
+    Caption = 'Ejecutar'
+    OnClick = BEjecutarClick
+    TabOrder = 0
+  end
+  object EArchiDefs: TEdit
+    Left = 208
+    Height = 33
+    Top = 5
+    Width = 417
+    TabOrder = 1
+  end
+  object BBuscar: TButton
+    Left = 632
+    Height = 35
+    Top = 5
+    Width = 96
+    Caption = 'Buscar'
+    OnClick = BBuscarClick
+    TabOrder = 2
+  end
+  object PBPrint: TProgressBar
+    Left = 112
+    Height = 25
+    Top = 48
+    Width = 585
+    Step = 1
+    TabOrder = 3
+  end
+  object OpenDialog1: TOpenDialog
+    InitialDir = '\simsee\SimResDefs'
+    left = 24
+    top = 96
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = Timer1Timer
+    left = 96
+    top = 96
+  end
+end

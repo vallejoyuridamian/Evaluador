@@ -1,0 +1,69 @@
+inherited EditarVariable: TEditarVariable
+  Left = 128
+  Height = 86
+  Top = 96
+  Width = 488
+  AutoSize = True
+  Caption = 'Agregar Variable'
+  ClientHeight = 86
+  ClientWidth = 488
+  OnCloseQuery = FormCloseQuery
+  object LClaseNombre: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 3
+    Width = 166
+    Caption = 'Actor a Monitorear (Clase, Nombre)'
+    ParentColor = False
+  end
+  object LNVar: TLabel[1]
+    Left = 0
+    Height = 14
+    Top = 27
+    Width = 105
+    Caption = 'Nombre de la Variable'
+    ParentColor = False
+  end
+  object CBNombre_Y_Clase: TComboBox[2]
+    Left = 176
+    Height = 21
+    Top = 0
+    Width = 297
+    DropDownCount = 15
+    ItemHeight = 13
+    OnChange = CBNombre_Y_ClaseChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object CBVariable: TComboBox[3]
+    Left = 176
+    Height = 21
+    Top = 24
+    Width = 297
+    DropDownCount = 15
+    ItemHeight = 13
+    OnChange = CambiosForm
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object BAgregarVar: TButton[4]
+    Left = 104
+    Height = 25
+    Top = 51
+    Width = 90
+    Caption = 'Guardar'
+    OnClick = BGuardarClick
+    TabOrder = 2
+  end
+  object BCancelar: TButton[5]
+    Left = 280
+    Height = 25
+    Top = 51
+    Width = 90
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 3
+  end
+  inherited iconos: TImageList[6]
+  end
+end

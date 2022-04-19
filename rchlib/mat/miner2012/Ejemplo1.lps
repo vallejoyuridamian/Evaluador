@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="Ejemplo1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uejemplo1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEjemplo1"/>
+        <TopLine Value="439"/>
+        <CursorPos X="3" Y="461"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\xmatdefs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\uoptvariadorhistogramas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\fc\base\uescalacolores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\ADME\EstimadorGeneracionERNC\uproblemacurvas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="461"/>
+        <CursorPos X="55" Y="475"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\freepascal\fpc\3.0.1\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1226"/>
+        <CursorPos X="59" Y="1236"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\uproblema.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="62"/>
+        <CursorPos X="29" Y="81"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="13" HistoryIndex="12">
+      <Position1>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="289" Column="71" TopLine="283"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="138" Column="3" TopLine="130"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="304" Column="3" TopLine="235"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="463" TopLine="442"/>
+      </Position4>
+      <Position5>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="504" Column="5" TopLine="502"/>
+      </Position5>
+      <Position6>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="717" Column="3" TopLine="698"/>
+      </Position6>
+      <Position7>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="473" Column="61" TopLine="451"/>
+      </Position7>
+      <Position8>
+        <Filename Value="C:\freepascal\fpc\3.0.1\rtl\inc\systemh.inc"/>
+        <Caret Line="1236" Column="59" TopLine="1226"/>
+      </Position8>
+      <Position9>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="468" Column="46" TopLine="464"/>
+      </Position9>
+      <Position10>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="482" Column="87" TopLine="464"/>
+      </Position10>
+      <Position11>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="467" Column="22" TopLine="458"/>
+      </Position11>
+      <Position12>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="462" Column="16" TopLine="451"/>
+      </Position12>
+      <Position13>
+        <Filename Value="uejemplo1.pas"/>
+        <Caret Line="461" Column="3" TopLine="455"/>
+      </Position13>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

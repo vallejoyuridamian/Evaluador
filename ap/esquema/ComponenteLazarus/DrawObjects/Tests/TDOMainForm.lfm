@@ -1,0 +1,315 @@
+object FormTestDrawObjects: TFormTestDrawObjects
+  Left = 216
+  Height = 628
+  Top = 86
+  Width = 637
+  Caption = 'Testing Draw Objects with Lazarus'
+  ClientHeight = 609
+  ClientWidth = 637
+  Menu = MainMenu
+  OnCreate = FormCreate
+  LCLVersion = '0.9.28.2'
+  object PanelTop: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 637
+    Align = alTop
+    Caption = 'PanelTop'
+    ClientHeight = 50
+    ClientWidth = 637
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 376
+      Height = 14
+      Top = 31
+      Width = 47
+      Caption = 'Message:'
+      ParentColor = False
+    end
+    object LblMessage: TLabel
+      Left = 424
+      Height = 14
+      Top = 31
+      Width = 20
+      Caption = 'Msg'
+      ParentColor = False
+    end
+  end
+  object PanelLeft: TPanel
+    Left = 0
+    Height = 559
+    Top = 50
+    Width = 128
+    Align = alLeft
+    Caption = 'PanelLeft'
+    ClientHeight = 559
+    ClientWidth = 128
+    TabOrder = 1
+    object BtnNewRectangle: TButton
+      Left = 8
+      Height = 16
+      Top = 6
+      Width = 112
+      Caption = 'New Rectangle'
+      OnClick = BtnNewRectangleClick
+      TabOrder = 0
+    end
+    object BtnRecordResult: TButton
+      Left = 8
+      Height = 17
+      Top = 510
+      Width = 112
+      Caption = 'Record Result'
+      OnClick = BtnRecordResultClick
+      TabOrder = 1
+    end
+    object Button1: TButton
+      Left = 8
+      Height = 17
+      Top = 478
+      Width = 112
+      Action = ActionClearDrawing
+      TabOrder = 2
+    end
+    object BtnNewEllipse: TButton
+      Left = 8
+      Height = 16
+      Top = 22
+      Width = 112
+      Action = ActionNewEllipse
+      TabOrder = 3
+    end
+    object BtnNewArc: TButton
+      Left = 8
+      Height = 16
+      Top = 38
+      Width = 112
+      Action = ActionNewArc
+      TabOrder = 4
+    end
+    object BtnNewBezier: TButton
+      Left = 8
+      Height = 16
+      Top = 54
+      Width = 112
+      Action = ActionNewBezier
+      TabOrder = 5
+    end
+    object BtnNewOtherObjects: TButton
+      Left = 8
+      Height = 16
+      Top = 446
+      Width = 112
+      Action = ActionNewOtherObjects
+      TabOrder = 6
+    end
+    object BtnNewObject: TButton
+      Left = 8
+      Height = 16
+      Top = 70
+      Width = 112
+      Action = ActionNewLLine
+      TabOrder = 7
+    end
+    object BtnNewObject1: TButton
+      Left = 8
+      Height = 16
+      Top = 86
+      Width = 112
+      Action = ActionNewPolygon
+      TabOrder = 8
+    end
+    object BtnNewObject2: TButton
+      Left = 8
+      Height = 16
+      Top = 102
+      Width = 112
+      Caption = 'New ...'
+      OnClick = ActionNewBezierExecute
+      TabOrder = 9
+    end
+  end
+  object ScrollBoxMain: TScrollBox
+    Left = 128
+    Height = 559
+    Top = 50
+    Width = 509
+    Align = alClient
+    ClientHeight = 555
+    ClientWidth = 505
+    TabOrder = 2
+    object PaintBoxDraw: TPaintBox
+      Left = 0
+      Height = 555
+      Top = 0
+      Width = 505
+      Align = alClient
+      OnClick = PaintBoxDrawClick
+    end
+  end
+  object BtnNewObject3: TButton
+    Left = 8
+    Height = 16
+    Top = 200
+    Width = 112
+    Action = ActionConnectedLine
+    TabOrder = 3
+  end
+  object BtnNewObject4: TButton
+    Left = 8
+    Height = 16
+    Top = 344
+    Width = 112
+    Action = ActionZoom
+    TabOrder = 4
+  end
+  object BtnNewObject5: TButton
+    Left = 8
+    Height = 16
+    Top = 216
+    Width = 112
+    Action = ActionConnectedZLine
+    TabOrder = 5
+  end
+  object BtnNewObject6: TButton
+    Left = 8
+    Height = 16
+    Top = 232
+    Width = 112
+    Action = ActionNewComposite
+    TabOrder = 6
+  end
+  object BtnNewObject7: TButton
+    Left = 8
+    Height = 16
+    Top = 384
+    Width = 112
+    Action = ActionNewTestGraphicControl
+    TabOrder = 7
+  end
+  object BtnNewObject8: TButton
+    Left = 8
+    Height = 16
+    Top = 400
+    Width = 112
+    Caption = 'New ...'
+    OnClick = ActionNewBezierExecute
+    TabOrder = 8
+  end
+  object BtnNewObject9: TButton
+    Left = 8
+    Height = 16
+    Top = 296
+    Width = 112
+    Action = ActionClearFocus
+    TabOrder = 9
+  end
+  object BtnNewObject10: TButton
+    Left = 8
+    Height = 16
+    Top = 312
+    Width = 112
+    Caption = 'New ...'
+    OnClick = ActionNewBezierExecute
+    TabOrder = 10
+  end
+  object BtnNewObject11: TButton
+    Left = 8
+    Height = 16
+    Top = 328
+    Width = 112
+    Caption = 'New ...'
+    OnClick = ActionNewBezierExecute
+    TabOrder = 11
+  end
+  object BtnNewObject12: TButton
+    Left = 8
+    Height = 16
+    Top = 512
+    Width = 112
+    Action = ActionNewSpecificObjects
+    TabOrder = 12
+  end
+  object ActionList: TActionList
+    left = 152
+    top = 64
+    object ActionClearDrawing: TAction
+      Category = 'New Object'
+      Caption = 'Clear Drawing'
+      OnExecute = ActionClearDrawingExecute
+    end
+    object ActionNewEllipse: TAction
+      Category = 'New Object'
+      Caption = 'New Ellipse'
+      OnExecute = ActionNewEllipseExecute
+    end
+    object ActionNewArc: TAction
+      Category = 'New Object'
+      Caption = 'New Arc'
+      OnExecute = ActionNewArcExecute
+    end
+    object ActionNewBezier: TAction
+      Category = 'New Object'
+      Caption = 'New Bezier'
+      OnExecute = ActionNewBezierExecute
+    end
+    object ActionNewOtherObjects: TAction
+      Category = 'New Object'
+      Caption = 'New Other Objects'
+      OnExecute = ActionNewOtherObjectsExecute
+    end
+    object ActionNewLLine: TAction
+      Category = 'New Object'
+      Caption = 'New LLine'
+      OnExecute = ActionNewLLineExecute
+    end
+    object ActionNewPolygon: TAction
+      Category = 'New Object'
+      Caption = 'New Polygon'
+      OnExecute = ActionNewPolygonExecute
+    end
+    object ActionConnectedLine: TAction
+      Category = 'Complex New Object'
+      Caption = 'Connected Line'
+      OnExecute = ActionConnectedLineExecute
+    end
+    object ActionZoom: TAction
+      Category = 'Complex New Object'
+      Caption = 'Zoom'
+      OnExecute = ActionZoomExecute
+    end
+    object ActionNewSpecificObjects: TAction
+      Category = 'New Object'
+      Caption = 'New Specific Objects'
+      OnExecute = ActionNewSpecificObjectsExecute
+    end
+    object ActionConnectedZLine: TAction
+      Category = 'Complex New Object'
+      Caption = 'Connected ZLine'
+      OnExecute = ActionConnectedZLineExecute
+    end
+    object ActionNewComposite: TAction
+      Category = 'Complex New Object'
+      Caption = 'New Composite'
+      OnExecute = ActionNewCompositeExecute
+    end
+    object ActionClearFocus: TAction
+      Caption = 'Clear Focus'
+      OnExecute = ActionClearFocusExecute
+    end
+    object ActionNewTestGraphicControl: TAction
+      Category = 'New Object'
+      Caption = 'New Test GraphicControl'
+      OnExecute = ActionNewTestGraphicControlExecute
+    end
+  end
+  object MainMenu: TMainMenu
+    left = 424
+    top = 72
+    object MenuItemAbout: TMenuItem
+      Caption = 'About'
+      OnClick = MenuItemAboutClick
+    end
+  end
+end

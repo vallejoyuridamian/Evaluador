@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="7"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=".exe"/>
+      <Icon Value="0"/>
+      <UseXPManifest Value="True"/>
+      <ActiveEditorIndexAtStart Value="3"/>
+    </General>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <CurrentMajorRevNr Value="1"/>
+      <ProjectVersion Value="0.1.0.0"/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="36">
+      <Unit0>
+        <Filename Value="TestDrawObjects.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TestDrawObjects"/>
+        <CursorPos X="18" Y="22"/>
+        <TopLine Value="4"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="208"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="TDOMainForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormTestDrawObjects"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TDOMainForm"/>
+        <CursorPos X="40" Y="32"/>
+        <TopLine Value="20"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="208"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\ExcelInterface\Tests\TestCaseExcel.pas"/>
+        <UnitName Value="TestCaseExcel"/>
+        <CursorPos X="29" Y="686"/>
+        <TopLine Value="666"/>
+        <UsageCount Value="105"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TDOTestCasesDrawObjects"/>
+        <CursorPos X="71" Y="4"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="208"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\lazarus\components\fpcunit\guitestrunner.pas"/>
+        <ComponentName Value="GUITestRunner"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="GuiTestRunner"/>
+        <CursorPos X="19" Y="319"/>
+        <TopLine Value="315"/>
+        <UsageCount Value="105"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\Composants\DrawObjects\DrawObjects.pas"/>
+        <UnitName Value="DrawObjects"/>
+        <CursorPos X="124" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="208"/>
+        <Bookmarks Count="2">
+          <Item0 X="1" Y="1803" ID="1"/>
+          <Item1 X="22" Y="2978" ID="4"/>
+        </Bookmarks>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\Composants\DrawObjects\DrawObjectsBase.pas"/>
+        <UnitName Value="DrawObjectsBase"/>
+        <CursorPos X="66" Y="1077"/>
+        <TopLine Value="1059"/>
+        <UsageCount Value="208"/>
+        <Bookmarks Count="2">
+          <Item0 X="6" Y="226" ID="2"/>
+          <Item1 X="1" Y="143" ID="3"/>
+        </Bookmarks>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\Composants\DrawObjects\Demo\main.pas"/>
+        <UnitName Value="main"/>
+        <CursorPos X="1" Y="497"/>
+        <TopLine Value="481"/>
+        <UsageCount Value="104"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <CursorPos X="12" Y="234"/>
+        <TopLine Value="221"/>
+        <UsageCount Value="129"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <CursorPos X="94" Y="94"/>
+        <TopLine Value="84"/>
+        <UsageCount Value="69"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\lazarus\lcl\lmessages.pp"/>
+        <UnitName Value="LMessages"/>
+        <CursorPos X="11" Y="435"/>
+        <TopLine Value="426"/>
+        <UsageCount Value="34"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="17"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.3.1\source\rtl\win\wininc\messages.inc"/>
+        <CursorPos X="73" Y="8"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="17"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.3.1\source\rtl\win32\windows.pp"/>
+        <UnitName Value="windows"/>
+        <CursorPos X="10" Y="56"/>
+        <TopLine Value="46"/>
+        <UsageCount Value="16"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.3.1\source\packages\amunits\src\otherlibs\zlib.pas"/>
+        <UnitName Value="ZLIB"/>
+        <CursorPos X="5" Y="71"/>
+        <TopLine Value="60"/>
+        <UsageCount Value="103"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\lazarus\lcl\intfgraphics.pas"/>
+        <UnitName Value="IntfGraphics"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="16"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\canvas.inc"/>
+        <CursorPos X="3" Y="115"/>
+        <TopLine Value="110"/>
+        <UsageCount Value="31"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="TestGraphicControl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TestGraphicControl"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="202"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.3.1\source\rtl\objpas\classes\classesh.inc"/>
+        <CursorPos X="4" Y="41"/>
+        <TopLine Value="30"/>
+        <UsageCount Value="49"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.3.1\source\rtl\win32\classes.pp"/>
+        <UnitName Value="Classes"/>
+        <CursorPos X="22" Y="25"/>
+        <TopLine Value="17"/>
+        <UsageCount Value="49"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="GraphicUtilities.pas"/>
+        <UnitName Value="GraphicUtilities"/>
+        <CursorPos X="28" Y="19"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="211"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\..\lazarus\lcl\graphtype.pp"/>
+        <UnitName Value="GraphType"/>
+        <CursorPos X="1" Y="1191"/>
+        <TopLine Value="1180"/>
+        <UsageCount Value="105"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\Composants\DrawObjects\DrawObjectsExtended.pas"/>
+        <UnitName Value="DrawObjectsExtended"/>
+        <CursorPos X="118" Y="23"/>
+        <TopLine Value="8"/>
+        <UsageCount Value="122"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\ExcelInterface\Source\ExcelUtilities.pas"/>
+        <UnitName Value="ExcelUtilities"/>
+        <CursorPos X="1" Y="26"/>
+        <TopLine Value="4"/>
+        <UsageCount Value="27"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.3.1\source\rtl\win\sysutils.pp"/>
+        <UnitName Value="sysutils"/>
+        <CursorPos X="20" Y="18"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.3.1\source\rtl\objpas\classes\classes.inc"/>
+        <CursorPos X="57" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.3.1\source\rtl\objpas\classes\compon.inc"/>
+        <CursorPos X="3" Y="71"/>
+        <TopLine Value="66"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\control.inc"/>
+        <CursorPos X="3" Y="680"/>
+        <TopLine Value="675"/>
+        <UsageCount Value="51"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\customform.inc"/>
+        <CursorPos X="1" Y="137"/>
+        <TopLine Value="126"/>
+        <UsageCount Value="51"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\winapih.inc"/>
+        <CursorPos X="10" Y="162"/>
+        <TopLine Value="151"/>
+        <UsageCount Value="39"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\winapi.inc"/>
+        <CursorPos X="3" Y="556"/>
+        <TopLine Value="555"/>
+        <UsageCount Value="39"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="TDOAboutBox.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAbout"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TDOAboutBox"/>
+        <CursorPos X="15" Y="14"/>
+        <TopLine Value="2"/>
+        <UsageCount Value="23"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DrawObjects"/>
+        <CursorPos X="1" Y="350"/>
+        <TopLine Value="348"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\Source\DrawObjectsBase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DrawObjectsBase"/>
+        <UsageCount Value="21"/>
+        <SyntaxHighlighter Value="Text"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\Source\DrawObjectsExtended.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DrawObjectsExtended"/>
+        <UsageCount Value="21"/>
+        <SyntaxHighlighter Value="Text"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\..\..\..\..\lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <CursorPos X="42" Y="42"/>
+        <TopLine Value="28"/>
+        <UsageCount Value="10"/>
+      </Unit35>
+    </Units>
+    <JumpHistory Count="26" HistoryIndex="25">
+      <Position1>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="115" Column="1" TopLine="112"/>
+      </Position1>
+      <Position2>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="101" Column="1" TopLine="93"/>
+      </Position2>
+      <Position3>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="105" Column="41" TopLine="93"/>
+      </Position4>
+      <Position5>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="106" Column="27" TopLine="93"/>
+      </Position5>
+      <Position6>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="110" Column="14" TopLine="93"/>
+      </Position6>
+      <Position7>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="111" Column="14" TopLine="93"/>
+      </Position7>
+      <Position8>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="124" Column="45" TopLine="112"/>
+      </Position8>
+      <Position9>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="125" Column="45" TopLine="112"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="356" Column="3" TopLine="344"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="911" Column="4" TopLine="911"/>
+      </Position12>
+      <Position13>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="126" Column="45" TopLine="112"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="352" Column="1" TopLine="337"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="1150" Column="18" TopLine="1145"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="1150" Column="8" TopLine="1146"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="1140" Column="54" TopLine="1128"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="1140" Column="54" TopLine="1128"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="1137" Column="1" TopLine="1137"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\Source\DrawObjects.pas"/>
+        <Caret Line="23" Column="48" TopLine="9"/>
+      </Position20>
+      <Position21>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="103" Column="1" TopLine="103"/>
+      </Position21>
+      <Position22>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="125" Column="4" TopLine="114"/>
+      </Position22>
+      <Position23>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="157" Column="3" TopLine="145"/>
+      </Position23>
+      <Position24>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="28" Column="10" TopLine="25"/>
+      </Position24>
+      <Position25>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position25>
+      <Position26>
+        <Filename Value="TDOTestCasesDrawObjects.pas"/>
+        <Caret Line="52" Column="1" TopLine="40"/>
+      </Position26>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)\"/>
+      <OtherUnitFiles Value="C:\lazarus\components\fpcunit\;C:\Donnees\Composants\DrawObjects\;C:\lazarus\components\synedit\;C:\rchaer\esquema\ComponenteLazarus\DrawObjects\Source\"/>
+      <UnitOutputDirectory Value="bin"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Watches Count="10">
+      <Item1>
+        <Expression Value="Self.Left"/>
+      </Item1>
+      <Item2>
+        <Expression Value="Self.Top"/>
+      </Item2>
+      <Item3>
+        <Expression Value="Self.Width"/>
+      </Item3>
+      <Item4>
+        <Expression Value="Self.Height"/>
+      </Item4>
+      <Item5>
+        <Expression Value="Self.xmin"/>
+      </Item5>
+      <Item6>
+        <Expression Value="ymin"/>
+      </Item6>
+      <Item7>
+        <Expression Value="xmax"/>
+      </Item7>
+      <Item8>
+        <Expression Value="ymax"/>
+      </Item8>
+      <Item9>
+        <Expression Value="self"/>
+      </Item9>
+      <Item10>
+        <Expression Value="self.classname"/>
+      </Item10>
+    </Watches>
+    <Exceptions Count="4">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="EAssertionFailedError"/>
+      </Item4>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

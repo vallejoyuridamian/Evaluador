@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 304
+  Height = 466
+  Top = 142
+  Width = 690
+  Caption = 'Flucar'
+  ClientHeight = 466
+  ClientWidth = 690
+  LCLVersion = '1.2.6.0'
+  object Button1: TButton
+    Left = 36
+    Height = 64
+    Top = 16
+    Width = 230
+    Caption = 'Leer y ejecutar archivo FLUCAR *.DAT'
+    Enabled = False
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 36
+    Height = 55
+    Top = 88
+    Width = 230
+    Caption = 'Leer y ejecutar archivo PSS *.RAW'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object TV_flujo: TTreeView
+    Left = 36
+    Height = 242
+    Top = 172
+    Width = 230
+    DefaultItemHeight = 22
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 320
+    Height = 40
+    Top = 40
+    Width = 74
+    Caption = 'SALIR'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object taps: TCheckBox
+    Left = 304
+    Height = 24
+    Top = 96
+    Width = 125
+    Caption = 'Taps variables?'
+    TabOrder = 4
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'DatosFC|*.dat'
+    left = 576
+    top = 48
+  end
+  object OpenDialog2: TOpenDialog
+    Filter = 'Archivos RAW|*.raw'
+    left = 624
+    top = 48
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    left = 522
+    top = 31
+  end
+end

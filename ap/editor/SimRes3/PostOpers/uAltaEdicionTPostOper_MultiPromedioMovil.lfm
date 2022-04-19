@@ -1,0 +1,125 @@
+inherited AltaEdicionTPostOper_MultiPromedioMovil: TAltaEdicionTPostOper_MultiPromedioMovil
+  Left = 165
+  Height = 287
+  Top = 133
+  Width = 472
+  AutoSize = True
+  Caption = 'AltaEdicionTPostOper_MultiPromedioMovil'
+  ClientHeight = 287
+  ClientWidth = 472
+  OnCloseQuery = FormCloseQuery
+  object lResultado: TLabel[0]
+    Left = 48
+    Height = 14
+    Top = 59
+    Width = 53
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+  object lCronVar: TLabel[1]
+    Left = 56
+    Height = 14
+    Top = 86
+    Width = 44
+    Caption = 'CronVar:'
+    ParentColor = False
+  end
+  object cbRes: TComboBox[2]
+    Left = 112
+    Height = 21
+    Top = 56
+    Width = 219
+    ItemHeight = 13
+    OnChange = CBCronVarResChange
+    TabOrder = 0
+  end
+  object cbParam1: TComboBox[3]
+    Left = 112
+    Height = 21
+    Top = 83
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBCronVarParam1Change
+    TabOrder = 1
+  end
+  object bGuardar: TButton[4]
+    Left = 88
+    Height = 25
+    Top = 233
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[5]
+    Left = 198
+    Height = 25
+    Top = 233
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[6]
+    Left = 336
+    Height = 21
+    Top = 8
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  object sgParams: TStringGrid[7]
+    Left = 32
+    Height = 120
+    Top = 110
+    Width = 299
+    ColCount = 2
+    DefaultRowHeight = 25
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    RowCount = 1
+    TabOrder = 5
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnDrawCell = sgParamsDrawCell
+    OnMouseDown = sgParamsMouseDown
+    OnMouseMove = sgParamsMouseMove
+    OnMouseUp = sgParamsMouseUp
+  end
+  object BAgregar: TButton[8]
+    Left = 258
+    Height = 21
+    Top = 83
+    Width = 73
+    Caption = 'Agregar'
+    OnClick = BAgregarClick
+    TabOrder = 6
+  end
+  object Label1: TLabel[9]
+    Left = 8
+    Height = 14
+    Top = 24
+    Width = 94
+    Caption = 'Cantidad de pasos:'
+    ParentColor = False
+  end
+  object eNPasosPM: TEdit[10]
+    Left = 115
+    Height = 21
+    Top = 26
+    Width = 37
+    TabOrder = 7
+    Text = '1'
+  end
+  inherited iconos: TImageList[11]
+    left = 408
+    top = 16
+  end
+  inherited iconos2: TImageList[12]
+    left = 376
+    top = 16
+  end
+end

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.4  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Thierry Coq">
+	<META NAME="CREATED" CONTENT="20081108;9370500">
+	<META NAME="CHANGEDBY" CONTENT="Thierry Coq">
+	<META NAME="CHANGED" CONTENT="20091024;8000143">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		H1 { margin-bottom: 0.21cm }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "MS Mincho"; font-size: 16pt }
+		H1.ctl { font-family: "Tahoma"; font-size: 16pt }
+		H2 { margin-bottom: 0.21cm }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "MS Mincho"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-size: 14pt; font-style: italic }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT SIZE=5 STYLE="font-size: 20pt"><B>DrawObjectsExtended
+Design Document</B></FONT></P>
+<H1 CLASS="western"></H1>
+<DIV ID="Table of Contents1" DIR="LTR">
+	<DIV ID="Table of Contents1_Head" DIR="LTR">
+		<P STYLE="margin-top: 0.42cm; page-break-after: avoid"><FONT FACE="Arial, sans-serif"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Contents</B></FONT></FONT></P>
+	</DIV>
+	<P STYLE="margin-bottom: 0cm">License	1</P>
+	<P STYLE="margin-bottom: 0cm">DrawObjectsExtended Design Overview	1</P>
+	<P STYLE="margin-bottom: 0cm">Use Cases	2</P>
+	<P STYLE="margin-left: 0.5cm; margin-bottom: 0cm">Main use cases	2</P>
+	<P STYLE="margin-left: 0.5cm; margin-bottom: 0cm">Screen copies	3</P>
+	<P STYLE="margin-bottom: 0cm">UML Design	4</P>
+	<P STYLE="margin-left: 0.5cm; margin-bottom: 0cm">Overall Structure
+		4</P>
+	<P STYLE="margin-left: 0.5cm; margin-bottom: 0cm">Main Classes	6</P>
+	<P STYLE="margin-left: 0.5cm; margin-bottom: 0cm">The drawing
+	behaviour	7</P>
+</DIV>
+<P><BR><BR>
+</P>
+<H1 CLASS="western">License</H1>
+<P>DrawObjectsExtended is published under Mozilla License 1.1.</P>
+<P>The original contributor of DrawObjects is Angus Johnson.</P>
+<P>DrawObjectsExtended is contributed by Thierry Coq.</P>
+<P><BR><BR>
+</P>
+<H1 CLASS="western">DrawObjectsExtended Design Overview</H1>
+<P>This document describes the design and use of the
+DrawObjectsExtended Component.</P>
+<P>This component is designed for use with FPC 2.3.1 and Lazarus
+0.9.29 on the Windows platform, and has been ported from Delphi. The
+final target is to be portable to Linux.</P>
+<P>It allows users to make structured graphics, such as boxes and
+arrows linked together.</P>
+<P><BR><BR>
+</P>
+<H1 CLASS="western">Use Cases</H1>
+<H2 CLASS="western">Main use cases</H2>
+<P><IMG SRC="DrawObjectsExtendedDesign_html_7528420d.gif" NAME="graphics3" ALIGN=LEFT WIDTH=591 HEIGHT=598 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P STYLE="page-break-before: always"><BR><BR>
+</P>
+<H2 CLASS="western">Screen copies</H2>
+<P>A few screen copies are presented below:</P>
+<P ALIGN=CENTER><IMG SRC="DrawObjectsExtendedDesign_html_5cfc3f44.jpg" NAME="graphics5" ALIGN=LEFT WIDTH=642 HEIGHT=361 BORDER=0><BR CLEAR=LEFT>the
+DrawObjectsExtended test form running under Lazarus 0.9.29beta, in
+windows</P>
+<P ALIGN=CENTER><IMG SRC="DrawObjectsExtendedDesign_html_1ad998c5.jpg" NAME="graphics6" ALIGN=LEFT WIDTH=642 HEIGHT=625 BORDER=0><BR CLEAR=LEFT>Some
+drawobjects, including the Composite DrawObject.</P>
+<P ALIGN=CENTER><BR><BR>
+</P>
+<H1 CLASS="western">UML Design</H1>
+<P>The UML Model is implemented using ModelMaker's UML tool, version
+9.</P>
+<H2 CLASS="western">Overall Structure 
+</H2>
+<P>The first diagram shows the relationships between the various
+units, the classes and operations provided by each unit.</P>
+<P><IMG SRC="DrawObjectsExtendedDesign_html_578e7329.gif" NAME="graphics1" ALIGN=LEFT WIDTH=642 HEIGHT=539 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H2 CLASS="western" STYLE="page-break-before: always">Main Classes</H2>
+<P>The second diagram shows the inheritance relationships to identify
+where to add additional classes, if needed.</P>
+<P><IMG SRC="DrawObjectsExtendedDesign_html_17fba9b0.gif" NAME="graphics2" ALIGN=LEFT WIDTH=642 HEIGHT=426 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H2 CLASS="western" STYLE="page-break-before: always">The drawing
+behaviour</H2>
+<P><IMG SRC="DrawObjectsExtendedDesign_html_m3b3aecc3.gif" NAME="graphics4" ALIGN=LEFT WIDTH=642 HEIGHT=392 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+</BODY>
+</HTML>

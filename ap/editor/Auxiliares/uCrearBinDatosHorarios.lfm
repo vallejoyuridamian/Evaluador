@@ -1,0 +1,133 @@
+inherited CrearBinDatosHorarios: TCrearBinDatosHorarios
+  Left = 422
+  Height = 255
+  Top = 93
+  Width = 426
+  AutoSize = True
+  Caption = 'Crear Archivo Binario Con Datos Horarios'
+  ClientHeight = 255
+  ClientWidth = 426
+  Font.Name = 'MS Sans Serif'
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  object LFIni: TLabel[0]
+    Left = 0
+    Height = 13
+    Top = 5
+    Width = 72
+    Caption = 'Fecha Inicial:'
+    ParentColor = False
+  end
+  object LNDatos: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 57
+    Width = 103
+    Caption = 'Número de Datos:'
+    ParentColor = False
+  end
+  object LFFin: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 30
+    Width = 65
+    Caption = 'Fecha Final:'
+    ParentColor = False
+  end
+  object BGuardar: TButton[3]
+    Left = 72
+    Height = 25
+    Top = 192
+    Width = 137
+    Caption = 'Salvar Demanda'
+    OnClick = BGuardarClick
+    TabOrder = 6
+  end
+  object BCancelar: TButton[4]
+    Left = 224
+    Height = 25
+    Top = 192
+    Width = 129
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 1
+  end
+  object ENDatos: TEdit[5]
+    Left = 104
+    Height = 23
+    Top = 54
+    Width = 121
+    Color = 14342874
+    ReadOnly = True
+    TabStop = False
+    TabOrder = 2
+    Text = 'ENDatos'
+  end
+  object BAyuda: TButton[6]
+    Left = 296
+    Height = 25
+    Top = 0
+    Width = 25
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 0
+  end
+  object BExportar_ods: TButton[7]
+    Left = 88
+    Height = 25
+    Top = 127
+    Width = 125
+    Caption = 'Exportar .ods'
+    OnClick = BExportar_odsClick
+    TabOrder = 3
+  end
+  object BImportar_ods: TButton[8]
+    Left = 219
+    Height = 25
+    Top = 127
+    Width = 125
+    Caption = 'Importar .ods'
+    Enabled = False
+    OnClick = BImportar_odsClick
+    TabOrder = 4
+  end
+  object ProgressBar1: TProgressBar[9]
+    Left = 88
+    Height = 17
+    Top = 104
+    Width = 256
+    TabOrder = 5
+  end
+  object eFechaIni: TEdit[10]
+    Left = 72
+    Height = 23
+    Top = 4
+    Width = 80
+    Color = 14342874
+    ReadOnly = True
+    TabOrder = 7
+    Text = 'eFechaIni'
+  end
+  object eFechaFin: TEdit[11]
+    Left = 72
+    Height = 23
+    Top = 32
+    Width = 80
+    Color = 14342874
+    ReadOnly = True
+    TabOrder = 8
+    Text = 'eFechaFin'
+  end
+  inherited iconos: TImageList[12]
+    left = 304
+    top = 32
+  end
+  inherited iconos2: TImageList[13]
+    left = 208
+    top = 65528
+  end
+  object SaveDialog1: TSaveDialog[14]
+    left = 360
+    top = 16
+  end
+end

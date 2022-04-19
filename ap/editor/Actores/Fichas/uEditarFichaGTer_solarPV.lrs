@@ -1,0 +1,96 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TEditarFichaGTer_solarPV','FORMDATA',[
+  'TPF0'#24'TEditarFichaGTer_solarPV'#23'EditarFichaGTer_solarPV'#4'Left'#3']'#1
+  +#6'Height'#3#247#1#3'Top'#3#142#0#5'Width'#3#131#3#8'AutoSize'#9#7'Caption'#6
+  +#23'EditarFichaGTer_solarPV'#12'ClientHeight'#3#247#1#11'ClientWidth'#3#131#3
+  +#9'Font.Name'#6#6'Tahoma'#12'OnCloseQuery'#7#14'FormCloseQuery'#8'OnCreate'#7
+  +#10'FormCreate'#10'LCLVersion'#6#7'1.0.4.0'#0#6'TLabel'#5'LFIni'#4'Left'#2#1
+  +#6'Height'#2#20#3'Top'#2#3#5'Width'#2'i'#7'Caption'#6#15'Fecha de inicio'#11
+  +'ParentColor'#8#0#0#6'TLabel'#28'LIndicePreciosPorCombustible'#4'Left'#3#184
+  +#1#6'Height'#2#20#3'Top'#3#130#1#5'Width'#3'k'#1#7'Caption'#6'3Indice de Pre'
+  +'cios por Combustible[p.u. del precio]:'#11'ParentColor'#8#0#0#6'TLabel'#27
+  +'LBornePreciosPorCombustible'#4'Left'#3#184#1#6'Height'#2#20#3'Top'#3#152#1#5
+  +'Width'#2'0'#7'Caption'#6#6'Borne:'#11'ParentColor'#8#0#0#6'TLabel'#9'LFuent'
+  +'eKt'#4'Left'#2#24#6'Height'#2#20#3'Top'#3#216#0#5'Width'#2'I'#7'Caption'#6
+  +#10'Fuente Kt:'#11'ParentColor'#8#0#0#7'TButton'#8'BGuardar'#4'Left'#3'X'#2#6
+  +'Height'#2#25#3'Top'#3#184#1#5'Width'#2'i'#7'Caption'#6#15'Guardar Cambios'#7
+  +'OnClick'#7#13'BGuardarClick'#8'TabOrder'#2#0#0#0#7'TButton'#9'BCancelar'#4
+  +'Left'#3#240#2#6'Height'#2#25#3'Top'#3#184#1#5'Width'#2'i'#7'Caption'#6#8'Ca'
+  +'ncelar'#7'OnClick'#7#14'BCancelarClick'#8'TabOrder'#2#1#0#0#5'TEdit'#5'EFIn'
+  +'i'#4'Left'#3#184#0#6'Height'#2#27#3'Top'#2#0#5'Width'#3#217#0#7'OnEnter'#7#9
+  +'EditEnter'#6'OnExit'#7#8'EditExit'#8'TabOrder'#2#2#4'Text'#6#5'EFIni'#0#0#9
+  +'TCheckBox'#14'CBPeriodicidad'#4'Left'#2#0#6'Height'#2#23#3'Top'#2#24#5'Widt'
+  +'h'#2'\'#7'Caption'#6#10'Periodica?'#7'OnClick'#7#19'CBPeriodicidadClick'#8
+  +'TabOrder'#2#3#0#0#6'TPanel'#13'PPeriodicidad'#4'Left'#2#8#6'Height'#2'Q'#3
+  +'Top'#2'G'#5'Width'#3#167#1#8'AutoSize'#9#12'ClientHeight'#2'Q'#11'ClientWid'
+  +'th'#3#167#1#8'TabOrder'#2#4#0#6'TLabel'#11'LFinPeriodo'#4'Left'#2#1#6'Heigh'
+  +'t'#2#20#3'Top'#2#26#5'Width'#2'q'#7'Caption'#6#16'Fin del Periodo:'#11'Pare'
+  +'ntColor'#8#0#0#6'TLabel'#11'LIniPeriodo'#4'Left'#2#1#6'Height'#2#20#3'Top'#2
+  +#2#5'Width'#3#131#0#7'Caption'#6#19'Inicio del Periodo:'#11'ParentColor'#8#0
+  +#0#6'TLabel'#13'LLargoPeriodo'#4'Left'#2#1#6'Height'#2#20#3'Top'#2'8'#5'Widt'
+  +'h'#3#132#0#7'Caption'#6#19'Largo del Per'#195#173'odo:'#11'ParentColor'#8#0
+  +#0#5'TEdit'#12'EFFinPeriodo'#4'Left'#2'^'#6'Height'#2#27#3'Top'#2#23#5'Width'
+  +#2'x'#7'OnEnter'#7#9'EditEnter'#6'OnExit'#7#8'EditExit'#8'TabOrder'#2#1#4'Te'
+  +'xt'#6#1'0'#0#0#5'TEdit'#12'EFIniPeriodo'#4'Left'#2'^'#6'Height'#2#27#3'Top'
+  +#2#1#5'Width'#2'x'#7'OnEnter'#7#9'EditEnter'#6'OnExit'#7#8'EditExit'#8'TabOr'
+  +'der'#2#0#4'Text'#6#1'0'#0#0#11'TStringGrid'#14'sgPeriodicidad'#4'Left'#3#221
+  +#0#6'Height'#2'O'#3'Top'#2#1#5'Width'#3#201#0#8'ColCount'#2#2#16'DefaultRowH'
+  +'eight'#2#25#9'FixedRows'#2#0#7'Options'#11#15'goFixedVertLine'#15'goFixedHo'
+  +'rzLine'#10'goVertLine'#10'goHorzLine'#13'goRangeSelect'#6'goTabs'#0#8'RowCo'
+  +'unt'#2#3#8'TabOrder'#2#4#15'TitleFont.Color'#7#12'clWindowText'#16'TitleFon'
+  +'t.Height'#2#245#14'TitleFont.Name'#6#6'Tahoma'#7'OnClick'#7#17'sgChequearCa'
+  +'mbios'#6'OnExit'#7#17'sgChequearCambios'#13'OnGetEditText'#7#13'sgGetEditTe'
+  +'xt'#0#0#5'TEdit'#13'ELargoPeriodo'#4'Left'#2'^'#6'Height'#2#27#3'Top'#2'5'#5
+  +'Width'#2')'#7'OnEnter'#7#9'EditEnter'#6'OnExit'#7#8'EditExit'#8'TabOrder'#2
+  +#2#4'Text'#6#1'1'#0#0#9'TComboBox'#14'CBLargoPeriodo'#4'Left'#3#140#0#6'Heig'
+  +'ht'#2#27#3'Top'#2'5'#5'Width'#2'K'#10'ItemHeight'#2#19#13'Items.Strings'#1#6
+  +#5'A'#195#177'os'#6#5'Meses'#6#7'Semanas'#6#5'D'#195#173'as'#0#8'OnChange'#7
+  +#11'cambiosForm'#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#3#0#0#0#7'TButt'
+  +'on'#6'BAyuda'#4'Left'#3#154#1#6'Height'#2#21#3'Top'#2#0#5'Width'#2#21#7'Cap'
+  +'tion'#6#1'?'#8'TabOrder'#2#5#0#0#9'TComboBox#CBFuenteIndicePreciosPorCombus'
+  +'tible'#4'Left'#3#172#2#6'Height'#2#27#3'Top'#3#127#1#5'Width'#3#145#0#10'It'
+  +'emHeight'#2#19#8'OnChange'#7')CBFuenteIndicePreciosPorCombustibleChange'#5
+  +'Style'#7#14'csDropDownList'#8'TabOrder'#2#6#0#0#9'TComboBox'#31'CBBorneIndi'
+  +'cePreciosCombustible'#4'Left'#3#172#2#6'Height'#2#27#3'Top'#3#149#1#5'Width'
+  +#3#145#0#10'ItemHeight'#2#19#8'OnChange'#7#11'cambiosForm'#5'Style'#7#14'csD'
+  +'ropDownList'#8'TabOrder'#2#7#0#0#9'TComboBox'#12'ComboFuentes'#4'Left'#2'a'
+  +#6'Height'#2#27#3'Top'#2#20#5'Width'#3#145#0#10'ItemHeight'#2#19#9'OnCloseUp'
+  +#7#19'ComboFuentesCloseUp'#8'TabOrder'#2#8#4'Text'#6#12'ComboFuentes'#7'Visi'
+  +'ble'#8#0#0#11'TStringGrid'#8'IntFicha'#4'Left'#3#184#1#6'Height'#3#184#0#3
+  +'Top'#3#160#0#5'Width'#3#176#1#8'ColCount'#2#2#15'DefaultColWidth'#3#200#0#16
+  +'DefaultRowHeight'#2#25#9'FixedRows'#2#0#7'Options'#11#15'goFixedVertLine'#15
+  +'goFixedHorzLine'#10'goVertLine'#10'goHorzLine'#9'goEditing'#6'goTabs'#0#8'R'
+  +'owCount'#2#6#8'TabOrder'#2#9#15'TitleFont.Color'#7#12'clWindowText'#16'Titl'
+  +'eFont.Height'#2#245#14'TitleFont.Name'#6#6'Tahoma'#7'OnClick'#7#17'sgCheque'
+  +'arCambios'#6'OnExit'#7#17'sgChequearCambios'#13'OnGetEditText'#7#13'sgGetEd'
+  +'itText'#0#0#9'TGroupBox'#9'GroupBox1'#4'Left'#3#184#1#6'Height'#2'p'#3'Top'
+  ,#2'('#5'Width'#3#192#1#7'Caption'#6'&Pagos (no considerados en el despacho)'
+  +#12'ClientHeight'#2'^'#11'ClientWidth'#3#188#1#8'TabOrder'#2#10#0#6'TLabel'#6
+  +'Label3'#4'Left'#2#14#6'Height'#2#20#3'Top'#2#16#5'Width'#3'/'#1#7'Caption'#6
+  +')Pago por disponibilidad [USD/(unidad-h)]:'#11'ParentColor'#8#0#0#6'TLabel'
+  +#6'Label4'#4'Left'#2#14#6'Height'#2#20#3'Top'#2'7'#5'Width'#3#222#0#7'Captio'
+  +'n'#6#28'Pago por energia  [USD/MWh]:'#11'ParentColor'#8#0#0#6'TLabel'#6'Lab'
+  +'el5'#4'Left'#3#254#0#6'Height'#2#20#3'Top'#2'7'#5'Width'#3#252#0#7'Caption'
+  +#6'%(Adicional al CV e igual indexaci'#195#179'n)'#11'ParentColor'#8#0#0#5'T'
+  +'Edit'#22'ePagoPorDisponibilidad'#4'Left'#3#222#0#6'Height'#2#27#3'Top'#2#8#5
+  +'Width'#2'H'#8'TabOrder'#2#0#4'Text'#6#1'0'#0#0#5'TEdit'#15'ePagoPorEnergia'
+  +#4'Left'#3#174#0#6'Height'#2#27#3'Top'#2'0'#5'Width'#2'H'#8'TabOrder'#2#1#4
+  +'Text'#6#1'0'#0#0#0#5'TEdit'#5'eArea'#4'Left'#2'p'#6'Height'#2#27#3'Top'#3'Q'
+  +#1#5'Width'#2'F'#8'TabOrder'#2#11#0#0#6'TLabel'#6'Label2'#4'Left'#2#24#6'Hei'
+  +'ght'#2#20#3'Top'#3'X'#1#5'Width'#2'P'#7'Caption'#6#10'Area [m2]:'#11'Parent'
+  +'Color'#8#0#0#9'TComboBox'#22'CBFuenteIndiceClaridad'#4'Left'#2'Y'#6'Height'
+  +#2#27#3'Top'#3#208#0#5'Width'#3#208#0#10'ItemHeight'#2#19#8'OnChange'#7#28'C'
+  +'BFuenteIndiceClaridadChange'#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#12
+  +#0#0#6'TLabel'#14'LBorneFuenteKt'#4'Left'#2#24#6'Height'#2#20#3'Top'#3#239#0
+  +#5'Width'#2'0'#7'Caption'#6#6'Borne:'#11'ParentColor'#8#0#0#9'TComboBox'#27
+  +'CBBorneFuenteIndiceClaridad'#4'Left'#2'Y'#6'Height'#2#27#3'Top'#3#232#0#5'W'
+  +'idth'#3#209#0#10'ItemHeight'#2#19#8'OnChange'#7#11'cambiosForm'#5'Style'#7
+  +#14'csDropDownList'#8'TabOrder'#2#13#0#0#6'TLabel'#6'Label6'#4'Left'#2#24#6
+  +'Height'#2#20#3'Top'#3'x'#1#5'Width'#2'x'#7'Caption'#6#17'Latitud [grados]:'
+  +#11'ParentColor'#8#0#0#6'TLabel'#6'Label7'#4'Left'#2#24#6'Height'#2#20#3'Top'
+  +#3#149#1#5'Width'#3#134#0#7'Caption'#6#18'Longitud [grados]:'#11'ParentColor'
+  +#8#0#0#5'TEdit'#8'eLatitud'#4'Left'#2'p'#6'Height'#2#27#3'Top'#3'p'#1#5'Widt'
+  +'h'#2'F'#8'TabOrder'#2#14#0#0#5'TEdit'#9'eLongitud'#4'Left'#2'p'#6'Height'#2
+  +#27#3'Top'#3#142#1#5'Width'#2'F'#8'TabOrder'#2#15#0#0#0
+]);

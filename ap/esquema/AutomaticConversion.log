@@ -1,0 +1,74 @@
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\esquema.dpr *
+Hint: Added defines -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL in custom options
+Hint: Found all unit files
+Hint: * Arreglando las unidades usadas para el archivo C:\SimSEE\svn_SimSEE_org\esquema\esquema.dpr *
+Hint: 
+Hint: *** Converting unit files belonging to project/package ***
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\ufesquema.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: Reemplazada unidad "Windows" con "LCLIntf, LCLType, LMessages" en sección 'uses'.
+Hint: Replaced call fileExists( d.FileName ) with FileExistsUTF8(d.FileName ) { *Converted from FileExists* }
+Hint: Added unit FileUtil to uses section
+Hint: Replaced call GetCurrentDir; with GetCurrentDirUTF8; { *Converted from GetCurrentDir* }
+Hint: Replaced call GetCurrentDir; with GetCurrentDirUTF8; { *Converted from GetCurrentDir* }
+Hint: Replaced call GetCurrentDir with GetCurrentDirUTF8 { *Converted from GetCurrentDir* }
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\upoligonal.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: Reemplazada unidad "windows" con "LCLIntf, LCLType, LMessages" en sección 'uses'.
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\urectangle.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: Reemplazada unidad "windows" con "LCLIntf, LCLType, LMessages" en sección 'uses'.
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\ucampos.pas *
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\ufEditorCampo.pas *
+Hint: Reemplazada unidad "Windows" con "LCLIntf, LCLType, LMessages" en sección 'uses'.
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\utog2d.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: Reemplazada unidad "Windows" con "LCLIntf, LCLType, LMessages" en sección 'uses'.
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\uTOGPropsForm.pas *
+Hint: Reemplazada unidad "Windows" con "LCLIntf, LCLType, LMessages" en sección 'uses'.
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\uesquema.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: Reemplazada unidad "windows" con "LCLIntf, LCLType, LMessages" en sección 'uses'.
+Hint: 
+Hint: *** Converting unit files found during conversion ***
+Hint: * Convirtiendo archivo C:\SimSEE\SimSEE_src\src\carqueja_111b\rchlib\mat\IntPoint.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: * Convirtiendo archivo C:\SimSEE\SimSEE_src\src\carqueja_111b\rchlib\mat\lz_ResolverdorDeProblemas\ConverterBackup\Algebrac.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: Fixed unit name from AlgebraC to Algebrac.
+Hint: * Convirtiendo archivo C:\SimSEE\SimSEE_src\src\carqueja_111b\rchlib\mat\lz_ResolverdorDeProblemas\ConverterBackup\Matcpx.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: Arregladas las mayúsculas o minúsculas de la unidad "AlgebraC" a "Algebrac".
+Hint: Fixed unit name from MatCPX to Matcpx.
+Hint: * Convirtiendo archivo C:\SimSEE\svn_SimSEE_org\esquema\xmatdefs.pas *
+Hint: Cambiada la codificación para cp1252 a UTF-8
+Hint: 
+Hint: *** Fixing used units and Repairing form files ***
+Hint: * Reparando archivo de formulario C:\SimSEE\svn_SimSEE_org\esquema\ufesquema.lfm *
+Hint: Removed property "TextHeight".
+Hint: Removed property "OldCreateOrder".
+Hint: Changed Top coord of TButton from "104" to "102" inside TPanel.
+Hint: Changed Left coord of TButton from "24" to "22" inside TPanel.
+Hint: Changed Top coord of TButton from "73" to "71" inside TPanel.
+Hint: Changed Left coord of TButton from "24" to "22" inside TPanel.
+Hint: Changed Top coord of TUpDown from "16" to "14" inside TPanel.
+Hint: Changed Left coord of TUpDown from "48" to "46" inside TPanel.
+Hint: Changed Top coord of TUpDown from "8" to "6" inside TPanel.
+Hint: Changed Left coord of TUpDown from "16" to "14" inside TPanel.
+Hint: Added property "SimplePanel = False" for TStatusBar.
+Hint: * Arreglando las unidades usadas para el archivo C:\SimSEE\svn_SimSEE_org\esquema\ufesquema.pas *
+Hint: * Arreglando las unidades usadas para el archivo C:\SimSEE\svn_SimSEE_org\esquema\upoligonal.pas *
+Hint: * Arreglando las unidades usadas para el archivo C:\SimSEE\svn_SimSEE_org\esquema\urectangle.pas *
+Hint: * Arreglando las unidades usadas para el archivo C:\SimSEE\svn_SimSEE_org\esquema\ucampos.pas *
+Hint: * Reparando archivo de formulario C:\SimSEE\svn_SimSEE_org\esquema\ufEditorCampo.lfm *
+Hint: Removed property "TextHeight".
+Hint: Removed property "OldCreateOrder".
+Hint: * Arreglando las unidades usadas para el archivo C:\SimSEE\svn_SimSEE_org\esquema\ufEditorCampo.pas *
+Hint: * Arreglando las unidades usadas para el archivo C:\SimSEE\svn_SimSEE_org\esquema\utog2d.pas *
+Hint: * Reparando archivo de formulario C:\SimSEE\svn_SimSEE_org\esquema\uTOGPropsForm.lfm *
+Hint: Removed property "TextHeight".
+Hint: Removed property "OldCreateOrder".
+Hint: * Arreglando las unidades usadas para el archivo C:\SimSEE\svn_SimSEE_org\esquema\uTOGPropsForm.pas *
+Hint: * Reparando archivo de formulario C:\SimSEE\svn_SimSEE_org\esquema\uesquema.lfm *
+Hint: Conversión tuvo: 00:00:56
+Hint: Conversion Preparada.
