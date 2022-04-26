@@ -1,6 +1,0 @@
-inherited BaseEditoresActores: TBaseEditoresActores
-  Left = 358
-  Top = 111
-  Caption = 'BaseEditoresActores'
-  OnResize = FormResize
-end

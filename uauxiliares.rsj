@@ -1,9 +1,0 @@
-{"version":1,"strings":[
-{"hash":113720622,"name":"uauxiliares.rs_arrayerrordeformato_debecomenzarcon","sourcebytes":[70,111,114,109,97,116,111,32,100,101,32,97,114,114,97,121,32,105,110,118,225,108,105,100,111,32,100,101,98,101,32,99,111,109,101,110,122,97,114,32,99,111,110],"value":"Formato de array inv\u00E1lido debe comenzar con"},
-{"hash":136069285,"name":"uauxiliares.rs_arrayerrordeformato_cantidaddeelementos","sourcebytes":[70,111,114,109,97,116,111,32,100,101,32,97,114,114,97,121,32,105,110,118,225,108,105,100,111,32,100,101,98,101,32,116,101,110,101,114,32,108,97,32,99,97,110,116,105,100,97,100,32,100,101,32,101,108,101,109,101,110,116,111,115,32,115,101,103,117,105,100,97,32,100,101],"value":"Formato de array inv\u00E1lido debe tener la cantidad de elementos seguida de"},
-{"hash":61518430,"name":"uauxiliares.rs_arrayerrordeformato_cantidaddeelementosnoentera","sourcebytes":[70,111,114,109,97,116,111,32,100,101,32,97,114,114,97,121,32,105,110,118,225,108,105,100,111,46,32,76,97,32,99,97,110,116,105,100,97,100,32,100,101,32,101,108,101,109,101,110,116,111,115,32,116,105,101,110,101,110,32,113,117,101,32,115,101,114,32,117,110,32,101,110,116,101,114,111,46],"value":"Formato de array inv\u00E1lido. La cantidad de elementos tienen que ser un entero."},
-{"hash":137855907,"name":"uauxiliares.rs_elvalorespecificadoes","sourcebytes":[69,108,32,118,97,108,111,114,32,105,110,103,114,101,115,97,100,111,32,101,115],"value":"El valor ingresado es"},
-{"hash":126644851,"name":"uauxiliares.rs_caracteresentreparentesisrectos","sourcebytes":[67,97,114,97,99,116,233,114,101,115,32,101,110,116,114,101,32,112,97,114,233,110,116,101,115,105,115,32,114,101,99,116,111,115],"value":"Caract\u00E9res entre par\u00E9ntesis rectos"},
-{"hash":1401,"name":"uauxiliares.rs_si","sourcebytes":[83,73],"value":"SI"},
-{"hash":1327,"name":"uauxiliares.rs_no","sourcebytes":[78,79],"value":"NO"}
-]}

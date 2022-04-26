@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="C:\freepascal\fpc\3.0.1\bin\i386-win32\fpc.exe" Date="1246188410"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq &quot;-FiC:\Users\dvallejo\Google Drive\Evaluador&quot; &quot;-FuC:\Users\dvallejo\Google Drive\Evaluador\rchlib\mat&quot; &quot;-FuC:\Users\dvallejo\Google Drive\Evaluador\ap\esquema&quot; &quot;-FuC:\Users\dvallejo\Google Drive\Evaluador\base&quot; &quot;-FuC:\Users\dvallejo\Google Drive\Evaluador\fpspreadsheet\source\common&quot; &quot;-FuC:\Users\dvallejo\Google Drive\Evaluador\excel&quot; -FuC:\freepascal\laz\lcl\units\i386-win32 -FuC:\freepascal\laz\components\lazutils\lib\i386-win32 -FuC:\freepascal\laz\packager\units\i386-win32 &quot;-FuC:\Users\dvallejo\Google Drive\Evaluador\&quot; &quot;-FUC:\Users\dvallejo\Google Drive\Evaluador\&quot; -dAPLICACION_CONSOLA -dSIM_EXCEL evaluador.lpr"/>
-  <Complete Value="False"/>
-</CONFIG>

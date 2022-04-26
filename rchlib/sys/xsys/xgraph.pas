@@ -1,5 +1,0 @@
-{$IFDEF WINDOWS}
-GraphW
-{$ELSE}
-Graph
-{$ENDIF}

@@ -1,5 +1,0 @@
-inherited BaseEditoresCombustiblesConFichas: TBaseEditoresCombustiblesConFichas
-  Left = 0
-  Top = 0
-  Caption = 'BaseEditoresCombustiblesConFichas'
-end

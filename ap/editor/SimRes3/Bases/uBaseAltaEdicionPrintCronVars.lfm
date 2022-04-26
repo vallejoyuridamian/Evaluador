@@ -1,3 +1,0 @@
-inherited BaseAltaEdicionPrintCronVars: TBaseAltaEdicionPrintCronVars
-  Caption = 'BaseAltaEdicionPrintCronVars'
-end
