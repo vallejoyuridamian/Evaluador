@@ -1,0 +1,452 @@
+inherited EditarTBiomasaEmbalsable: TEditarTBiomasaEmbalsable
+  Left = 571
+  Height = 581
+  Top = 170
+  Width = 968
+  Caption = 'EditarTBiomasaEmbalsable'
+  ClientHeight = 581
+  ClientWidth = 968
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited lbo_capa: TLabel
+    Height = 13
+    Width = 29
+  end
+  inherited e_Capa: TEdit
+    TabOrder = 14
+  end
+  object LNombre: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 108
+    Caption = 'Nombre del Generador'
+    ParentColor = False
+  end
+  object LNodo: TLabel[3]
+    Left = 0
+    Height = 13
+    Top = 27
+    Width = 25
+    Caption = 'Nodo'
+    ParentColor = False
+  end
+  object LFNac: TLabel[4]
+    Left = 0
+    Height = 13
+    Top = 51
+    Width = 99
+    Caption = 'Fecha de Nacimiento'
+    ParentColor = False
+  end
+  object LFMuerte: TLabel[5]
+    Left = 0
+    Height = 13
+    Top = 75
+    Width = 81
+    Caption = 'Fecha de Muerte'
+    ParentColor = False
+  end
+  object LFichas: TLabel[6]
+    Left = 16
+    Height = 13
+    Top = 288
+    Width = 34
+    Caption = 'Fichas:'
+    ParentColor = False
+  end
+  object CBNodo: TComboBox[7]
+    Left = 112
+    Height = 21
+    Top = 24
+    Width = 215
+    ItemHeight = 13
+    OnChange = CBNodoChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object EditNombre: TEdit[8]
+    Left = 112
+    Height = 21
+    Top = 0
+    Width = 214
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 1
+    Text = 'Ingrese el Nombre del Nuevo Generador'
+  end
+  object EFNac: TEdit[9]
+    Left = 168
+    Height = 21
+    Top = 48
+    Width = 89
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+  end
+  object EFMuerte: TEdit[10]
+    Left = 168
+    Height = 21
+    Top = 72
+    Width = 89
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 3
+  end
+  object sgFichas: TStringGrid[11]
+    Left = 8
+    Height = 250
+    Top = 304
+    Width = 417
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+    RowCount = 6
+    TabOrder = 4
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object BAgregarFicha: TButton[12]
+    Left = 232
+    Height = 25
+    Top = 276
+    Width = 122
+    Caption = 'Agregar Nueva Ficha'
+    TabOrder = 5
+  end
+  object BGuardar: TButton[13]
+    Left = 429
+    Height = 25
+    Top = 512
+    Width = 105
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 6
+  end
+  object BCancelar: TButton[14]
+    Left = 544
+    Height = 25
+    Top = 512
+    Width = 105
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 7
+  end
+  object Panel1: TPanel[15]
+    Left = 0
+    Height = 2
+    Top = 96
+    Width = 417
+    TabOrder = 8
+  end
+  object BVerExpandida: TButton[16]
+    Left = 144
+    Height = 25
+    Top = 276
+    Width = 89
+    Caption = 'Ver Expandida'
+    TabOrder = 9
+  end
+  object BEditorDeUnidades: TButton[17]
+    Left = 432
+    Height = 25
+    Top = 448
+    Width = 190
+    Caption = 'Editar Unidades Disponibles'
+    OnClick = BEditorDeUnidadesClick
+    TabOrder = 10
+  end
+  object BAyuda: TButton[18]
+    Left = 368
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 11
+  end
+  object GroupBox3: TGroupBox[19]
+    Left = 429
+    Height = 72
+    Top = 352
+    Width = 395
+    Caption = 'Emisiones CO2'
+    ClientHeight = 50
+    ClientWidth = 391
+    TabOrder = 12
+    object Label11: TLabel
+      Left = 14
+      Height = 13
+      Top = 7
+      Width = 75
+      Caption = 'Ton-CO2/MWh:'
+      ParentColor = False
+    end
+    object eTonCO2xMWh: TEdit
+      Left = 94
+      Height = 21
+      Top = 4
+      Width = 64
+      TabOrder = 0
+      Text = '0'
+    end
+    object cbLowCostMustRun: TCheckBox
+      Left = 182
+      Height = 29
+      Top = 0
+      Width = 122
+      Caption = 'Low Cost Must Run'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object cbCleanDevelopmentMechanism: TCheckBox
+      Left = 182
+      Height = 29
+      Top = 24
+      Width = 178
+      Caption = 'Clean Development Mechanism'
+      TabOrder = 2
+    end
+  end
+  object btEditarForzamientos: TButton[20]
+    Left = 435
+    Height = 25
+    Top = 480
+    Width = 187
+    Caption = 'Editar Forzamientos'
+    OnClick = btEditarForzamientosClick
+    TabOrder = 13
+  end
+  object GroupBox1: TGroupBox[21]
+    Left = 429
+    Height = 176
+    Top = 96
+    Width = 459
+    Caption = 'Indexación de precios'
+    ClientHeight = 154
+    ClientWidth = 455
+    TabOrder = 15
+    object lbl_ixA: TLabel
+      Left = 24
+      Height = 13
+      Top = 36
+      Width = 39
+      Caption = 'Indice A'
+      ParentColor = False
+    end
+    object cmb_ixA_fuente: TComboBox
+      Left = 96
+      Height = 21
+      Top = 32
+      Width = 169
+      ItemHeight = 13
+      OnChange = cmb_ixA_fuenteChange
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object cmb_ixA_borne: TComboBox
+      Left = 271
+      Height = 21
+      Top = 32
+      Width = 129
+      ItemHeight = 13
+      OnChange = cmb_ixA_borneChange
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object lbl_ixB_fuente: TLabel
+      Left = 25
+      Height = 13
+      Top = 69
+      Width = 38
+      Caption = 'Índice B'
+      ParentColor = False
+    end
+    object cmb_ixB_fuente: TComboBox
+      Left = 96
+      Height = 21
+      Top = 61
+      Width = 167
+      ItemHeight = 13
+      OnChange = cmb_ixB_fuenteChange
+      Style = csDropDownList
+      TabOrder = 2
+    end
+    object cmb_ixB_borne: TComboBox
+      Left = 271
+      Height = 21
+      Top = 60
+      Width = 129
+      ItemHeight = 13
+      OnChange = cmb_ixB_borneChange
+      Style = csDropDownList
+      TabOrder = 3
+    end
+    object lbl_ixC: TLabel
+      Left = 25
+      Height = 13
+      Top = 96
+      Width = 39
+      Caption = 'Índice C'
+      ParentColor = False
+    end
+    object cmb_ixC_fuente: TComboBox
+      Left = 96
+      Height = 21
+      Top = 88
+      Width = 167
+      ItemHeight = 13
+      OnChange = cmb_ixC_fuenteChange
+      Style = csDropDownList
+      TabOrder = 4
+    end
+    object cmb_ixC_borne: TComboBox
+      Left = 271
+      Height = 21
+      Top = 88
+      Width = 129
+      ItemHeight = 13
+      OnChange = cmb_ixC_borneChange
+      Style = csDropDownList
+      TabOrder = 5
+    end
+    object lbl_ixD: TLabel
+      Left = 25
+      Height = 13
+      Top = 124
+      Width = 39
+      Caption = 'Índice C'
+      ParentColor = False
+    end
+    object cmb_ixD_fuente: TComboBox
+      Left = 96
+      Height = 21
+      Top = 117
+      Width = 167
+      ItemHeight = 13
+      OnChange = cmb_ixD_fuenteChange
+      Style = csDropDownList
+      TabOrder = 6
+    end
+    object cmb_ixD_borne: TComboBox
+      Left = 271
+      Height = 21
+      Top = 116
+      Width = 129
+      ItemHeight = 13
+      OnChange = cmb_ixD_borneChange
+      Style = csDropDownList
+      TabOrder = 7
+    end
+    object Label2: TLabel
+      Left = 118
+      Height = 13
+      Top = 9
+      Width = 34
+      Caption = 'Fuente'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 295
+      Height = 13
+      Top = 12
+      Width = 28
+      Caption = 'Borne'
+      ParentColor = False
+    end
+  end
+  object GroupBox2: TGroupBox[22]
+    Left = 8
+    Height = 160
+    Top = 104
+    Width = 410
+    Caption = 'Energía Almacenada'
+    ClientHeight = 138
+    ClientWidth = 406
+    TabOrder = 16
+    object lbl_X_EA_inicial: TLabel
+      Left = 32
+      Height = 13
+      Top = 8
+      Width = 149
+      Caption = 'Compromiso DOP inicial [MWh]:'
+      ParentColor = False
+    end
+    object eX_EA_inicial: TEdit
+      Left = 192
+      Height = 21
+      Top = 4
+      Width = 80
+      TabOrder = 0
+    end
+    object lbl_ECA_DOP: TLabel
+      Left = 9
+      Height = 13
+      Top = 33
+      Width = 177
+      Caption = 'Energía Comprometida Anual [MWh]:'
+      ParentColor = False
+    end
+    object eECA_DOPTOP: TEdit
+      Left = 192
+      Height = 21
+      Top = 32
+      Width = 80
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 13
+      Top = 64
+      Width = 170
+      Caption = 'NPuntos discretización del almacén:'
+      ParentColor = False
+    end
+    object eNPuntos_EA: TEdit
+      Left = 192
+      Height = 21
+      Top = 61
+      Width = 48
+      TabOrder = 2
+    end
+    object cb_imponer_cvea: TCheckBox
+      Left = 144
+      Height = 29
+      Top = 112
+      Width = 96
+      Caption = 'Imponer cvea'
+      OnChange = cb_imponer_cveaChange
+      TabOrder = 3
+    end
+    object lbl_meses_TOP: TLabel
+      Left = 128
+      Height = 13
+      Top = 88
+      Width = 53
+      Caption = 'meses TOP'
+      ParentColor = False
+    end
+    object eMeses_TOP: TEdit
+      Left = 192
+      Height = 21
+      Top = 88
+      Width = 48
+      TabOrder = 4
+      Text = '12'
+    end
+  end
+  object cb_CalcularGradienteDeInversion: TCheckBox[23]
+    Left = 592
+    Height = 29
+    Top = 32
+    Width = 185
+    Caption = 'Calcular Gradiente de Inversión.'
+    TabOrder = 17
+  end
+  inherited iconos: TImageList[24]
+  end
+  inherited iconos2: TImageList[25]
+  end
+end

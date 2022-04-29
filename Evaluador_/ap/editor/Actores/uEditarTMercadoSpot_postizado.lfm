@@ -1,0 +1,167 @@
+inherited EditarTMercadoSpot_postizado: TEditarTMercadoSpot_postizado
+  Left = 342
+  Height = 568
+  Top = 170
+  Width = 653
+  AutoSize = True
+  Caption = 'EditarTMercadoSpot_postizado'
+  ClientHeight = 568
+  ClientWidth = 653
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited base_editores_panel_top: TPanel
+    Width = 653
+    ClientWidth = 653
+    TabOrder = 11
+  end
+  object LNombre: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 96
+    Caption = 'Nombre de Mercado'
+    ParentColor = False
+  end
+  object LNodo: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 27
+    Width = 83
+    Caption = 'Asignado al Nodo'
+    ParentColor = False
+  end
+  object LFNac: TLabel[3]
+    Left = 0
+    Height = 13
+    Top = 51
+    Width = 99
+    Caption = 'Fecha de Nacimiento'
+    ParentColor = False
+  end
+  object LFMuerte: TLabel[4]
+    Left = 0
+    Height = 13
+    Top = 78
+    Width = 81
+    Caption = 'Fecha de Muerte'
+    ParentColor = False
+  end
+  object LFichas: TLabel[5]
+    Left = 0
+    Height = 13
+    Top = 128
+    Width = 34
+    Caption = 'Fichas:'
+    ParentColor = False
+  end
+  object CBNodo: TComboBox[6]
+    Left = 112
+    Height = 21
+    Top = 24
+    Width = 260
+    ItemHeight = 13
+    OnChange = CBNodoChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object sgFichas: TStringGrid[7]
+    Left = 0
+    Height = 153
+    Top = 147
+    Width = 377
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+    RowCount = 6
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object EditNombre: TEdit[8]
+    Left = 112
+    Height = 21
+    Top = 0
+    Width = 233
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+    Text = 'Ingrese el nombre de mercado'
+  end
+  object EFNac: TEdit[9]
+    Left = 176
+    Height = 21
+    Top = 48
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 3
+    Text = 'EFNac'
+  end
+  object EFMuerte: TEdit[10]
+    Left = 176
+    Height = 21
+    Top = 75
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 4
+    Text = 'EFMuerte'
+  end
+  object BAgregarFicha: TButton[11]
+    Left = 251
+    Height = 25
+    Top = 123
+    Width = 129
+    Caption = 'Agregar Nueva Ficha'
+    TabOrder = 5
+  end
+  object BGuardar: TButton[12]
+    Left = 392
+    Height = 25
+    Top = 344
+    Width = 97
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 6
+  end
+  object BCancelar: TButton[13]
+    Left = 504
+    Height = 25
+    Top = 344
+    Width = 97
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 7
+  end
+  object BEditorDeUnidades: TButton[14]
+    Left = 392
+    Height = 25
+    Top = 312
+    Width = 190
+    Caption = 'Editar Unidades Disponibles'
+    OnClick = BEditorDeUnidadesClick
+    TabOrder = 8
+  end
+  object BVerExpandida: TButton[15]
+    Left = 96
+    Height = 25
+    Top = 123
+    Width = 149
+    Caption = 'Ver Periodicidad Expandida'
+    TabOrder = 9
+  end
+  object BAyuda: TButton[16]
+    Left = 348
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 10
+  end
+  inherited iconos: TImageList[17]
+  end
+  inherited iconos2: TImageList[18]
+  end
+end

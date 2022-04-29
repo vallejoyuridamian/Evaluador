@@ -1,0 +1,34 @@
+object formConsola: TformConsola
+  Left = 0
+  Height = 350
+  Top = 0
+  Width = 568
+  Caption = 'consola - interprete de comandos SimSEE'
+  ClientHeight = 350
+  ClientWidth = 568
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '0.9.30'
+  object memoConsola: TMemo
+    Left = 24
+    Height = 273
+    Top = 16
+    Width = 521
+    Lines.Strings = (
+      'ingrese ? para ayuda.'
+    )
+    TabOrder = 0
+  end
+  object memoInput: TMemo
+    Left = 24
+    Height = 25
+    Top = 304
+    Width = 521
+    OnKeyPress = memoInputKeyPress
+    TabOrder = 1
+  end
+end

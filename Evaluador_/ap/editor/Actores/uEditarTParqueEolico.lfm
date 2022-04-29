@@ -1,0 +1,431 @@
+inherited EditarTParqueEolico: TEditarTParqueEolico
+  Left = 235
+  Height = 614
+  Top = 102
+  Width = 930
+  Caption = 'EditarTParqueEolico'
+  ClientHeight = 614
+  ClientWidth = 930
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited base_editores_panel_top: TPanel
+    Width = 930
+    ClientWidth = 930
+    TabOrder = 18
+    inherited e_Capa: TEdit
+      Height = 23
+    end
+  end
+  object LNombre: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 131
+    Caption = 'Nombre del Generador'
+    ParentColor = False
+  end
+  object LNodo: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 27
+    Width = 99
+    Caption = 'Asignado al Nodo'
+    ParentColor = False
+  end
+  object LFNac: TLabel[3]
+    Left = 0
+    Height = 13
+    Top = 51
+    Width = 117
+    Caption = 'Fecha de Nacimiento'
+    ParentColor = False
+  end
+  object LFMuerte: TLabel[4]
+    Left = 0
+    Height = 13
+    Top = 75
+    Width = 93
+    Caption = 'Fecha de Muerte'
+    ParentColor = False
+  end
+  object LFuenteDeViento: TLabel[5]
+    Left = 16
+    Height = 13
+    Top = 363
+    Width = 100
+    Caption = 'Fuente De Viento:'
+    ParentColor = False
+  end
+  object LBorne: TLabel[6]
+    Left = 16
+    Height = 13
+    Top = 387
+    Width = 38
+    Caption = 'Borne:'
+    ParentColor = False
+  end
+  object Label1: TLabel[7]
+    Left = 272
+    Height = 13
+    Top = 363
+    Width = 391
+    Caption = '(Sólo se puede seleccionar una fuente con paso de sorteo HORARIO)'
+    ParentColor = False
+  end
+  object Label2: TLabel[8]
+    Left = 368
+    Height = 13
+    Top = 392
+    Width = 230
+    Caption = 'Pago por energía entregada [USD/MWh]:'
+    ParentColor = False
+  end
+  object CBNodo: TComboBox[9]
+    Left = 112
+    Height = 31
+    Top = 24
+    Width = 233
+    ItemHeight = 0
+    OnChange = CBNodoChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object EditNombre: TEdit[10]
+    Left = 112
+    Height = 23
+    Top = 0
+    Width = 209
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 1
+    Text = 'Ingrese el Nombre del Nuevo Generador'
+  end
+  object EFNac: TEdit[11]
+    Left = 192
+    Height = 23
+    Top = 48
+    Width = 89
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+  end
+  object EFMuerte: TEdit[12]
+    Left = 192
+    Height = 23
+    Top = 72
+    Width = 89
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 3
+  end
+  object BGuardar: TButton[13]
+    Left = 40
+    Height = 25
+    Top = 473
+    Width = 137
+    Caption = 'Salvar Generador'
+    OnClick = BGuardarClick
+    TabOrder = 4
+  end
+  object BCancelar: TButton[14]
+    Left = 208
+    Height = 25
+    Top = 473
+    Width = 129
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 5
+  end
+  object Panel1: TPanel[15]
+    Left = 0
+    Height = 1
+    Top = 320
+    Width = 849
+    TabOrder = 6
+  end
+  object CBFuente: TComboBox[16]
+    Left = 112
+    Height = 31
+    Top = 360
+    Width = 145
+    ItemHeight = 0
+    OnChange = CBFuenteChange
+    Style = csDropDownList
+    TabOrder = 7
+  end
+  object CBBorne: TComboBox[17]
+    Left = 112
+    Height = 31
+    Top = 384
+    Width = 145
+    ItemHeight = 0
+    OnChange = CBBorneChange
+    Style = csDropDownList
+    TabOrder = 8
+  end
+  object BEditarCurvaVP: TButton[18]
+    Left = 16
+    Height = 25
+    Top = 408
+    Width = 241
+    Caption = 'Editar Curva Velocidad-Potencia'
+    OnClick = BEditarCurvaVPClick
+    TabOrder = 9
+  end
+  object BEditorDeUnidades: TButton[19]
+    Left = 16
+    Height = 25
+    Top = 440
+    Width = 241
+    Caption = 'Editar Unidades Disponibles'
+    OnClick = BEditorDeUnidadesClick
+    TabOrder = 10
+  end
+  object BAyuda: TButton[20]
+    Left = 324
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 11
+  end
+  object sgFSpeedUp: TStringGrid[21]
+    Left = 8
+    Height = 64
+    Top = 288
+    Width = 888
+    ColCount = 13
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+    RowCount = 2
+    ScrollBars = ssNone
+    TabOrder = 12
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnClick = sgChequearCambios
+    OnExit = sgChequearCambios
+    OnGetEditText = sgGetEditText
+    OnKeyDown = sgChequearCambiosKeyDown
+  end
+  object BImportar_ods: TButton[22]
+    Left = 695
+    Height = 25
+    Top = 240
+    Width = 137
+    Caption = 'Importar .ods'
+    Enabled = False
+    OnClick = BImportar_odsClick
+    TabOrder = 13
+  end
+  object BExportar_ods: TButton[23]
+    Left = 552
+    Height = 25
+    Top = 240
+    Width = 137
+    Caption = 'Exportar .ods'
+    OnClick = BExportar_odsClick
+    TabOrder = 14
+  end
+  object ePagoPorEnergiaEntregada: TEdit[24]
+    Left = 571
+    Height = 23
+    Top = 386
+    Width = 53
+    TabOrder = 15
+    Text = '0'
+  end
+  object GroupBox3: TGroupBox[25]
+    Left = 408
+    Height = 80
+    Top = 458
+    Width = 368
+    Caption = 'Emisiones CO2'
+    ClientHeight = 65
+    ClientWidth = 364
+    TabOrder = 16
+    object Label11: TLabel
+      Left = 14
+      Height = 13
+      Top = 7
+      Width = 82
+      Caption = 'Ton-CO2/MWh:'
+      ParentColor = False
+    end
+    object eTonCO2xMWh: TEdit
+      Left = 94
+      Height = 23
+      Top = 4
+      Width = 64
+      TabOrder = 0
+      Text = '0'
+    end
+    object cbLowCostMustRun: TCheckBox
+      Left = 174
+      Height = 24
+      Top = 2
+      Width = 157
+      Caption = 'Low Cost Must Run'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object cbCleanDevelopmentMechanism: TCheckBox
+      Left = 174
+      Height = 24
+      Top = 32
+      Width = 241
+      Caption = 'Clean Development Mechanism'
+      TabOrder = 2
+    end
+  end
+  object ePagoPorEnergiaDisponible: TEdit[26]
+    Left = 571
+    Height = 23
+    Top = 410
+    Width = 53
+    TabOrder = 17
+  end
+  object Label3: TLabel[27]
+    Left = 368
+    Height = 13
+    Top = 410
+    Width = 229
+    Caption = 'Pago por energia disponible [USD/MWh]:'
+    ParentColor = False
+  end
+  object cbRestarParaPostizar: TCheckBox[28]
+    Left = 472
+    Height = 24
+    Top = 184
+    Width = 166
+    Caption = 'Restar para postizar.'
+    Checked = True
+    State = cbChecked
+    TabOrder = 19
+  end
+  object GroupBox1: TGroupBox[29]
+    Left = 8
+    Height = 166
+    Top = 99
+    Width = 450
+    Caption = 'Parámetros por generador'
+    ClientHeight = 151
+    ClientWidth = 446
+    TabOrder = 20
+    OnClick = GroupBox1Click
+    object eFD: TLabeledEdit
+      Left = 232
+      Height = 23
+      Top = 8
+      Width = 48
+      EditLabel.AnchorSideTop.Control = eFD
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eFD
+      EditLabel.AnchorSideBottom.Control = eFD
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 58
+      EditLabel.Height = 13
+      EditLabel.Top = 13
+      EditLabel.Width = 171
+      EditLabel.Caption = 'Factor de disponibilidad [p.u.]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 0
+      Text = '1.0'
+    end
+    object eTMR: TLabeledEdit
+      Left = 232
+      Height = 23
+      Top = 32
+      Width = 48
+      EditLabel.AnchorSideTop.Control = eTMR
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eTMR
+      EditLabel.AnchorSideBottom.Control = eTMR
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 83
+      EditLabel.Height = 13
+      EditLabel.Top = 37
+      EditLabel.Width = 146
+      EditLabel.Caption = 'Teimpo de reparación [h]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 1
+      Text = '168'
+    end
+    object eFacInterferencias: TLabeledEdit
+      Left = 232
+      Height = 23
+      Top = 56
+      Width = 48
+      EditLabel.AnchorSideTop.Control = eFacInterferencias
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eFacInterferencias
+      EditLabel.AnchorSideBottom.Control = eFacInterferencias
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = -19
+      EditLabel.Height = 13
+      EditLabel.Top = 61
+      EditLabel.Width = 248
+      EditLabel.Caption = 'Factor de pérdidas por interferencias [p.u.]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 2
+      Text = '1.0'
+    end
+    object eVelMin: TLabeledEdit
+      Left = 232
+      Height = 23
+      Top = 80
+      Width = 48
+      EditLabel.AnchorSideTop.Control = eVelMin
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eVelMin
+      EditLabel.AnchorSideBottom.Control = eVelMin
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 92
+      EditLabel.Height = 13
+      EditLabel.Top = 85
+      EditLabel.Width = 137
+      EditLabel.Caption = 'Velocidad mínima [m/s]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 3
+      Text = '4.0'
+    end
+    object eVelMax: TLabeledEdit
+      Left = 232
+      Height = 23
+      Top = 104
+      Width = 48
+      EditLabel.AnchorSideTop.Control = eVelMax
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = eVelMax
+      EditLabel.AnchorSideBottom.Control = eVelMax
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 88
+      EditLabel.Height = 13
+      EditLabel.Top = 109
+      EditLabel.Width = 141
+      EditLabel.Caption = 'Velocidad máxima [m/s]:'
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 4
+      Text = '25.0'
+    end
+  end
+  object cb_CalcularGradienteDeInversion: TCheckBox[30]
+    Left = 600
+    Height = 24
+    Top = 40
+    Width = 243
+    Caption = 'Calcular Gradiente de Inversión.'
+    TabOrder = 21
+  end
+  inherited iconos: TImageList[31]
+    left = 624
+  end
+  inherited iconos2: TImageList[32]
+  end
+end

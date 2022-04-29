@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="pruebasseriesv3"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="upruebaseriesv3.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\useriestemporales.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\rchlib\mat\xmatdefs.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\Users\dvallejo\Desktop\useriestemporales(nuevo).pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="$(SimSEE_bin)\pruebasseriesv3"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir);C:\freepascal\fpc\3.0.1\rtl\inc\;C:\freepascal\fpc\3.0.1\rtl\objpas\sysutils\"/>
+      <OtherUnitFiles Value="..\..\trunk\psql;..\..\trunk\rchlib\mat;..\..\trunk\fc\base;..\..\trunk\fc\excel;..\..\trunk\synapse;..\..\trunk\fc\tsdb_diario;..\..\trunk\fc\visordetabla;..\..\trunk\src_nettopos\src_libnettopos\libnettopos;..\..\trunk\ax\miner2007;..\EstimadorGeneracionERNC;..\ADME_DATA;..\..\trunk\fpspreadsheet\source\common;..\pronos;..\getmeteoblue;..;..\..\..\rchlib\mat;C:\Users\dvallejo\Desktop\"/>
+      <UnitOutputDirectory Value="$(SimSEE)\ppus\pruebasseriesv3"/>
+    </SearchPaths>
+    <Conditionals Value="if SrcOS='win' then
+begin
+   SimSEE := 'c:\SimSEE';
+   SimSEE_bin := SimSEE+'\bin';
+end
+else
+begin
+   SimSEE := GetEnv('HOME')+'/simsee';
+   SimSEE_bin := SimSEE+'/fpcbin';
+end;"/>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <Optimizations>
+        <OptimizationLevel Value="0"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Other>
+      <CustomOptions Value="-dxpq_direct
+-dPROXY_ENABLED_ROS
+-dxheapt
+-dupgsql
+-dconlib
+-dSVG_CANVAS
+-dpq_direct
+-dxMODELO_TEORICO
+-dMODELO_A_ALFA_VM
+-dxAJUSTE_VEL_POR_DIRECCION
+-dAPLICACION_CONSOLA"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

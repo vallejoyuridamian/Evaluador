@@ -1,0 +1,78 @@
+inherited EditarFichaDeterminismo: TEditarFichaDeterminismo
+  Left = 502
+  Height = 124
+  Top = 310
+  Width = 341
+  AutoSize = True
+  Caption = 'EditarFichaDeterminismo'
+  ClientHeight = 124
+  ClientWidth = 341
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  object LNPasos: TLabel[0]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 212
+    Caption = 'Número de Pasos de Sorteo Determinísticos:'
+    ParentColor = False
+  end
+  object ENPasos: TEdit[1]
+    Left = 218
+    Height = 21
+    Top = 0
+    Width = 84
+    OnEnter = EditEnter
+    OnExit = EditTamTablaExit
+    OnKeyDown = ENPasosKeyDown
+    TabOrder = 0
+  end
+  object sgValores: TStringGrid[2]
+    Left = 0
+    Height = 57
+    Top = 27
+    Width = 329
+    DefaultRowHeight = 25
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs]
+    RowCount = 2
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnClick = sgChequearCambios
+    OnExit = sgChequearCambios
+    OnGetEditText = sgGetEditText
+    OnKeyDown = sgChequearCambiosKeyDown
+  end
+  object BGuardar: TButton[3]
+    Left = 55
+    Height = 25
+    Top = 90
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = BGuardarClick
+    TabOrder = 2
+  end
+  object BCancelar: TButton[4]
+    Left = 200
+    Height = 25
+    Top = 90
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[5]
+    Left = 308
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  inherited iconos: TImageList[6]
+  end
+  inherited iconos2: TImageList[7]
+  end
+end

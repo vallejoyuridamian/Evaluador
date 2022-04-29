@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{d2ead5f6-8cdd-4b2a-9d11-33891af5ae19}</ProjectGuid>
+    <MainSource>cmdsim.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\..\..\..\bin\cmdsim.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>\simsee\bin</DCC_ExeOutput>
+    <DCC_DcuOutput>\simsee\dcus\cmdsim</DCC_DcuOutput>
+    <DCC_ObjOutput>\simsee\dcus\cmdsim</DCC_ObjOutput>
+    <DCC_HppOutput>\simsee\dcus\cmdsim</DCC_HppOutput>
+    <DCC_UnitSearchPath>../../fc/actores;../../fc/base;../../fc/rch30;../../fc/monitores</DCC_UnitSearchPath>
+    <DCC_ResourcePath>../../fc/actores;../../fc/base;../../fc/rch30;../../fc/monitores</DCC_ResourcePath>
+    <DCC_ObjPath>../../fc/actores;../../fc/base;../../fc/rch30;../../fc/monitores</DCC_ObjPath>
+    <DCC_IncludePath>../../fc/actores;../../fc/base;../../fc/rch30;../../fc/monitores</DCC_IncludePath>
+    <DCC_Define>MIPSimplex;RNODO_IGUALDAD;MODOGRAFICO;PUBLIVARS;xESTADO_HIDRO_UTE;xESTADO_HIDRO_ISOPROB;COSTOSHIDROPOSITIVOS;REDUCCIONCOTAQE;HOLGURA_FALLA;ITERAR</DCC_Define>
+    <DCC_CONSTRUCTING_ABSTRACT>False</DCC_CONSTRUCTING_ABSTRACT>
+    <DCC_IOChecking>False</DCC_IOChecking>
+    <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+    <DCC_ConsoleTarget>True</DCC_ConsoleTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_ExeOutput>\simsee\bin</DCC_ExeOutput>
+    <DCC_DcuOutput>\simsee\dcus\cmdsim</DCC_DcuOutput>
+    <DCC_ObjOutput>\simsee\dcus\cmdsim</DCC_ObjOutput>
+    <DCC_HppOutput>\simsee\dcus\cmdsim</DCC_HppOutput>
+    <DCC_UnitSearchPath>../../fc/actores;../../fc/base;../../fc/rch30;../../fc/monitores</DCC_UnitSearchPath>
+    <DCC_ResourcePath>../../fc/actores;../../fc/base;../../fc/rch30;../../fc/monitores</DCC_ResourcePath>
+    <DCC_ObjPath>../../fc/actores;../../fc/base;../../fc/rch30;../../fc/monitores</DCC_ObjPath>
+    <DCC_IncludePath>../../fc/actores;../../fc/base;../../fc/rch30;../../fc/monitores</DCC_IncludePath>
+    <DCC_Define>MIPSimplex;xMONITORES;RNODO_IGUALDAD;PUBLIVARS;xESTADO_HIDRO_UTE;xESTADO_HIDRO_ISOPROB;xCOSTOSHIDROPOSITIVOS;REDUCCIONCOTAQE;AYUDA_INDEPENDIENTE;HOLGURA_FALLA;ITERAR</DCC_Define>
+    <DCC_CONSTRUCTING_ABSTRACT>False</DCC_CONSTRUCTING_ABSTRACT>
+    <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_ConsoleTarget>True</DCC_ConsoleTarget>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="RunParams">sala=C:\simsee\corridas\ana\Sala_Simple.ese ejecutor=topo12</Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="DebugCWD">C:\simseeu\bin\</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">14346</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">cmdsim.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="cmdsim.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="..\..\fc\base\ucmdoptsim.pas" />
+    <DCCReference Include="..\..\fc\base\uRobotCalculoOptimizadorMulticore.pas" />
+    <DCCReference Include="..\..\fc\base\uRobotEscritorOptimizadorMulticore.pas" />
+    <DCCReference Include="..\..\fc\PA10\winLinuxUtils.pas" />
+    <DCCReference Include="..\..\fc\rch30\EXCEL\uExcelFile.pas" />
+    <DCCReference Include="..\..\fc\rch30\EXCEL\XLConst.pas" />
+    <DCCReference Include="..\..\fc\rch30\umipsimplex_mejorcamino.pas" />
+    <DCCReference Include="..\..\src_libnettopos\fctopos\IPC\Win32\ipcthrd.pas" />
+  </ItemGroup>
+</Project>

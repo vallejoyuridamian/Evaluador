@@ -1,0 +1,5 @@
+inherited EditarActorConFichas: TEditarActorConFichas
+  Left = 484
+  Top = 136
+  Caption = 'EditarActorConFichas'
+end

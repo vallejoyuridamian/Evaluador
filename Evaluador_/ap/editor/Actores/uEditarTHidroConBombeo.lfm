@@ -1,0 +1,343 @@
+inherited EditarTHidroConBombeo: TEditarTHidroConBombeo
+  Left = 265
+  Height = 670
+  Top = 41
+  Width = 810
+  Caption = 'EditarTHidroConBombeo'
+  ClientHeight = 670
+  ClientWidth = 810
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited lbo_capa: TLabel
+    Height = 13
+    Width = 29
+  end
+  inherited e_Capa: TEdit
+    TabOrder = 18
+  end
+  object LNombre: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 108
+    Caption = 'Nombre del Generador'
+    ParentColor = False
+  end
+  object LNodo: TLabel[3]
+    Left = 0
+    Height = 13
+    Top = 27
+    Width = 25
+    Caption = 'Nodo'
+    ParentColor = False
+  end
+  object LFNac: TLabel[4]
+    Left = 0
+    Height = 13
+    Top = 51
+    Width = 99
+    Caption = 'Fecha de Nacimiento'
+    ParentColor = False
+  end
+  object LFMuerte: TLabel[5]
+    Left = 0
+    Height = 13
+    Top = 75
+    Width = 81
+    Caption = 'Fecha de Muerte'
+    ParentColor = False
+  end
+  object LVEstado: TLabel[6]
+    Left = 0
+    Height = 13
+    Top = 104
+    Width = 98
+    Caption = 'Variables de Estado:'
+    ParentColor = False
+  end
+  object LNDisc: TLabel[7]
+    Left = 0
+    Height = 13
+    Top = 222
+    Width = 211
+    Caption = 'Nro de puntos de discretización de la altura:'
+    ParentColor = False
+  end
+  object LHIni: TLabel[8]
+    Left = 0
+    Height = 13
+    Top = 198
+    Width = 79
+    Caption = 'Altura Inicial[m]:'
+    ParentColor = False
+  end
+  object LFichas: TLabel[9]
+    Left = 0
+    Height = 13
+    Top = 251
+    Width = 34
+    Caption = 'Fichas:'
+    ParentColor = False
+  end
+  object LFuenteDeAportes: TLabel[10]
+    Left = 0
+    Height = 13
+    Top = 131
+    Width = 95
+    Caption = 'Fuente De Aportes:'
+    ParentColor = False
+  end
+  object LBorne: TLabel[11]
+    Left = 0
+    Height = 13
+    Top = 155
+    Width = 32
+    Caption = 'Borne:'
+    ParentColor = False
+  end
+  object CBNodo: TComboBox[12]
+    Left = 112
+    Height = 21
+    Top = 24
+    Width = 273
+    ItemHeight = 13
+    OnChange = CBNodoChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object EditNombre: TEdit[13]
+    Left = 112
+    Height = 21
+    Top = 0
+    Width = 249
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 1
+    Text = 'Ingrese el Nombre del Nuevo Generador'
+  end
+  object EFNac: TEdit[14]
+    Left = 168
+    Height = 21
+    Top = 48
+    Width = 98
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+  end
+  object EFMuerte: TEdit[15]
+    Left = 168
+    Height = 21
+    Top = 72
+    Width = 98
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 3
+  end
+  object sgFichas: TStringGrid[16]
+    Left = 0
+    Height = 250
+    Top = 278
+    Width = 385
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+    RowCount = 6
+    TabOrder = 4
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    ColWidths = (
+      64
+      64
+      64
+      65
+      64
+    )
+  end
+  object BAgregarFicha: TButton[17]
+    Left = 263
+    Height = 25
+    Top = 246
+    Width = 122
+    Caption = 'Agregar Nueva Ficha'
+    TabOrder = 5
+  end
+  object BGuardar: TButton[18]
+    Left = 424
+    Height = 25
+    Top = 504
+    Width = 105
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 6
+  end
+  object BCancelar: TButton[19]
+    Left = 544
+    Height = 25
+    Top = 504
+    Width = 105
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 7
+  end
+  object EHIni: TEdit[20]
+    Left = 213
+    Height = 21
+    Top = 195
+    Width = 172
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 8
+  end
+  object ENDisc: TEdit[21]
+    Left = 213
+    Height = 21
+    Top = 219
+    Width = 172
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 9
+  end
+  object Panel1: TPanel[22]
+    Left = 0
+    Height = 2
+    Top = 96
+    Width = 385
+    TabOrder = 10
+  end
+  object BVerExpandida: TButton[23]
+    Left = 112
+    Height = 25
+    Top = 246
+    Width = 145
+    Caption = 'Ver Periodicidad Expandida'
+    TabOrder = 11
+  end
+  object BEditorDeUnidades: TButton[24]
+    Left = 424
+    Height = 25
+    Top = 472
+    Width = 190
+    Caption = 'Editar Unidades Disponibles'
+    OnClick = BEditorDeUnidadesClick
+    TabOrder = 12
+  end
+  object CBFuente: TComboBox[25]
+    Left = 96
+    Height = 21
+    Top = 128
+    Width = 289
+    ItemHeight = 13
+    OnChange = CBFuenteChange
+    Style = csDropDownList
+    TabOrder = 13
+  end
+  object CBBorne: TComboBox[26]
+    Left = 96
+    Height = 21
+    Top = 152
+    Width = 289
+    ItemHeight = 13
+    OnChange = CBBorneChange
+    Style = csDropDownList
+    TabOrder = 14
+  end
+  object BAyuda: TButton[27]
+    Left = 364
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 15
+  end
+  object cb_ValorizadoManual: TCheckBox[28]
+    Left = 0
+    Height = 29
+    Top = 175
+    Width = 116
+    Caption = 'Valorizado Manual'
+    OnClick = CambiosForm
+    TabOrder = 16
+  end
+  object GroupBox3: TGroupBox[29]
+    Left = 408
+    Height = 80
+    Top = 251
+    Width = 379
+    Caption = 'Emisiones CO2'
+    ClientHeight = 58
+    ClientWidth = 375
+    TabOrder = 17
+    object Label11: TLabel
+      Left = 14
+      Height = 13
+      Top = 7
+      Width = 75
+      Caption = 'Ton-CO2/MWh:'
+      ParentColor = False
+    end
+    object eTonCO2xMWh: TEdit
+      Left = 94
+      Height = 21
+      Top = 4
+      Width = 64
+      TabOrder = 0
+      Text = '0'
+    end
+    object cbLowCostMustRun: TCheckBox
+      Left = 182
+      Height = 29
+      Top = 0
+      Width = 122
+      Caption = 'Low Cost Must Run'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object cbCleanDevelopmentMechanism: TCheckBox
+      Left = 182
+      Height = 29
+      Top = 24
+      Width = 178
+      Caption = 'Clean Development Mechanism'
+      TabOrder = 2
+    end
+  end
+  object rgTipoFuente: TRadioGroup[30]
+    Left = 416
+    Height = 73
+    Top = 120
+    Width = 191
+    AutoFill = True
+    Caption = 'Tipo de fuente.'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 51
+    ClientWidth = 187
+    ItemIndex = 0
+    Items.Strings = (
+      'Caudales [m3/s]'
+      'Escurrimientos [mm/mes]'
+    )
+    OnClick = rgTipoFuenteClick
+    TabOrder = 19
+  end
+  object cb_CalcularGradienteDeInversion: TCheckBox[31]
+    Left = 528
+    Height = 29
+    Top = 56
+    Width = 185
+    Caption = 'Calcular Gradiente de Inversión.'
+    TabOrder = 20
+  end
+  inherited iconos: TImageList[32]
+  end
+  inherited iconos2: TImageList[33]
+  end
+end

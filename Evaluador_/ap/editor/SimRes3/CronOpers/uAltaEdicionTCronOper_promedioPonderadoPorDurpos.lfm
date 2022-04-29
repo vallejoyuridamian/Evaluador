@@ -1,0 +1,74 @@
+inherited AltaEdicionTCronOper_promedioPonderadoPorDurPos: TAltaEdicionTCronOper_promedioPonderadoPorDurPos
+  Left = 412
+  Height = 109
+  Top = 230
+  Width = 295
+  AutoSize = True
+  Caption = 'AltaEdicionTCronOper_promedioPonderadoPorDurPos'
+  ClientHeight = 109
+  ClientWidth = 295
+  OnCloseQuery = FormCloseQuery
+  object lResultado: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 30
+    Width = 53
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+  object lIndice: TLabel[1]
+    Left = 0
+    Height = 14
+    Top = 57
+    Width = 34
+    Caption = 'Indice:'
+    ParentColor = False
+  end
+  object cbRes: TComboBox[2]
+    Left = 63
+    Height = 21
+    Top = 27
+    Width = 210
+    ItemHeight = 13
+    OnChange = CBCronVarChange
+    TabOrder = 0
+  end
+  object cbParam1: TComboBox[3]
+    Left = 63
+    Height = 21
+    Top = 54
+    Width = 210
+    ItemHeight = 13
+    OnChange = cbIndiceChange
+    TabOrder = 1
+  end
+  object bGuardar: TButton[4]
+    Left = 40
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[5]
+    Left = 159
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[6]
+    Left = 274
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  inherited iconos: TImageList[7]
+  end
+end

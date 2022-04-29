@@ -1,0 +1,6 @@
+inherited BaseAltasEditores: TBaseAltasEditores
+  Left = 229
+  Top = 150
+  Caption = 'BaseAltasEditores'
+  Font.Name = 'MS Sans Serif'
+end

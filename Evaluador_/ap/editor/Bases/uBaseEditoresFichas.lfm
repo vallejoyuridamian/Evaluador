@@ -1,0 +1,23 @@
+inherited BaseEditoresFichas: TBaseEditoresFichas
+  Left = 193
+  Height = 459
+  Top = 95
+  Width = 970
+  Caption = 'BaseEditoresFichas'
+  ClientHeight = 459
+  ClientWidth = 970
+  Font.Name = 'MS Sans Serif'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  inherited lbo_capa: TLabel
+    Width = 28
+  end
+  inherited iconos: TImageList
+    left = 864
+    top = 16
+  end
+  inherited iconos2: TImageList
+    left = 912
+    top = 16
+  end
+end

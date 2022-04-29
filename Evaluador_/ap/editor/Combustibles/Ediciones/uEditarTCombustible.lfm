@@ -1,0 +1,138 @@
+inherited EditarTCombustible: TEditarTCombustible
+  Left = 432
+  Height = 447
+  Top = 158
+  Width = 669
+  AutoSize = True
+  Caption = 'EditarCombustible'
+  ClientHeight = 447
+  ClientWidth = 669
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited lbo_capa: TLabel
+    Left = 416
+  end
+  inherited e_Capa: TEdit
+    Left = 456
+    TabOrder = 4
+  end
+  object LNombre: TLabel[2]
+    Left = 64
+    Height = 14
+    Top = 13
+    Width = 42
+    Caption = 'Nombre:'
+    ParentColor = False
+  end
+  object EditNombre: TEdit[3]
+    Left = 128
+    Height = 21
+    Top = 8
+    Width = 233
+    OnEnter = EditEnter
+    OnExit = EditNombreExit
+    TabOrder = 0
+    Text = 'Ingrese el nombre del nuevo Combustible'
+  end
+  object BAyuda: TButton[4]
+    Left = 368
+    Height = 21
+    Top = 8
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 1
+  end
+  object panel_ParametrosDinamicos: TGroupBox[5]
+    AnchorSideTop.Side = asrBottom
+    Left = 16
+    Height = 203
+    Top = 128
+    Width = 384
+    AutoSize = True
+    Caption = 'Parámetros dinámicos'
+    ClientHeight = 185
+    ClientWidth = 380
+    ParentBidiMode = False
+    TabOrder = 2
+    object LFichas: TLabel
+      Left = 0
+      Height = 14
+      Top = 5
+      Width = 35
+      Caption = 'Fichas:'
+      ParentColor = False
+    end
+    object sgFichas: TStringGrid
+      Left = 0
+      Height = 153
+      Top = 32
+      Width = 377
+      DefaultRowHeight = 25
+      FixedCols = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+      RowCount = 6
+      TabOrder = 0
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+    end
+    object BAgregarFicha: TButton
+      Left = 251
+      Height = 25
+      Top = 0
+      Width = 129
+      Caption = 'Agregar Nueva Ficha'
+      TabOrder = 1
+    end
+    object BVerExpandida: TButton
+      Left = 96
+      Height = 25
+      Top = 0
+      Width = 149
+      Caption = 'Ver Periodicidad Expandida'
+      OnClick = BVerExpandidaClick
+      TabOrder = 2
+    end
+  end
+  object panel_botones_deabajo: TPanel[6]
+    AnchorSideLeft.Control = panel_ParametrosDinamicos
+    AnchorSideTop.Control = panel_ParametrosDinamicos
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = panel_ParametrosDinamicos
+    AnchorSideRight.Side = asrBottom
+    Left = 16
+    Height = 78
+    Top = 335
+    Width = 384
+    ClientHeight = 78
+    ClientWidth = 384
+    TabOrder = 3
+    object BGuardar: TButton
+      Left = 80
+      Height = 25
+      Top = 40
+      Width = 97
+      Caption = 'Guardar Cambios'
+      OnClick = BGuardarClick
+      TabOrder = 0
+    end
+    object BCancelar: TButton
+      Left = 184
+      Height = 25
+      Top = 40
+      Width = 97
+      Caption = 'Cancelar'
+      OnClick = BCancelarClick
+      TabOrder = 1
+    end
+  end
+  inherited iconos: TImageList[7]
+    left = 528
+    top = 80
+  end
+  inherited iconos2: TImageList[8]
+    left = 560
+    top = 17
+  end
+end

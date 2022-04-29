@@ -1,0 +1,97 @@
+inherited AltaEdicionTCronOper_filtrarCronica: TAltaEdicionTCronOper_filtrarCronica
+  Left = 646
+  Height = 210
+  Top = 230
+  Width = 414
+  AutoSize = True
+  Caption = 'AltaEdicionTCronOper_filtrarCronica'
+  ClientHeight = 210
+  ClientWidth = 414
+  OnCloseQuery = FormCloseQuery
+  object lResultado: TLabel[0]
+    Left = 0
+    Height = 13
+    Top = 30
+    Width = 52
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+  object lIndice: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 57
+    Width = 33
+    Caption = 'Indice:'
+    ParentColor = False
+  end
+  object eNCronica: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 84
+    Width = 75
+    Caption = 'Nro de Crónica:'
+    ParentColor = False
+  end
+  object cbRes: TComboBox[3]
+    Left = 108
+    Height = 21
+    Top = 27
+    Width = 205
+    ItemHeight = 13
+    OnChange = CBCronVarChange
+    TabOrder = 0
+  end
+  object cbParam1: TComboBox[4]
+    Left = 108
+    Height = 21
+    Top = 54
+    Width = 205
+    ItemHeight = 13
+    OnChange = CBIndiceChange
+    TabOrder = 1
+  end
+  object bGuardar: TButton[5]
+    Left = 80
+    Height = 25
+    Top = 108
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[6]
+    Left = 190
+    Height = 25
+    Top = 108
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[7]
+    Left = 280
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  object eKCronica: TEdit[8]
+    Left = 108
+    Height = 21
+    Top = 81
+    Width = 205
+    OnEnter = EditEnter
+    OnExit = EditIntExit
+    TabOrder = 5
+  end
+  inherited iconos: TImageList[9]
+    left = 352
+    top = 72
+  end
+  inherited iconos2: TImageList[10]
+    left = 344
+    top = 16
+  end
+end

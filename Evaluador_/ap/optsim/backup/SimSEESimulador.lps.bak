@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Release"/>
+    <Units Count="92">
+      <Unit0>
+        <Filename Value="SimSEESimulador.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uSimSEE.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fSimSEE"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="97"/>
+        <CursorPos X="57" Y="28"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\fc\base\uglobs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\rchlib\mat\uproblema.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\rchlib\mat\uresfxgx.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\fc\base\uversiones.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\fc\base\uFuenteSintetizador.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\fc\actores\uusogestionable_postizado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\fc\base\ucosaconnombre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCosaConNombre"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\fc\base\ucosaparticipedemercado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\fc\actores\uActorNodal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\fc\base\usalasdejuego.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\fc\actores\uActores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\fc\base\ucosa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="3907"/>
+        <CursorPos X="93" Y="3925"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\fc\actores\uHidroConEmbalse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\fc\actores\uMercadoSpot_postizado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\fc\base\uEstados.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\fc\base\uodt_types.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\rchlib\mat\xmatdefs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\rchlib\mat\matreal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\fc\base\ufechas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\fc\base\uFuentesAleatorias.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\fc\base\ufuenteselector_horario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\fc\base\uInicioYFinal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\fc\base\ucalibrarconopronosticos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\..\fc\base\uforzamientos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\fc\base\ucontroladordeterminista.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\rchlib\mat\algebrac.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\fc\actores\ugter_basico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\rchlib\mat\pso\particulas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\..\rchlib\dsp\dsp\random\uniform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\..\fc\actores\usolartermico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\fc\base\umh_distribuidor_optsim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\fc\base\umh_sincrodata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\..\fc\actores\uHidroConEmbalseBinacional.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\..\fc\base\umodelosintcegh.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\..\fc\base\umatriz_ruida.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\..\fc\actores\uParqueEolico_vxy.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\..\fc\actores\ugter_basico_trep.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="..\..\fc\base\umh_worker_sim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="..\..\fc\base\uacumuladores_sim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="..\..\fc\actores\ugter_onoffporpaso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="..\..\rchlib\mat\fddp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="..\..\fc\base\udatoshorariosdetallados.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="..\..\rchlib\mat\umadresuniformes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="..\..\rchlib\mat\udisnormcan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="..\..\fc\base\urobothttppost.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="..\..\synapse\httpsend.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="..\..\fc\actores\usolarpv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="..\..\fc\base\uFuncionesReales.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="..\..\fc\actores\ubiomasaembalsable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="..\..\fc\actores\ugter_basico_PyCVariable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="..\..\fc\actores\ugsimple_monocombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="..\..\fc\excel\uExcelFile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="..\..\fc\actores\uregasificadora.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="..\..\fc\actores\uagendagnl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uAgendaGNL"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="..\..\fc\actores\utsumcomb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTSumComb"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="..\..\fc\actores\ugter_arranqueparada.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="..\..\fc\actores\uDemandas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="..\..\fc\actores\uParqueEolico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="..\..\fc\actores\uGeneradores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="..\..\fc\actores\ugter_combinado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="..\..\rchlib\mat\umipsimplex_mejorcamino.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="..\..\fc\base\uparametros.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="..\..\fc\actores\udemandacombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="udemandaCombustible"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="..\..\fc\actores\uDemandaAnioBaseEIndices.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="..\..\fc\base\ufichaslpd.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ufichasLPD"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="..\..\fc\actores\unodocombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="..\..\fc\actores\ucombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCombustible"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="..\..\fc\actores\udemandacombustibleaniobaseeindices.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="udemandaCombustibleAnioBaseEIndices"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="..\..\fc\actores\uActorNodalCombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="..\..\fc\actores\uarcocombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uArcoCombustible"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="273"/>
+        <CursorPos Y="297"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="..\..\fc\actores\ubancodebaterias01.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="..\..\fc\actores\uHidroConBombeo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="..\..\rchlib\mat\usimplex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="..\..\fc\base\uauxiliares.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="..\..\fc\actores\uHidroDePasada.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="..\..\fc\base\uversion_architexto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="..\..\alglib\src\ap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="..\..\fc\simres\uSustituirVariablesPlantilla.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="..\..\fc\actores\ugsimple_bicombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="..\..\fc\base\upronostico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="..\..\fc\base\uEsclavizadorSubMuestreado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="..\..\fc\base\uEsclavizadorSobreMuestreado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="..\..\fc\actores\udemandadetallada.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="..\..\fc\actores\udemandas01.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="..\..\fc\base\uestados_aproximador_cf01.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="128"/>
+        <CursorPos X="3" Y="143"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="..\..\rchlib\neuronales\uneuronas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="..\..\fc\base\uFuenteConstante.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="..\..\fc\base\uunidades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="..\..\fc\base\uConstantesSimSEE.pas"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit91>
+    </Units>
+    <JumpHistory Count="19" HistoryIndex="18">
+      <Position1>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="90" Column="13" TopLine="65"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="95" Column="59" TopLine="70"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="146" Column="55" TopLine="121"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="154" Column="28" TopLine="129"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="166" Column="42" TopLine="141"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="288" Column="44" TopLine="270"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="41" Column="25" TopLine="21"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\fc\base\ucosa.pas"/>
+        <Caret Line="3925" Column="93" TopLine="3907"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="296" Column="22" TopLine="282"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="298" TopLine="282"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="301" TopLine="282"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="297" Column="114" TopLine="282"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="41" Column="25" TopLine="426"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="90" Column="13" TopLine="77"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="95" Column="59" TopLine="77"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="146" Column="55" TopLine="121"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="154" Column="28" TopLine="141"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <Caret Line="166" Column="42" TopLine="150"/>
+      </Position19>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\fc\actores\uArcos.pas"/>
+        <Line Value="296"/>
+      </Item1>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

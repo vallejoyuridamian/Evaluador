@@ -1,0 +1,93 @@
+inherited AltaEdicionTCronOper_sumaConSigno: TAltaEdicionTCronOper_sumaConSigno
+  Left = 469
+  Height = 215
+  Top = 194
+  Width = 539
+  AutoSize = True
+  Caption = 'AltaEdicionTCronOper_sumaConSigno'
+  ClientHeight = 215
+  ClientWidth = 539
+  OnCloseQuery = FormCloseQuery
+  object lResultadoPos: TLabel[0]
+    Left = 0
+    Height = 13
+    Top = 30
+    Width = 92
+    Caption = 'Resultado Positivo:'
+    ParentColor = False
+  end
+  object lIndice: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 81
+    Width = 33
+    Caption = 'Indice:'
+    ParentColor = False
+  end
+  object lResultadoNeg: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 54
+    Width = 98
+    Caption = 'Resultado Negativo:'
+    ParentColor = False
+  end
+  object cbResPos: TComboBox[3]
+    Left = 104
+    Height = 21
+    Top = 27
+    Width = 328
+    ItemHeight = 13
+    OnChange = CBCronVarResPosChange
+    TabOrder = 0
+  end
+  object cbParam1: TComboBox[4]
+    Left = 104
+    Height = 21
+    Top = 78
+    Width = 328
+    ItemHeight = 13
+    OnChange = CBIndiceChange
+    TabOrder = 1
+  end
+  object bGuardar: TButton[5]
+    Left = 104
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[6]
+    Left = 214
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[7]
+    Left = 313
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  object cbResNeg: TComboBox[8]
+    Left = 104
+    Height = 21
+    Top = 51
+    Width = 328
+    ItemHeight = 13
+    OnChange = CBCronVarResNegChange
+    TabOrder = 5
+  end
+  inherited iconos: TImageList[9]
+  end
+  inherited iconos2: TImageList[10]
+  end
+end

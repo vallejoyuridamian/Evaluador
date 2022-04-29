@@ -1,0 +1,51 @@
+inherited EditarBorne: TEditarBorne
+  Left = 378
+  Height = 68
+  Top = 158
+  Width = 303
+  Caption = 'Editar Borne'
+  ClientHeight = 68
+  ClientWidth = 303
+  Font.Name = 'MS Sans Serif'
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  object LNombreBorne: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 3
+    Width = 86
+    Caption = 'Nombre del Borne'
+    ParentColor = False
+  end
+  object ENombre: TEdit[1]
+    Left = 95
+    Height = 21
+    Top = 0
+    Width = 193
+    OnEnter = EditEnter
+    OnExit = ENombreExit
+    TabOrder = 0
+  end
+  object BGuardar: TButton[2]
+    Left = 24
+    Height = 25
+    Top = 27
+    Width = 97
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 1
+  end
+  object BCancelar: TButton[3]
+    Left = 168
+    Height = 25
+    Top = 27
+    Width = 97
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 2
+  end
+  inherited iconos: TImageList[4]
+  end
+  inherited iconos2: TImageList[5]
+  end
+end

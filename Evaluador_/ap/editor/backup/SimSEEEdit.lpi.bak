@@ -1,0 +1,1618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="Editor SimSEE"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <LazDoc Paths="..\..\docs\source_doc"/>
+    <i18n>
+      <EnableI18N Value="True"/>
+      <OutDir Value="languages"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <MinorVersionNr Value="1"/>
+      <RevisionNr Value="1"/>
+      <BuildNr Value="403"/>
+      <Language Value="040A"/>
+      <StringTable ProductVersion="1.1.1.343"/>
+    </VersionInfo>
+    <BuildModes Count="2">
+      <Item1 Name="Debug" Default="True"/>
+      <Item2 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="$(SimSEE)\bin\SimSEEEdit"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="Bases;Actores;Fuentes;Fuentes\fichas;Actores\Fichas;Monitores\Bases;InfoTipos;Monitores\Variables;Monitores\AltasEdiciones;Auxiliares;Presentacion;Monitores\AltasEdiciones\Mensajes;..\..\fc\base;..\..\fc\actores;..\..\fc\monitores;..\..\fc\PA10;..\..\fc\campos;SimRes3;SimRes3\Indices;..\..\fc\simres;SimRes3\Bases;SimRes3\CronVars;SimRes3\CronOpers;SimRes3\PostOpers;SimRes3\PrintCronVars;..\..\fc\excel;..\..\fc\visordetabla;Herramientas\ComponerCFs;..\..\rchlib\mat;..\..\rchlib\trazosxy;Combustibles\Ediciones;Combustibles\Bases;..\flucar;..\..\rchlib\utilitarios;..\..\synapse;Actores\Auxiliares;Combustibles\Ediciones\Fichas;..\..\fc\base\campos;..\..\fc\StringGrid;..\..\alglib\src;..\..\fpspreadsheet\source\common"/>
+            <UnitOutputDirectory Value="$(SimSEE)\ppus\SimSEEEdit"/>
+          </SearchPaths>
+          <Conditionals Value="// example for adding linker options on Mac OS X
+//if TargetOS='darwin' then
+//  LinkerOptions := ' -framework OpenGL';
+
+// example for adding a unit and include path on Windows
+//if SrcOS='win' then begin
+//  UnitPath += ';win';
+//  IncPath += ';win';
+//end;
+
+
+if SrcOS='win' then
+   SimSEE := 'c:\SimSEE'
+else
+   SimSEE := GetEnv('HOME')+'/SimSEE';"/>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+              <CStyleOperator Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-dCALC_DEMANDA_NETA
+-dCOSTOSHIDROPOSITIVOS
+-dPDE_RIESGO
+-dMONITORES
+-dMODOGRAFICO
+-dCALIBRAR_PRONOSTICOS_TRAZOSXY
+-dARBOL
+-dINFOTIPOS
+-dPORDEFECTO_NULO
+-dxUCAMPOS
+-dVERBOSO
+-dOPEN_ODS"/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <DestinationDirectory Value="c:\basura\SimSEEEdit"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <CommandLineParams Value="C:\simsee\corridas_2016\Sala_Horaria_PF_14500_corta.ese"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="7">
+      <Item1>
+        <PackageName Value="TurboPowerIPro"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="SynEdit"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="TAChartLazarusPkg"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LazControls"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="FCL"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="DBFLaz"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="LCL"/>
+      </Item7>
+    </RequiredPackages>
+    <Units Count="256">
+      <Unit0>
+        <Filename Value="SimSEEEdit.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="SimSEEEditMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSimSEEEdit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Bases\uBaseEditoresFichas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseEditoresFichas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Monitores\Bases\uBaseAltasMonitores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseAltasMonitores"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Monitores\Bases\uBaseEditoresVariables.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseEditoresVariables"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="InfoTipos\uInfoTabs.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="InfoTipos\uFormSelectTipo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormSelectTipo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="Monitores\Variables\uEditarSerie.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarSerie"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="InfoTipos\uInfoCosa.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="Monitores\Variables\uEditarVariable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarVariable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="Monitores\AltasEdiciones\uAltaMonitorConsola.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaMonitorConsola"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="Monitores\AltasEdiciones\uAltaMonArchivo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaMonArchivo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="Monitores\AltasEdiciones\uAltaMonHistograma.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaMonitorHistograma"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="Monitores\AltasEdiciones\uAltaMonitorGrafico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaMonitorGrafico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="Auxiliares\uFormExportar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormExportar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="Presentacion\uVisorFichasExpandidas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="VisorFichasExpandidas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="Monitores\AltasEdiciones\Mensajes\uEditarMensaje.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarMensaje"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="Auxiliares\uFormEditarOpciones.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormEditarOpciones"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="Auxiliares\uCrearBinDatosHorarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CrearBinDatosHorarios"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="Bases\uBaseEditoresFichasGeneradores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseEditoresFichasGeneradores"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="Auxiliares\formModificarReferencia.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="formErrorReferencia"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\fc\actores\uActores.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\fc\actores\uDemandas.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\fc\actores\uActorNodal.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\fc\actores\unodos.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\..\fc\actores\uGeneradores.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\fc\actores\uArcos_ConPerdidasCuadraticas.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\fc\actores\uMercadoSpot.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\fc\actores\uGTer.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\fc\actores\uParqueEolico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\..\fc\actores\ugter_basico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\..\fc\actores\ugter_onoffporpaso.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\fc\actores\ugter_onoffporposte.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\fc\actores\uHidroDePasada.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\..\fc\actores\udemandadetallada.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\..\fc\actores\udemandas01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\..\fc\actores\udemandacombustibleaniobaseeindices.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="udemandaCombustibleAnioBaseEIndices"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\..\fc\actores\ugter_basico_trep.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="Auxiliares\uEditarEnganches.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarEnganches"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="Bases\uBaseFormularios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseFormularios"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="..\..\fc\actores\ucontratomodalidaddevolucion.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="ueditarfichabancodebaterias01.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaBancoDeBaterias01"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEditarFichaBancodeBaterias01"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="..\..\fc\actores\uComercioInternacional.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="..\..\fc\PA10\utilidades.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="..\..\fc\actores\ugter_arranqueparada.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="..\..\fc\actores\uBaseMercadoSpot.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="..\..\fc\actores\uMercadoSpotConDetalleHorarioSemanal.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="Auxiliares\uimpvnreal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormImportarVectorNReales"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="Auxiliares\uimpmatnreal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormImportarMatrizNReal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="..\..\fc\base\uopencalcexportimport.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="SimRes3\uEditorSimRes3Main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditorSimRes3"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="SimRes3\Indices\uAltaEdicionTVarIdxs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTVarIdxs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="..\..\fc\simres\uHistoVarsOps.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="..\..\fc\simres\uPostOpers.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="..\..\fc\simres\uPrintCronVars.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="..\..\fc\simres\uPrint.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="..\..\fc\simres\uTSimRes.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="..\..\fc\simres\uSimResGlobs.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="..\..\fc\simres\uLectorSimRes3Defs.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="..\..\fc\simres\uAuxiliaresEscrituraSimRes.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="SimRes3\Bases\uBaseAltaEdicionIndices.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseAltaEdicionIndices"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="SimRes3\Bases\uBaseAltaEdicionCronVars.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseAltaEdicionCronVars"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="SimRes3\CronVars\uAltaEdicionTCronVar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronVar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="SimRes3\Bases\uBaseAltaEdicionCronOpers.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseAltaEdicionCronOpers"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_suma.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_suma"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="SimRes3\Bases\uBaseFormulariosEditorSimRes3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseFormulariosEditorSimRes3"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_sumaConSigno.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_sumaConSigno"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_Combinar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_Combinar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_promedio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_promedio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_sumaProductoConDurpos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_sumaProductoConDurpos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_sumaProductoConDurposHasta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_sumaProductoConDurposHasta"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_sumaDobleProductoConDurposTopeado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_sumaDobleProductoConDurposTopeado"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_suma_m.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_suma_m"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_promedio_m.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_promedio_m"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="SimRes3\CronOpers\ualtaediciontcronoper_generica_m.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_generica_m"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="SimRes3\Bases\uBaseAltaEdicionPostOpers.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseAltaEdicionPostOpers"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="SimRes3\PostOpers\uAltaEdicionTPostOper_2CronVarsUnReal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_2CronVarsUnReal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="SimRes3\PostOpers\uAltaEdicionTPostOper_3CronVars.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_3CronVars"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="SimRes3\PostOpers\uAltaEdicionTPostOper_combinarCronVars.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_combinarCronVars"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="SimRes3\PostOpers\uAltaEdicionTPostOper_combinarDespCronVars.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_combinarDespCronVars"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="SimRes3\PostOpers\ualtaediciontpostoper_transponer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_Transponer"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAltaEdicionTPostOper_Transponer"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="SimRes3\PostOpers\ualtaediciontpostoper_enventanar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_Enventanar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAltaEdicionTPostOper_Enventanar"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="SimRes3\PostOpers\uAltaEdicionTPostOper_acumularCronVar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_acumularCronVar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="SimRes3\PostOpers\uAltaEdicionTPostOper_potenciaFirmeHidraulica.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_potenciaFirmeHidraulica"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="SimRes3\Bases\uBaseAltaEdicionPrintCronVars.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseAltaEdicionPrintCronVars"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="SimRes3\PrintCronVars\uAltaEdicionTPrintCronVar_matrizDeDatos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionPrintCronVar_matrizDeDatos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="SimRes3\PrintCronVars\uAltaEdicionTPrintCronVar_Histograma_text.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionPrintCronVar_histograma_text"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="SimRes3\PrintCronVars\uAltaEdicionTPrintCronVar_HistogramaGlobal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionPrintCronVar_HistogramaGlobal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="..\..\fc\simres\uSustituirVariablesPlantilla.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="uOpcionesSimSEEEdit.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_filtrarCronica.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_filtrarCronica"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="uListaMantenimientos.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="..\..\fc\simres\uListaComentarioObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="..\..\fc\actores\ugter_onoffporpaso_conrestricciones.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="..\..\fc\simres\uListaTagObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="Monitores\AltasEdiciones\uAltaMonSimRes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaMonSimRes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="..\..\fc\actores\uHidroConEmbalseBinacional.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="SimRes3\PrintCronVars\uAltaEdicionTPrintCronVar_CompararValoresMultiplesCronVars.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionPrintCronVar_CompararValoresMultiplesCronVars"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="Bases\uBaseEditoresCosasConNombre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseEditoresCosasConNombre"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="..\..\fc\actores\ugter_arranqueparada_noopt.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="Bases\uBaseEditores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseEditores"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit100>
+      <Unit101>
+        <Filename Value="Bases\uBaseAltasEditores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseAltasEditores"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="..\..\fc\actores\uArcos.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_Maximo_m.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_Maximo_m"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="SimRes3\PostOpers\uAltaEdicionTPostOper_maximo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_maximo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="ucmdform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="formConsola"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="..\..\fc\excel\uExcelFile.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="..\..\fc\excel\XLConst.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit107>
+      <Unit108>
+        <Filename Value="..\..\fc\actores\uHidroConBombeo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit108>
+      <Unit109>
+        <Filename Value="..\..\fc\visordetabla\uvisordetabla.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModule2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit109>
+      <Unit110>
+        <Filename Value="..\..\fc\visordetabla\uDataSetGenerico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit110>
+      <Unit111>
+        <Filename Value="..\..\fc\visordetabla\uTablaDataSetGenerico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit111>
+      <Unit112>
+        <Filename Value="SimRes3\PrintCronVars\uAltaEdicionTPrintCronVar_Histograma.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionPrintCronVar_histograma"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit112>
+      <Unit113>
+        <Filename Value="..\..\fc\actores\uParqueEolico_vxy.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit113>
+      <Unit114>
+        <Filename Value="..\..\fc\actores\ugter_basico_PyCVariable.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit114>
+      <Unit115>
+        <Filename Value="SimRes3\CronOpers\uAltaEdicionTCronOper_promedioPonderadoPorDurpos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTCronOper_promedioPonderadoPorDurPos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit115>
+      <Unit116>
+        <Filename Value="..\..\fc\actores\uMercadoSpot_postizado.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit116>
+      <Unit117>
+        <Filename Value="Herramientas\ComponerCFs\uComponerCFs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ComponerCFs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit117>
+      <Unit118>
+        <Filename Value="Herramientas\ComponerCFs\uCompositorCFs.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit118>
+      <Unit119>
+        <Filename Value="uManejadorListadoEditores.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit119>
+      <Unit120>
+        <Filename Value="Combustibles\Bases\uBaseEditoresCombustiblesConFichas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseEditoresCombustiblesConFichas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit120>
+      <Unit121>
+        <Filename Value="Combustibles\Ediciones\uEditarTCombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTCombustible"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit121>
+      <Unit122>
+        <Filename Value="Combustibles\Ediciones\Fichas\uEditarFichaCombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaCombustible"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit122>
+      <Unit123>
+        <Filename Value="..\..\rchlib\mat\autoesca.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AutoEsca"/>
+      </Unit123>
+      <Unit124>
+        <Filename Value="..\..\rchlib\trazosxy\utrazosxy.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDllForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit124>
+      <Unit125>
+        <Filename Value="..\..\fc\actores\ubancodebaterias01.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit125>
+      <Unit126>
+        <Filename Value="..\flucar\uiteradorflucar.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit126>
+      <Unit127>
+        <Filename Value="..\..\fc\base\uzipper.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit127>
+      <Unit128>
+        <Filename Value="ulst_generadores.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit128>
+      <Unit129>
+        <Filename Value="ueditr_parametros_emisiones_gen.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fEditParametrosEmisionesGenerador"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit129>
+      <Unit130>
+        <Filename Value="..\..\rchlib\utilitarios\cronomet.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit130>
+      <Unit131>
+        <Filename Value="..\..\fc\base\uversiones.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit131>
+      <Unit132>
+        <Filename Value="..\..\fc\base\ulistaplantillassr3.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit132>
+      <Unit133>
+        <Filename Value="ulst_plantillassimres3.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit133>
+      <Unit134>
+        <Filename Value="ueditor_resourcestrings.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit134>
+      <Unit135>
+        <Filename Value="..\..\fc\base\ucosa.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit135>
+      <Unit136>
+        <Filename Value="..\..\fc\base\uempaquetar.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit136>
+      <Unit137>
+        <Filename Value="..\..\fc\base\uInicioYFinal.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit137>
+      <Unit138>
+        <Filename Value="..\..\fc\actores\uusogestionable_postizado.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit138>
+      <Unit139>
+        <Filename Value="..\..\fc\base\usalasdejuego.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit139>
+      <Unit140>
+        <Filename Value="..\..\fc\base\ucosaparticipedemercado.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit140>
+      <Unit141>
+        <Filename Value="..\..\fc\base\uglobs.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit141>
+      <Unit142>
+        <Filename Value="..\..\fc\base\ufuenteselector_horario.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit142>
+      <Unit143>
+        <Filename Value="..\..\fc\base\uFuenteSintetizador.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit143>
+      <Unit144>
+        <Filename Value="..\..\fc\base\uutilformulario.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit144>
+      <Unit145>
+        <Filename Value="..\..\fc\base\ucalibrarconopronosticos.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit145>
+      <Unit146>
+        <Filename Value="..\..\fc\base\upronostico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit146>
+      <Unit147>
+        <Filename Value="..\..\rchlib\dsp\dsp\random\uniform.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit147>
+      <Unit148>
+        <Filename Value="..\..\rchlib\mat\pso\particulas.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit148>
+      <Unit149>
+        <Filename Value="..\..\fc\base\uFuncionesReales.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit149>
+      <Unit150>
+        <Filename Value="..\..\fc\base\uescenarios.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit150>
+      <Unit151>
+        <Filename Value="ulst_escenarios.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit151>
+      <Unit152>
+        <Filename Value="ueditorescenario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditorEscenario"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEditorEscenario"/>
+      </Unit152>
+      <Unit153>
+        <Filename Value="Actores\ueditarmemo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit153>
+      <Unit154>
+        <Filename Value="Fuentes\fichas\ueditarfichafuentetiempo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit154>
+      <Unit155>
+        <Filename Value="Actores\Auxiliares\uEditarForzamientos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarForzamientos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit155>
+      <Unit156>
+        <Filename Value="Actores\Fichas\uEditarFichaForzamientos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit156>
+      <Unit157>
+        <Filename Value="Actores\uEditarTDemanda01.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTDemanda01"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit157>
+      <Unit158>
+        <Filename Value="Actores\Fichas\uEditarFichaDemanda01.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaDemanda01"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit158>
+      <Unit159>
+        <Filename Value="Actores\uEditarTParqueEolico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTParqueEolico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit159>
+      <Unit160>
+        <Filename Value="Actores\uEditarTParqueEolico_vxy.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTParqueEolico_vxy"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit160>
+      <Unit161>
+        <Filename Value="Actores\ueditartsolartermico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTSolarTermico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ueditarTSolarTermico"/>
+      </Unit161>
+      <Unit162>
+        <Filename Value="Actores\Fichas\ueditarfichasolarpv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaSolarPV"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEditarFichaSolarPV"/>
+      </Unit162>
+      <Unit163>
+        <Filename Value="Actores\Fichas\ueditarfichasolartermico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaSolarTermico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ueditarFichaSolarTermico"/>
+      </Unit163>
+      <Unit164>
+        <Filename Value="..\..\fc\actores\usolartermico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit164>
+      <Unit165>
+        <Filename Value="..\..\fc\actores\usolarpv.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit165>
+      <Unit166>
+        <Filename Value="Actores\uEditarActorConFichas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarActorConFichas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit166>
+      <Unit167>
+        <Filename Value="Actores\ueditartsolarpv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTSolarPV"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ueditarTSolarPV"/>
+      </Unit167>
+      <Unit168>
+        <Filename Value="Actores\Fichas\uEditarFichaGTer_Basico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaGTer_Basico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit168>
+      <Unit169>
+        <Filename Value="Fuentes\uEditarFuenteSintetizador.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFuenteSintetizador"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit169>
+      <Unit170>
+        <Filename Value="..\..\fc\base\urobothttppost.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRobotHttpPost"/>
+      </Unit170>
+      <Unit171>
+        <Filename Value="..\..\synapse\httpsend.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit171>
+      <Unit172>
+        <Filename Value="Actores\Fichas\uEditarFichaHidroDePasada.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaHidroDePasada"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit172>
+      <Unit173>
+        <Filename Value="Actores\Fichas\uEditarFichaHidroConBombeo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaHidroConBombeo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit173>
+      <Unit174>
+        <Filename Value="Actores\Fichas\uEditarFichaHidroConEmbalse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaHidroConEmbalse"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit174>
+      <Unit175>
+        <Filename Value="Actores\uEditarTHidroConBombeo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTHidroConBombeo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit175>
+      <Unit176>
+        <Filename Value="Actores\uEditarTBiomasaEmbalsable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTBiomasaEmbalsable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit176>
+      <Unit177>
+        <Filename Value="Actores\Fichas\uEditarFichaBiomasaEmbalsable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaBiomasaEmbalsable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit177>
+      <Unit178>
+        <Filename Value="..\..\fc\actores\ubiomasaembalsable.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit178>
+      <Unit179>
+        <Filename Value="Actores\Auxiliares\uEditarUnidades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarUnidades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit179>
+      <Unit180>
+        <Filename Value="..\..\fc\base\campos\ucampos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCampos"/>
+      </Unit180>
+      <Unit181>
+        <Filename Value="..\..\fc\actores\unodocombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit181>
+      <Unit182>
+        <Filename Value="..\..\fc\actores\ucombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCombustible"/>
+      </Unit182>
+      <Unit183>
+        <Filename Value="Actores\uEditarTNodoCombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTNodoCombustible"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit183>
+      <Unit184>
+        <Filename Value="Actores\uEditarTArcoCombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTArcoCombustible"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit184>
+      <Unit185>
+        <Filename Value="Actores\uEditarTArco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTArco"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit185>
+      <Unit186>
+        <Filename Value="Actores\Fichas\uEditarFichaArcoCombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaArcoCombustible"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit186>
+      <Unit187>
+        <Filename Value="..\..\fc\base\ufichaslpd.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ufichasLPD"/>
+      </Unit187>
+      <Unit188>
+        <Filename Value="..\..\fc\base\usalasdejuegoParaEditor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit188>
+      <Unit189>
+        <Filename Value="..\..\fc\actores\uarcocombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uArcoCombustible"/>
+      </Unit189>
+      <Unit190>
+        <Filename Value="Actores\ueditartgsimple_monocombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTGsimple_MonoCombustible"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ueditartgsimple_MonoCombustible"/>
+      </Unit190>
+      <Unit191>
+        <Filename Value="Actores\Fichas\ueditarfichagsimple_monocombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichagsimple_MonoCombustible"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit191>
+      <Unit192>
+        <Filename Value="..\..\fc\actores\ugsimple_bicombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit192>
+      <Unit193>
+        <Filename Value="Actores\Fichas\ueditarfichasumcomb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichasumcomb"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit193>
+      <Unit194>
+        <Filename Value="..\..\fc\actores\utsumcomb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTSumComb"/>
+      </Unit194>
+      <Unit195>
+        <Filename Value="Actores\ueditarsumcomb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Editarsumcomb"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit195>
+      <Unit196>
+        <Filename Value="Actores\Fichas\uEditarFVectR.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFVectR"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit196>
+      <Unit197>
+        <Filename Value="..\..\fc\base\uauxiliares.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit197>
+      <Unit198>
+        <Filename Value="..\..\fc\actores\ugter_combinado.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit198>
+      <Unit199>
+        <Filename Value="Actores\ueditarregasificadora.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarRegasificadora"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ueditarRegasificadora"/>
+      </Unit199>
+      <Unit200>
+        <Filename Value="Actores\Fichas\ueditarficharegasificadora.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarfichaRegasificadora"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit200>
+      <Unit201>
+        <Filename Value="Actores\Fichas\uEditarFichaGTer_combinado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaGTer_combinado"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit201>
+      <Unit202>
+        <Filename Value="Actores\ueditartbancodebaterias01.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTBancoDeBaterias01"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEditarTBancoDeBaterias01"/>
+      </Unit202>
+      <Unit203>
+        <Filename Value="Actores\uEditarTGTer_Combinado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTGTer_Combinado"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit203>
+      <Unit204>
+        <Filename Value="..\..\fc\base\uverdoc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="formVerDoc"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit204>
+      <Unit205>
+        <Filename Value="Actores\uBaseEditoresActores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseEditoresActores"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit205>
+      <Unit206>
+        <Filename Value="..\..\rchlib\mat\xmatdefs.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit206>
+      <Unit207>
+        <Filename Value="Actores\uEditarTDemandaDetallada.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTDemandaDetallada"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit207>
+      <Unit208>
+        <Filename Value="..\..\fc\actores\udemandacombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="udemandaCombustible"/>
+      </Unit208>
+      <Unit209>
+        <Filename Value="..\..\fc\actores\uActorNodalCombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit209>
+      <Unit210>
+        <Filename Value="Actores\uEditarTDemandaCombustibleAnioBaseEIndices.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTDemandaCombustibleAnioBaseEIndices"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit210>
+      <Unit211>
+        <Filename Value="..\..\fc\actores\uregasificadora.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit211>
+      <Unit212>
+        <Filename Value="..\..\fc\actores\uagendagnl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uAgendaGNL"/>
+      </Unit212>
+      <Unit213>
+        <Filename Value="Fuentes\uBaseEditoresFuentesConFichas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseEditoresFuentesConFichas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit213>
+      <Unit214>
+        <Filename Value="Fuentes\uEditarFuentesSimples.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFuentesSimples"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit214>
+      <Unit215>
+        <Filename Value="Fuentes\fichas\uEditarFichaFuenteConstante.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaFuenteConstante"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit215>
+      <Unit216>
+        <Filename Value="uvisorgraficomantenimientos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormVisorMantenimientos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit216>
+      <Unit217>
+        <Filename Value="..\..\fc\base\uversion_architexto.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit217>
+      <Unit218>
+        <Filename Value="..\..\fc\base\uconsultapronosticoscli.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit218>
+      <Unit219>
+        <Filename Value="..\..\fc\actores\ugsimple_monocombustible.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit219>
+      <Unit220>
+        <Filename Value="..\..\fc\base\ugraficador.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit220>
+      <Unit221>
+        <Filename Value="Fuentes\fichas\ueditarfichafuenteselector_horario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaFuenteSelector_horario"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEditarFichaFuenteSelector_horario"/>
+      </Unit221>
+      <Unit222>
+        <Filename Value="..\..\alglib\src\ap.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit222>
+      <Unit223>
+        <Filename Value="..\..\fc\actores\uHidroConEmbalse.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit223>
+      <Unit224>
+        <Filename Value="..\..\fc\base\uparseadorsupersimple.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit224>
+      <Unit225>
+        <Filename Value="SimRes3\PostOpers\ualtaediciontpostoper_acumcron.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AltaEdicionTPostOper_AcumCron"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAltaEdicionTPostOper_AcumCron"/>
+      </Unit225>
+      <Unit226>
+        <Filename Value="..\..\fc\base\uFuenteConstante.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit226>
+      <Unit227>
+        <Filename Value="..\..\fc\base\uFuentesAleatorias.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit227>
+      <Unit228>
+        <Filename Value="..\..\fc\base\uforzamientos.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit228>
+      <Unit229>
+        <Filename Value="..\..\fc\base\ufichasdeterminismos_obsoleta.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit229>
+      <Unit230>
+        <Filename Value="..\..\fc\base\uEstados.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit230>
+      <Unit231>
+        <Filename Value="..\..\fc\actores\uarcoconsalidaprogramable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uArcoConSalidaProgramable"/>
+      </Unit231>
+      <Unit232>
+        <Filename Value="..\..\fc\base\ufuentetiempo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit232>
+      <Unit233>
+        <Filename Value="..\..\fc\base\ufuentesinusoide.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit233>
+      <Unit234>
+        <Filename Value="..\..\fc\base\ufuentemaxmin.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit234>
+      <Unit235>
+        <Filename Value="..\..\fc\actores\uDemandaAnioBaseEIndices.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit235>
+      <Unit236>
+        <Filename Value="..\..\fc\monitores\uReferenciaMonitor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit236>
+      <Unit237>
+        <Filename Value="..\..\fc\monitores\uReferenciaMonHistograma.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit237>
+      <Unit238>
+        <Filename Value="..\..\fc\monitores\uReferenciaMonSimRes.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit238>
+      <Unit239>
+        <Filename Value="..\..\fc\monitores\uManejadoresDeMonitores.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit239>
+      <Unit240>
+        <Filename Value="..\..\fc\monitores\uReferenciaMonitorGraficoSimple.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit240>
+      <Unit241>
+        <Filename Value="..\..\fc\monitores\uReferenciaMonArchivo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit241>
+      <Unit242>
+        <Filename Value="..\..\fc\base\uFuenteUniforme.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit242>
+      <Unit243>
+        <Filename Value="..\..\fc\base\uFuenteGaussiana.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit243>
+      <Unit244>
+        <Filename Value="..\..\fc\base\uFuenteWeibull.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit244>
+      <Unit245>
+        <Filename Value="..\..\fc\base\uFuenteCombinacion.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit245>
+      <Unit246>
+        <Filename Value="..\..\fc\base\uFuenteProducto.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit246>
+      <Unit247>
+        <Filename Value="..\..\fc\base\ufuenteselector.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uFuenteSelector"/>
+      </Unit247>
+      <Unit248>
+        <Filename Value="Actores\uEditarTNodo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTNodo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit248>
+      <Unit249>
+        <Filename Value="Actores\uEditarTGTer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarTGTer"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit249>
+      <Unit250>
+        <Filename Value="Actores\Fichas\uEditarFichaHidroConEmbalseBinacional.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EditarFichaHidroConEmbalseBinacional"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit250>
+      <Unit251>
+        <Filename Value="..\..\fc\base\uopencalc.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit251>
+      <Unit252>
+        <Filename Value="..\..\fpspreadsheet\source\common\fpstypes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fpsTypes"/>
+      </Unit252>
+      <Unit253>
+        <Filename Value="..\..\fc\base\uunidades.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit253>
+      <Unit254>
+        <Filename Value="..\..\fc\base\ugeturlinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit254>
+      <Unit255>
+        <Filename Value="..\..\fc\base\useriestemporales.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit255>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="$(SimSEE)\bin\SimSEEEdit"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="Bases;Actores;Fuentes;Fuentes\fichas;Actores\Fichas;Monitores\Bases;InfoTipos;Monitores\Variables;Monitores\AltasEdiciones;Auxiliares;Presentacion;Monitores\AltasEdiciones\Mensajes;..\..\fc\base;..\..\fc\actores;..\..\fc\monitores;..\..\fc\PA10;..\..\fc\campos;SimRes3;SimRes3\Indices;..\..\fc\simres;SimRes3\Bases;SimRes3\CronVars;SimRes3\CronOpers;SimRes3\PostOpers;SimRes3\PrintCronVars;..\..\fc\excel;..\..\fc\visordetabla;Herramientas\ComponerCFs;..\..\rchlib\mat;..\..\rchlib\trazosxy;Combustibles\Ediciones;Combustibles\Bases;..\flucar;..\..\rchlib\utilitarios;..\..\synapse;Actores\Auxiliares;Combustibles\Ediciones\Fichas;..\..\src_nettopos\src_libnettopos\fctopos\IPC\Win32;..\..\fc\base\campos;..\..\fc\StringGrid;..\..\alglib\src;..\..\fpspreadsheet\source\common"/>
+      <UnitOutputDirectory Value="$(SimSEE)\ppus\SimSEEEdit"/>
+    </SearchPaths>
+    <Conditionals Value="// example for adding linker options on Mac OS X
+//if TargetOS='darwin' then
+//  LinkerOptions := ' -framework OpenGL';
+
+// example for adding a unit and include path on Windows
+//if SrcOS='win' then begin
+//  UnitPath += ';win';
+//  IncPath += ';win';
+//end;
+
+if SrcOS='win' then
+   SimSEE := 'c:\SimSEE'
+else
+   SimSEE := GetEnv('HOME')+'/SimSEE';"/>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <CStyleOperator Value="False"/>
+        <IncludeAssertionCode Value="True"/>
+        <CPPInline Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <Optimizations>
+        <OptimizationLevel Value="0"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseValgrind Value="True"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <Verbosity>
+        <ShowDebugInfo Value="True"/>
+      </Verbosity>
+      <CustomOptions Value="-dCALC_DEMANDA_NETA
+-dCOSTOSHIDROPOSITIVOS
+-dPDE_RIESGO
+-dMONITORES
+-dMODOGRAFICO
+-dCALIBRAR_PRONOSTICOS_TRAZOSXY
+-dARBOL
+-dINFOTIPOS
+-dPORDEFECTO_NULO
+-dxUCAMPOS
+-dVERBOSO
+-dOPEN_ODS
+-dxARCO_GEMELOS"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

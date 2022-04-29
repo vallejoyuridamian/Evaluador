@@ -1,0 +1,301 @@
+inherited EditarTDemanda01: TEditarTDemanda01
+  Left = 342
+  Height = 623
+  Top = 133
+  Width = 739
+  AutoSize = True
+  Caption = 'EditarTDemanda01'
+  ClientHeight = 623
+  ClientWidth = 739
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited lbo_capa: TLabel
+    Height = 13
+    Width = 29
+  end
+  inherited e_Capa: TEdit
+    TabOrder = 18
+  end
+  object LNombre: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 111
+    Caption = 'Nombre de la Demanda'
+    ParentColor = False
+  end
+  object LNodo: TLabel[3]
+    Left = 0
+    Height = 13
+    Top = 75
+    Width = 83
+    Caption = 'Asignado al Nodo'
+    ParentColor = False
+  end
+  object LFNac: TLabel[4]
+    Left = 0
+    Height = 13
+    Top = 27
+    Width = 89
+    Caption = 'Año de Nacimiento'
+    ParentColor = False
+  end
+  object LFMuerte: TLabel[5]
+    Left = 0
+    Height = 13
+    Top = 51
+    Width = 71
+    Caption = 'Año de Muerte'
+    ParentColor = False
+  end
+  object LFichas: TLabel[6]
+    Left = 8
+    Height = 13
+    Top = 309
+    Width = 34
+    Caption = 'Fichas:'
+    ParentColor = False
+  end
+  object LEscalonesdeFalla: TLabel[7]
+    Left = 1
+    Height = 13
+    Top = 144
+    Width = 87
+    Caption = 'Escalones de Falla'
+    ParentColor = False
+  end
+  object LNEscalones: TLabel[8]
+    Left = 0
+    Height = 13
+    Top = 171
+    Width = 102
+    Caption = 'Numero de Escalones'
+    ParentColor = False
+  end
+  object LFuenteDeAportes: TLabel[9]
+    Left = 0
+    Height = 13
+    Top = 99
+    Width = 213
+    Caption = 'Componente Aleatoria[p.u. de la Demanda]:'
+    ParentColor = False
+  end
+  object LBorne: TLabel[10]
+    Left = 168
+    Height = 13
+    Top = 120
+    Width = 32
+    Caption = 'Borne:'
+    ParentColor = False
+  end
+  object LIndicePreciosPorCombustible: TLabel[11]
+    Left = 392
+    Height = 13
+    Top = 219
+    Width = 186
+    Caption = 'Índice Multiplicador de Costos de Falla:'
+    ParentColor = False
+  end
+  object LBornePreciosPorCombustible: TLabel[12]
+    Left = 544
+    Height = 13
+    Top = 248
+    Width = 32
+    Caption = 'Borne:'
+    ParentColor = False
+  end
+  object CBNodo: TComboBox[13]
+    Left = 97
+    Height = 21
+    Top = 72
+    Width = 264
+    ItemHeight = 13
+    OnChange = CBNodoChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object sgFichas: TStringGrid[14]
+    Left = 8
+    Height = 154
+    Top = 328
+    Width = 454
+    DefaultColWidth = 90
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+    RowCount = 6
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object EditNombre: TEdit[15]
+    Left = 121
+    Height = 21
+    Top = 0
+    Width = 213
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+  end
+  object EFNac: TEdit[16]
+    Left = 177
+    Height = 21
+    Top = 24
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 3
+  end
+  object EFMuerte: TEdit[17]
+    Left = 177
+    Height = 21
+    Top = 48
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 4
+  end
+  object BAgregarFicha: TButton[18]
+    Left = 297
+    Height = 25
+    Top = 304
+    Width = 129
+    Caption = 'Agregar Nueva Ficha'
+    OnClick = BAgregarFichaClick
+    TabOrder = 5
+  end
+  object BGuardar: TButton[19]
+    Left = 511
+    Height = 25
+    Top = 520
+    Width = 97
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 6
+  end
+  object BCancelar: TButton[20]
+    Left = 616
+    Height = 25
+    Top = 520
+    Width = 97
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 7
+  end
+  object sgFalla: TStringGrid[21]
+    Left = 0
+    Height = 93
+    Top = 195
+    Width = 344
+    DefaultRowHeight = 25
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goTabs]
+    RowCount = 3
+    TabOrder = 8
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnClick = sgChequearCambios
+    OnExit = sgChequearCambios
+    OnGetEditText = sgGetEditText
+    OnKeyDown = sgChequearCambiosKeyDown
+  end
+  object EditTamTablaFalla: TEdit[22]
+    Left = 113
+    Height = 21
+    Top = 168
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditTamTablaFallaExit
+    TabOrder = 9
+  end
+  object BEditorDeUnidades: TButton[23]
+    Left = 511
+    Height = 25
+    Top = 488
+    Width = 190
+    Caption = 'Editar Unidades Disponibles'
+    OnClick = BEditorDeUnidadesClick
+    TabOrder = 10
+  end
+  object BVerExpandida: TButton[24]
+    Left = 129
+    Height = 25
+    Top = 304
+    Width = 152
+    Caption = 'Ver Periodicidad Expandida'
+    OnClick = BVerExpandidaClick
+    TabOrder = 11
+  end
+  object CBFuente: TComboBox[25]
+    Left = 216
+    Height = 21
+    Top = 96
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBFuenteChange
+    Style = csDropDownList
+    TabOrder = 12
+  end
+  object CBBorne: TComboBox[26]
+    Left = 216
+    Height = 21
+    Top = 120
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBBorneChange
+    Style = csDropDownList
+    TabOrder = 13
+  end
+  object BAyuda: TButton[27]
+    Left = 340
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 14
+  end
+  object CBFuenteIndicePreciosPorCombustible: TComboBox[28]
+    Left = 582
+    Height = 21
+    Top = 216
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBFuenteIndicePreciosPorCombustibleChange
+    Style = csDropDownList
+    TabOrder = 15
+  end
+  object CBBorneIndicePreciosCombustible: TComboBox[29]
+    Left = 582
+    Height = 21
+    Top = 244
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBBorneIndicePreciosCombustibleChange
+    Style = csDropDownList
+    TabOrder = 16
+  end
+  object chkSumarFuentePotencia: TCheckBox[30]
+    Left = 379
+    Height = 29
+    Top = 96
+    Width = 87
+    Caption = 'Sumar ruido'
+    TabOrder = 17
+  end
+  object cbSumarParaPostizar: TCheckBox[31]
+    Left = 496
+    Height = 29
+    Top = 144
+    Width = 130
+    Caption = 'Sumar para postizar.'
+    Checked = True
+    State = cbChecked
+    TabOrder = 19
+  end
+  inherited iconos: TImageList[32]
+  end
+  inherited iconos2: TImageList[33]
+  end
+end

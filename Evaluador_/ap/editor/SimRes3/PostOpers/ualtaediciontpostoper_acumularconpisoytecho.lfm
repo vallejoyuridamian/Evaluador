@@ -1,0 +1,132 @@
+inherited AltaEdicionTPostOper_acumularConPisoYTecho: TAltaEdicionTPostOper_acumularConPisoYTecho
+  Left = 651
+  Height = 273
+  Top = 210
+  Width = 428
+  AutoSize = True
+  Caption = 'AltaEdicionTPostOper_acumularConPisoYTecho'
+  ClientHeight = 273
+  ClientWidth = 428
+  OnCloseQuery = FormCloseQuery
+  object lResultado: TLabel[0]
+    Left = 55
+    Height = 13
+    Top = 56
+    Width = 52
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+  object lCronVar: TLabel[1]
+    Left = 41
+    Height = 13
+    Top = 82
+    Width = 66
+    Caption = 'Ingreso neto:'
+    ParentColor = False
+  end
+  object cbRes: TComboBox[2]
+    Left = 120
+    Height = 21
+    Top = 56
+    Width = 210
+    ItemHeight = 13
+    OnChange = CBCronVarResultadoChange
+    TabOrder = 0
+  end
+  object cbIngreso: TComboBox[3]
+    Left = 120
+    Height = 21
+    Top = 83
+    Width = 210
+    ItemHeight = 13
+    OnChange = CBCronVarCronVarChange
+    TabOrder = 1
+  end
+  object bGuardar: TButton[4]
+    Left = 112
+    Height = 25
+    Top = 216
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[5]
+    Left = 222
+    Height = 25
+    Top = 216
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[6]
+    Left = 272
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  object lblTecho: TLabel[7]
+    Left = 74
+    Height = 13
+    Top = 136
+    Width = 33
+    Caption = 'Techo:'
+    ParentColor = False
+  end
+  object cbTecho: TComboBox[8]
+    Left = 120
+    Height = 21
+    Top = 136
+    Width = 210
+    ItemHeight = 13
+    OnChange = CBCronVarCronVarChange
+    TabOrder = 5
+  end
+  object lblPiso: TLabel[9]
+    Left = 84
+    Height = 13
+    Top = 112
+    Width = 23
+    Caption = 'Piso:'
+    ParentColor = False
+  end
+  object cbPiso: TComboBox[10]
+    Left = 120
+    Height = 21
+    Top = 112
+    Width = 210
+    ItemHeight = 13
+    OnChange = CBCronVarCronVarChange
+    TabOrder = 6
+  end
+  object eValIni: TLabeledEdit[11]
+    Left = 120
+    Height = 21
+    Top = 168
+    Width = 80
+    EditLabel.AnchorSideTop.Control = eValIni
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eValIni
+    EditLabel.AnchorSideBottom.Control = eValIni
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 61
+    EditLabel.Height = 13
+    EditLabel.Top = 172
+    EditLabel.Width = 56
+    EditLabel.Caption = 'Valor inicial:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 7
+    Text = '0'
+  end
+  inherited iconos: TImageList[12]
+    left = 328
+  end
+  inherited iconos2: TImageList[13]
+    left = 376
+  end
+end

@@ -1,0 +1,124 @@
+inherited AltaMonSimRes: TAltaMonSimRes
+  Left = 0
+  Height = 316
+  Top = 0
+  Width = 441
+  Caption = 'Alta de Monitor para SimRes'
+  ClientHeight = 316
+  ClientWidth = 441
+  Font.Name = 'Tahoma'
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnResize = FormResize
+  object LNMon: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 3
+    Width = 94
+    Caption = 'Nombre del Monitor'
+    ParentColor = False
+  end
+  object LNArch: TLabel[1]
+    Left = 0
+    Height = 14
+    Top = 27
+    Width = 94
+    Caption = 'Nombre del Archivo'
+    ParentColor = False
+  end
+  object LVars: TLabel[2]
+    Left = 0
+    Height = 14
+    Top = 56
+    Width = 44
+    Caption = 'Variables'
+    ParentColor = False
+  end
+  object ENMon: TEdit[3]
+    Left = 99
+    Height = 21
+    Top = 0
+    Width = 238
+    OnEnter = EditEnter
+    OnExit = EditNombreExit
+    TabOrder = 0
+  end
+  object ENArch: TEdit[4]
+    Left = 99
+    Height = 21
+    Top = 24
+    Width = 238
+    OnChange = cambiosForm
+    TabOrder = 1
+  end
+  object BElegirArchivo: TButton[5]
+    Left = 338
+    Height = 21
+    Top = 24
+    Width = 91
+    Caption = 'Elegir Archivo'
+    OnClick = BElegirArchivoClick
+    TabOrder = 2
+  end
+  object sgVariables: TStringGrid[6]
+    Left = 0
+    Height = 198
+    Top = 75
+    Width = 429
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    TabOrder = 3
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnDrawCell = listadoDrawCell
+    OnMouseDown = listadoMouseDown
+    OnMouseMove = listadoMouseMove
+    OnMouseUp = listadoMouseUp
+  end
+  object BAgregarVar: TButton[7]
+    Left = 338
+    Height = 25
+    Top = 51
+    Width = 91
+    Caption = 'Agregar Variable'
+    OnClick = BAgregarVarClick
+    TabOrder = 4
+  end
+  object BAgregarMonitor: TButton[8]
+    Left = 79
+    Height = 25
+    Top = 279
+    Width = 90
+    Caption = 'Agregar Monitor'
+    OnClick = BAgregarMonitorClick
+    TabOrder = 5
+  end
+  object BCancelar: TButton[9]
+    Left = 265
+    Height = 25
+    Top = 279
+    Width = 90
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 6
+  end
+  object BAyuda: TButton[10]
+    Left = 338
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 7
+  end
+  inherited iconos: TImageList[11]
+  end
+  inherited iconos2: TImageList[12]
+  end
+  object SaveDialog1: TSaveDialog[13]
+    left = 256
+    top = 8
+  end
+end

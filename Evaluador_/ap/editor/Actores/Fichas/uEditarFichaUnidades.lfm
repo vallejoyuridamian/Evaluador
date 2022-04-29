@@ -1,0 +1,406 @@
+inherited EditarFichaUnidades: TEditarFichaUnidades
+  Left = 492
+  Height = 412
+  Top = 194
+  Width = 639
+  Caption = 'Editar Ficha de Cantidad de Unidades'
+  ClientHeight = 412
+  ClientWidth = 639
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited lbo_capa: TLabel
+    Left = 320
+    Top = 8
+  end
+  inherited e_Capa: TEdit
+    Left = 352
+    Top = 3
+    TabOrder = 2
+  end
+  object LDesde: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 49
+    Caption = 'Comienzo:'
+    ParentColor = False
+  end
+  object LNMaquinas_t1: TLabel[3]
+    Left = 12
+    Height = 13
+    Top = 40
+    Width = 80
+    Caption = 'Unids instaladas:'
+    ParentColor = False
+  end
+  object BGuardar: TButton[4]
+    Left = 224
+    Height = 25
+    Top = 344
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = BGuardarClick
+    TabOrder = 17
+  end
+  object BCancelar: TButton[5]
+    Left = 312
+    Height = 25
+    Top = 344
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 18
+  end
+  object CBPeriodicidad: TCheckBox[6]
+    Left = 32
+    Height = 29
+    Top = 192
+    Width = 80
+    Caption = 'Periodica?'
+    OnClick = CBPeriodicidadClick
+    TabOrder = 15
+  end
+  object PPeriodicidad: TPanel[7]
+    Left = 40
+    Height = 81
+    Top = 229
+    Width = 422
+    AutoSize = True
+    ClientHeight = 81
+    ClientWidth = 422
+    TabOrder = 16
+    object LFinPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 26
+      Width = 73
+      Caption = 'Fin del Periodo:'
+      ParentColor = False
+    end
+    object LIniPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 2
+      Width = 84
+      Caption = 'Inicio del Periodo:'
+      ParentColor = False
+    end
+    object LLargoPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 56
+      Width = 88
+      Caption = 'Largo del Período:'
+      ParentColor = False
+    end
+    object EFFinPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 23
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 0
+      Text = '0'
+    end
+    object EFIniPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 1
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 1
+      Text = '0'
+    end
+    object sgPeriodicidad: TStringGrid
+      Left = 221
+      Height = 79
+      Top = 1
+      Width = 200
+      ColCount = 2
+      DefaultRowHeight = 25
+      FixedRows = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goTabs]
+      RowCount = 3
+      TabOrder = 2
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      OnClick = sgChequearCambios
+      OnExit = sgChequearCambios
+      OnGetEditText = sgGetEditText
+      OnKeyDown = sgChequearCambiosKeyDown
+    end
+    object ELargoPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 53
+      Width = 41
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 3
+      Text = '1'
+    end
+    object CBLargoPeriodo: TComboBox
+      Left = 140
+      Height = 21
+      Top = 53
+      Width = 75
+      ItemHeight = 13
+      Items.Strings = (
+        'Años'
+        'Meses'
+        'Semanas'
+        'Días'
+      )
+      OnChange = cambiosForm
+      Style = csDropDownList
+      TabOrder = 4
+    end
+  end
+  object ENMaquinas_I0: TEdit[8]
+    Left = 104
+    Height = 21
+    Top = 32
+    Width = 32
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 3
+    Text = '0'
+  end
+  object EFIni: TEdit[9]
+    Left = 112
+    Height = 21
+    Top = 0
+    Width = 153
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 0
+  end
+  object BAyuda: TButton[10]
+    Left = 272
+    Height = 21
+    Top = 3
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 1
+  end
+  object ENMaquinas_I1: TEdit[11]
+    Left = 104
+    Height = 21
+    Top = 60
+    Width = 32
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 6
+    Text = '0'
+    Visible = False
+  end
+  object ENMaquinas_I2: TEdit[12]
+    Left = 105
+    Height = 21
+    Top = 89
+    Width = 32
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 9
+    Text = '0'
+    Visible = False
+  end
+  object ENMaquinas_I3: TEdit[13]
+    Left = 104
+    Height = 21
+    Top = 117
+    Width = 32
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 12
+    Text = '0'
+    Visible = False
+  end
+  object LNMaquinas_t2: TLabel[14]
+    Left = 12
+    Height = 13
+    Top = 64
+    Width = 83
+    Caption = 'Unids. instaladas:'
+    ParentColor = False
+    Visible = False
+  end
+  object LNMaquinas_t3: TLabel[15]
+    Left = 9
+    Height = 13
+    Top = 94
+    Width = 83
+    Caption = 'Unids. instaladas:'
+    ParentColor = False
+    Visible = False
+  end
+  object LNMaquinas_t4: TLabel[16]
+    Left = 10
+    Height = 13
+    Top = 121
+    Width = 83
+    Caption = 'Unids. instaladas:'
+    ParentColor = False
+    Visible = False
+  end
+  object cb_AltaConIncertidumbre1: TCheckBox[17]
+    Left = 296
+    Height = 29
+    Top = 57
+    Width = 86
+    Caption = 'Alta Incierta'
+    TabOrder = 7
+    Visible = False
+  end
+  object cb_InicioCronicaConIncertidumbre1: TCheckBox[18]
+    Left = 392
+    Height = 29
+    Top = 57
+    Width = 132
+    Caption = 'Inicio Crónica Incierto'
+    TabOrder = 8
+    Visible = False
+  end
+  object cb_AltaConIncertidumbre2: TCheckBox[19]
+    Left = 296
+    Height = 29
+    Top = 85
+    Width = 86
+    Caption = 'Alta Incierta'
+    TabOrder = 10
+    Visible = False
+  end
+  object cb_InicioCronicaConIncertidumbre2: TCheckBox[20]
+    Left = 393
+    Height = 29
+    Top = 85
+    Width = 132
+    Caption = 'Inicio Crónica Incierto'
+    TabOrder = 11
+    Visible = False
+  end
+  object cb_AltaConIncertidumbre3: TCheckBox[21]
+    Left = 296
+    Height = 29
+    Top = 112
+    Width = 86
+    Caption = 'Alta Incierta'
+    TabOrder = 13
+    Visible = False
+  end
+  object cb_InicioCronicaConIncertidumbre3: TCheckBox[22]
+    Left = 393
+    Height = 29
+    Top = 112
+    Width = 132
+    Caption = 'Inicio Crónica Incierto'
+    TabOrder = 14
+    Visible = False
+  end
+  object cb_AltaConIncertidumbre0: TCheckBox[23]
+    Left = 296
+    Height = 29
+    Top = 29
+    Width = 86
+    Caption = 'Alta Incierta'
+    TabOrder = 4
+  end
+  object cb_InicioCronicaConIncertidumbre0: TCheckBox[24]
+    Left = 392
+    Height = 29
+    Top = 29
+    Width = 132
+    Caption = 'Inicio Crónica Incierto'
+    TabOrder = 5
+  end
+  object LNMaquinas_t5: TLabel[25]
+    Left = 168
+    Height = 13
+    Top = 40
+    Width = 74
+    Caption = 'En Mant. Prog.:'
+    ParentColor = False
+  end
+  object ENMaquinas_EMP0: TEdit[26]
+    Left = 256
+    Height = 21
+    Top = 32
+    Width = 32
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 19
+    Text = '0'
+  end
+  object ENMaquinas_EMP1: TEdit[27]
+    Left = 256
+    Height = 21
+    Top = 60
+    Width = 32
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 20
+    Text = '0'
+    Visible = False
+  end
+  object ENMaquinas_EMP2: TEdit[28]
+    Left = 257
+    Height = 21
+    Top = 88
+    Width = 32
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 21
+    Text = '0'
+    Visible = False
+  end
+  object ENMaquinas_EMP3: TEdit[29]
+    Left = 257
+    Height = 21
+    Top = 117
+    Width = 32
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 22
+    Text = '0'
+    Visible = False
+  end
+  object LNMaquinas_t6: TLabel[30]
+    Left = 168
+    Height = 13
+    Top = 64
+    Width = 74
+    Caption = 'En Mant. Prog.:'
+    ParentColor = False
+    Visible = False
+  end
+  object LNMaquinas_t7: TLabel[31]
+    Left = 168
+    Height = 13
+    Top = 89
+    Width = 74
+    Caption = 'En Mant. Prog.:'
+    ParentColor = False
+    Visible = False
+  end
+  object LNMaquinas_t8: TLabel[32]
+    Left = 168
+    Height = 13
+    Top = 117
+    Width = 74
+    Caption = 'En Mant. Prog.:'
+    ParentColor = False
+    Visible = False
+  end
+  inherited iconos: TImageList[33]
+    left = 576
+    top = 80
+  end
+  inherited iconos2: TImageList[34]
+    left = 568
+    top = 32
+  end
+end

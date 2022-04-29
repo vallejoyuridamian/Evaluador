@@ -1,0 +1,59 @@
+object Form1: TForm1
+  Left = 245
+  Height = 693
+  Top = 135
+  Width = 990
+  Caption = 'Form1'
+  ClientHeight = 693
+  ClientWidth = 990
+  LCLVersion = '1.6.2.0'
+  object Button1: TButton
+    Left = 99
+    Height = 25
+    Top = 456
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object rb_Creciente: TRadioButton
+    Left = 80
+    Height = 29
+    Top = 392
+    Width = 102
+    Caption = 'Creciente'
+    Checked = True
+    TabOrder = 1
+    TabStop = True
+  end
+  object rb_Decreciente: TRadioButton
+    Left = 81
+    Height = 29
+    Top = 416
+    Width = 121
+    Caption = 'Decreciente'
+    TabOrder = 2
+  end
+  object trx1: TPaintBox
+    Left = 80
+    Height = 131
+    Top = 37
+    Width = 816
+    Color = clWhite
+    ParentColor = False
+  end
+  object trx2: TPaintBox
+    Left = 81
+    Height = 144
+    Top = 184
+    Width = 815
+  end
+  object ecnt_error: TEdit
+    Left = 99
+    Height = 33
+    Top = 512
+    Width = 80
+    TabOrder = 3
+    Text = 'ecnt_error'
+  end
+end

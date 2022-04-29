@@ -1,0 +1,4 @@
+inherited BaseEditoresFichasGeneradores: TBaseEditoresFichasGeneradores
+  Left = 194
+  Caption = 'BaseEditoresFichasGeneradores'
+end

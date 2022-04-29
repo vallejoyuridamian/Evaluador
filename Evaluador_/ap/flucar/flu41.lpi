@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="1" Active="Debug">
+      <Item1 Name="Debug" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="46">
+      <Unit0>
+        <Filename Value="flu41.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="9"/>
+        <CursorPos X="55" Y="16"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uflu41.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="56"/>
+        <CursorPos X="3" Y="67"/>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\fc\rch30\xmatdefs.pas"/>
+        <UnitName Value="xMatDefs"/>
+        <TopLine Value="675"/>
+        <CursorPos Y="708"/>
+        <UsageCount Value="128"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\fc\rch30\Algebrac.pas"/>
+        <UnitName Value="AlgebraC"/>
+        <TopLine Value="90"/>
+        <CursorPos X="21" Y="118"/>
+        <UsageCount Value="13"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\fc\rch30\Matcpx.pas"/>
+        <UnitName Value="MatCPX"/>
+        <TopLine Value="50"/>
+        <CursorPos Y="62"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="upricipal.pas"/>
+        <TopLine Value="6"/>
+        <CursorPos X="11" Y="24"/>
+        <UsageCount Value="201"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="161"/>
+        <CursorPos X="20" Y="167"/>
+        <UsageCount Value="201"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form2"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <CursorPos X="11" Y="3"/>
+        <UsageCount Value="108"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="unit2.pas"/>
+        <ComponentName Value="Form3"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit2"/>
+        <TopLine Value="14"/>
+        <CursorPos X="36" Y="8"/>
+        <UsageCount Value="108"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="tyvs2.pas"/>
+        <UnitName Value="TyVs2"/>
+        <TopLine Value="15"/>
+        <CursorPos Y="15"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="usistema.pas"/>
+        <CursorPos X="26" Y="787"/>
+        <UsageCount Value="85"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="urawdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="3322"/>
+        <CursorPos X="3" Y="3326"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\fc\base\uauxiliares.pas"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="961"/>
+        <CursorPos X="21" Y="993"/>
+        <UsageCount Value="205"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="EntDat.pas"/>
+        <UnitName Value="entdat"/>
+        <CursorPos X="6"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\fc\rch30\uevaluador.pas"/>
+        <TopLine Value="645"/>
+        <CursorPos Y="683"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="flujoraw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="724"/>
+        <CursorPos X="12" Y="732"/>
+        <UsageCount Value="200"/>
+        <Bookmarks Count="1">
+          <Item0 Y="616" ID="9"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="usortedlist.pas"/>
+        <TopLine Value="5"/>
+        <CursorPos Y="29"/>
+        <UsageCount Value="64"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="ecuacs.pas"/>
+        <TopLine Value="166"/>
+        <CursorPos X="15" Y="157"/>
+        <UsageCount Value="64"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="barrasraw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="6" Y="11"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="uprincipal_raw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="144"/>
+        <CursorPos X="3" Y="130"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="uactoresflucar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="336"/>
+        <CursorPos X="5" Y="133"/>
+        <UsageCount Value="200"/>
+        <Bookmarks Count="1">
+          <Item0 Y="163" ID="8"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="umatrizadmitancias.pas"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="101"/>
+        <CursorPos X="37" Y="88"/>
+        <UsageCount Value="201"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\rchlib\mat\ucpxresolvecuacs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="39" Y="282"/>
+        <UsageCount Value="205"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="50"/>
+        <CursorPos X="23" Y="69"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="ufunciones.pas"/>
+        <TopLine Value="359"/>
+        <CursorPos X="85" Y="367"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\..\rchlib\mat\matreal.pas"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="33"/>
+        <CursorPos X="85" Y="52"/>
+        <UsageCount Value="98"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="usalidas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="utyvs.pas"/>
+        <UnitName Value="uTyVs"/>
+        <CursorPos Y="17"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="IntList.pas"/>
+        <TopLine Value="32"/>
+        <CursorPos Y="52"/>
+        <UsageCount Value="73"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\rchlib\utilitarios\cronomet.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="201"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\..\rchlib\mat\Matcpx.pas"/>
+        <UnitName Value="MatCPX"/>
+        <TopLine Value="88"/>
+        <UsageCount Value="64"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\..\rchlib\mat\xmatdefs.pas"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="104"/>
+        <CursorPos X="35" Y="125"/>
+        <UsageCount Value="101"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\rchlib\mat\algebrac.pas"/>
+        <CursorPos X="14" Y="23"/>
+        <UsageCount Value="75"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="C:\lazarus\fpc\2.6.0\source\rtl\win32\classes.pp"/>
+        <UnitName Value="Classes"/>
+        <UsageCount Value="10"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="uiteradorflucar.pas"/>
+        <TopLine Value="297"/>
+        <CursorPos X="23" Y="309"/>
+        <UsageCount Value="52"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="uflucar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uFlucar"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="4"/>
+        <CursorPos X="19" Y="52"/>
+        <UsageCount Value="224"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\..\fc\actores\uDemandas.pas"/>
+        <CursorPos X="15"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\..\fc\actores\uGNLSumComb_TakeOrPay_Spot.pas"/>
+        <TopLine Value="1870"/>
+        <CursorPos X="17" Y="1907"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\..\fc\actores\uAgenda.pas"/>
+        <TopLine Value="406"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="upso.pas"/>
+        <UnitName Value="uPSO"/>
+        <TopLine Value="157"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="..\..\ax\SparseMatReal\usparseMatReal.pas"/>
+        <UnitName Value="uSparseMatReal"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="78"/>
+        <CursorPos X="91" Y="95"/>
+        <UsageCount Value="94"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="C:\lazarus\fpc\2.6.2\source\rtl\objpas\classes\classesh.inc"/>
+        <TopLine Value="645"/>
+        <CursorPos X="3" Y="317"/>
+        <UsageCount Value="10"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="..\..\ax\SparseMatReal\ucompsparsematreal.pas"/>
+        <UnitName Value="uCompSparseMatReal"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="65"/>
+        <CursorPos X="40" Y="84"/>
+        <UsageCount Value="223"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="..\..\rchlib\mat\compol.pas"/>
+        <UnitName Value="ComPol"/>
+        <TopLine Value="25"/>
+        <CursorPos X="18" Y="43"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="..\..\rchlib\mat\usparseMatReal.pas"/>
+        <UnitName Value="uSparseMatReal"/>
+        <TopLine Value="1444"/>
+        <CursorPos X="26" Y="1472"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="..\..\alglib\src\ap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit45>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="flujoraw.pas"/>
+        <Caret Line="714" TopLine="687"/>
+      </Position1>
+      <Position2>
+        <Filename Value="flujoraw.pas"/>
+        <Caret Line="753" Column="9" TopLine="721"/>
+      </Position2>
+      <Position3>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="2573" Column="34" TopLine="2559"/>
+      </Position3>
+      <Position4>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="2572" Column="7" TopLine="2559"/>
+      </Position4>
+      <Position5>
+        <Filename Value="flujoraw.pas"/>
+        <Caret Line="531" Column="3" TopLine="522"/>
+      </Position5>
+      <Position6>
+        <Filename Value="flujoraw.pas"/>
+        <Caret Line="531" Column="3" TopLine="526"/>
+      </Position6>
+      <Position7>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="173" Column="3" TopLine="154"/>
+      </Position7>
+      <Position8>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="209" Column="5" TopLine="191"/>
+      </Position8>
+      <Position9>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="2574" Column="5" TopLine="2559"/>
+      </Position9>
+      <Position10>
+        <Filename Value="flujoraw.pas"/>
+        <Caret Line="716" Column="43" TopLine="682"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\rchlib\mat\ucpxresolvecuacs.pas"/>
+        <Caret Line="106" Column="12" TopLine="96"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\rchlib\mat\ucpxresolvecuacs.pas"/>
+        <Caret Line="338" Column="41" TopLine="333"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="163" Column="11" TopLine="138"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="206" Column="11" TopLine="177"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="363" Column="6" TopLine="353"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="84" Column="15" TopLine="55"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="202" Column="17" TopLine="179"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="332" Column="10" TopLine="300"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="83" Column="25" TopLine="68"/>
+      </Position19>
+      <Position20>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="2746" Column="3" TopLine="2740"/>
+      </Position20>
+      <Position21>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="2611" Column="17" TopLine="2602"/>
+      </Position21>
+      <Position22>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="173" Column="3" TopLine="153"/>
+      </Position22>
+      <Position23>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="2573" Column="5" TopLine="2559"/>
+      </Position23>
+      <Position24>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="1754" Column="3" TopLine="1734"/>
+      </Position24>
+      <Position25>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="3327" Column="118"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="164" Column="3" TopLine="8"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\..\rchlib\mat\uresolvecuacs.pas"/>
+        <Caret Line="69" Column="23" TopLine="50"/>
+      </Position27>
+      <Position28>
+        <Filename Value="urawdata.pas"/>
+        <Caret Line="3093" Column="13" TopLine="3016"/>
+      </Position28>
+      <Position29>
+        <Filename Value="flu41.lpr"/>
+        <Caret Line="17" Column="66"/>
+      </Position29>
+      <Position30>
+        <Filename Value="flu41.lpr"/>
+        <Caret Column="6"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="c:\simsee\bin\flu41"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\..\rchlib\mat;..\..\fc\base;..\..\rchlib\utilitarios;..\..\fc\actores;..\..\alglib\src"/>
+      <UnitOutputDirectory Value="c:\simsee\ppus\flu41"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <CStyleOperator Value="False"/>
+        <IncludeAssertionCode Value="True"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <TargetOS Value="win32"/>
+      <Optimizations>
+        <OptimizationLevel Value="0"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dCONTROLAR_PASO
+-dTAPS
+-dTAPSf
+-dxITERADOR_FLUCAR"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="5">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="Exception"/>
+      </Item4>
+      <Item5>
+        <Name Value="EConvertError"/>
+      </Item5>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

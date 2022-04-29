@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{512e4b83-b481-4ba4-b6a1-85e21df7e0e2}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="ejemploreal1.dproj" />
+    <Projects Include="ejemplo_cuadripolo.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ejemploreal1">
+    <MSBuild Projects="ejemploreal1.dproj" Targets="" />
+  </Target>
+  <Target Name="ejemploreal1:Clean">
+    <MSBuild Projects="ejemploreal1.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ejemploreal1:Make">
+    <MSBuild Projects="ejemploreal1.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ejemplo_cuadripolo">
+    <MSBuild Projects="ejemplo_cuadripolo.dproj" Targets="" />
+  </Target>
+  <Target Name="ejemplo_cuadripolo:Clean">
+    <MSBuild Projects="ejemplo_cuadripolo.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ejemplo_cuadripolo:Make">
+    <MSBuild Projects="ejemplo_cuadripolo.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ejemploreal1;ejemplo_cuadripolo" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="ejemploreal1:Clean;ejemplo_cuadripolo:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="ejemploreal1:Make;ejemplo_cuadripolo:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

@@ -1,0 +1,119 @@
+inherited AltaEdicionTPostOper_combinarCronVars: TAltaEdicionTPostOper_combinarCronVars
+  Left = 510
+  Height = 350
+  Top = 192
+  Width = 348
+  AutoSize = True
+  Caption = 'AltaEdicionTPostOper_combinarCronVars'
+  ClientHeight = 350
+  ClientWidth = 348
+  object lResultado: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 27
+    Width = 53
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+  object lCronVar: TLabel[1]
+    Left = 0
+    Height = 14
+    Top = 54
+    Width = 44
+    Caption = 'CronVar:'
+    ParentColor = False
+  end
+  object lCoeficiente: TLabel[2]
+    Left = 0
+    Height = 14
+    Top = 76
+    Width = 59
+    Caption = 'Coeficiente:'
+    ParentColor = False
+  end
+  object cbRes: TComboBox[3]
+    Left = 80
+    Height = 21
+    Top = 24
+    Width = 243
+    ItemHeight = 13
+    OnChange = CBCronVarResultadoChange
+    TabOrder = 0
+  end
+  object cbParam1: TComboBox[4]
+    Left = 80
+    Height = 21
+    Top = 51
+    Width = 164
+    ItemHeight = 13
+    OnChange = CBCronVarParam1Change
+    TabOrder = 1
+  end
+  object bGuardar: TButton[5]
+    Left = 273
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[6]
+    Left = 273
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[7]
+    Left = 327
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  object sgParams: TStringGrid[8]
+    Left = 0
+    Height = 173
+    Top = 100
+    Width = 268
+    ColCount = 2
+    DefaultRowHeight = 25
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    RowCount = 1
+    TabOrder = 5
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnDrawCell = sgParamsDrawCell
+    OnMouseDown = sgParamsMouseDown
+    OnMouseMove = sgParamsMouseMove
+    OnMouseUp = sgParamsMouseUp
+  end
+  object BAgregar: TButton[9]
+    Left = 250
+    Height = 21
+    Top = 51
+    Width = 73
+    Caption = 'Agregar'
+    OnClick = BAgregarClick
+    TabOrder = 6
+  end
+  object eCoef: TEdit[10]
+    Left = 80
+    Height = 21
+    Top = 73
+    Width = 164
+    TabOrder = 7
+  end
+  inherited iconos: TImageList[11]
+  end
+  inherited iconos2: TImageList[12]
+  end
+end

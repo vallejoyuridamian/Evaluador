@@ -1,0 +1,7 @@
+inherited BaseFormulariosEditorSimRes3: TBaseFormulariosEditorSimRes3
+  Left = 53
+  Height = 240
+  Top = 24
+  Width = 320
+  Caption = 'BaseFormulariosEditorSimRes3'
+end

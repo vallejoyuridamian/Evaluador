@@ -1,0 +1,378 @@
+inherited EditarRegasificadora: TEditarRegasificadora
+  Left = 370
+  Height = 628
+  Top = 33
+  Width = 722
+  Caption = 'EditarRegasificadora'
+  ClientHeight = 628
+  ClientWidth = 722
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited base_editores_panel_top: TPanel
+    Width = 722
+    ClientWidth = 722
+    TabOrder = 11
+    inherited e_Capa: TEdit
+      Height = 23
+    end
+  end
+  object LNombre: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 133
+    Caption = 'Nombre del suministro:'
+    ParentColor = False
+  end
+  object LFNac: TLabel[2]
+    Left = 456
+    Height = 13
+    Top = 51
+    Width = 117
+    Caption = 'Fecha de Nacimiento'
+    ParentColor = False
+  end
+  object LFMuerte: TLabel[3]
+    Left = 456
+    Height = 13
+    Top = 75
+    Width = 93
+    Caption = 'Fecha de Muerte'
+    ParentColor = False
+  end
+  object LFichas: TLabel[4]
+    Left = 32
+    Height = 13
+    Top = 128
+    Width = 38
+    Caption = 'Fichas:'
+    ParentColor = False
+  end
+  object sgFichas: TStringGrid[5]
+    Left = 24
+    Height = 153
+    Top = 144
+    Width = 377
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+    RowCount = 6
+    TabOrder = 0
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object EditNombre: TEdit[6]
+    Left = 120
+    Height = 23
+    Top = 0
+    Width = 233
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 1
+    Text = 'Ingrese el nombre de la Regasificadora'
+  end
+  object EFNac: TEdit[7]
+    Left = 632
+    Height = 23
+    Top = 48
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+    Text = 'EFNac'
+  end
+  object EFMuerte: TEdit[8]
+    Left = 632
+    Height = 23
+    Top = 72
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 3
+    Text = 'EFMuerte'
+  end
+  object BAgregarFichaCAYA: TButton[9]
+    Left = 248
+    Height = 25
+    Top = 88
+    Width = 129
+    Caption = 'Agregar Nueva Ficha'
+    OnClick = BAgregarFichaCAYAClick
+    TabOrder = 4
+  end
+  object BGuardar: TButton[10]
+    Left = 240
+    Height = 25
+    Top = 584
+    Width = 97
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 5
+  end
+  object BCancelar: TButton[11]
+    Left = 360
+    Height = 25
+    Top = 584
+    Width = 97
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 6
+  end
+  object BEditorDeUnidades: TButton[12]
+    Left = 480
+    Height = 25
+    Top = 224
+    Width = 190
+    Caption = 'Editar Unidades Disponibles'
+    OnClick = BEditorDeUnidadesClick
+    TabOrder = 7
+    Visible = False
+  end
+  object BAyuda: TButton[13]
+    Left = 372
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 8
+  end
+  object btEditarForzamientos: TButton[14]
+    Left = 480
+    Height = 25
+    Top = 256
+    Width = 187
+    Caption = 'Editar Forzamientos'
+    OnClick = btEditarForzamientosClick
+    TabOrder = 9
+  end
+  object lbNodoCombA: TLabel[15]
+    Left = 48
+    Height = 13
+    Top = 33
+    Width = 107
+    Caption = 'Nodo Combusitble:'
+    ParentColor = False
+  end
+  object cbNodoComb: TComboBox[16]
+    Left = 184
+    Height = 27
+    Top = 33
+    Width = 169
+    ItemHeight = 0
+    Style = csDropDownList
+    TabOrder = 10
+  end
+  object eVGNL_inicial: TEdit[17]
+    Left = 640
+    Height = 23
+    Top = 112
+    Width = 64
+    TabOrder = 12
+    Text = '145000'
+  end
+  object LV_GNLini: TLabel[18]
+    Left = 544
+    Height = 13
+    Top = 120
+    Width = 107
+    Caption = 'V_GNL inicial [m3]:'
+    ParentColor = False
+  end
+  object LNroDiscret: TLabel[19]
+    Left = 536
+    Height = 13
+    Top = 144
+    Width = 114
+    Caption = 'Nro discretizaciones'
+    ParentColor = False
+  end
+  object eNroDiscret: TEdit[20]
+    Left = 640
+    Height = 23
+    Top = 140
+    Width = 64
+    TabOrder = 13
+    Text = '10'
+  end
+  object LPrecioVertimiento: TLabel[21]
+    Left = 480
+    Height = 13
+    Top = 183
+    Width = 179
+    Caption = 'Precio Vertimiento [USD/MBTU]:'
+    ParentColor = False
+  end
+  object ePrecioVertimiento: TEdit[22]
+    Left = 640
+    Height = 23
+    Top = 175
+    Width = 64
+    TabOrder = 14
+  end
+  object BVerExpandida: TButton[23]
+    Left = 72
+    Height = 25
+    Top = 88
+    Width = 141
+    Caption = 'Ver Periodicidad Expandida'
+    TabOrder = 15
+  end
+  object BImportar_ods: TButton[24]
+    Left = 295
+    Height = 25
+    Top = 364
+    Width = 131
+    Caption = 'Importar .ods'
+    Enabled = False
+    OnClick = BImportar_odsClick
+    TabOrder = 16
+  end
+  object BExportar_ods: TButton[25]
+    Left = 152
+    Height = 25
+    Top = 364
+    Width = 131
+    Caption = 'Exportar .ods'
+    OnClick = BExportar_odsClick
+    TabOrder = 17
+  end
+  object LFInicioAgenda: TLabel[26]
+    Left = 24
+    Height = 13
+    Top = 343
+    Width = 148
+    Caption = 'Fecha de Inicio de Agenda'
+    ParentColor = False
+  end
+  object EFInicioAgenda: TEdit[27]
+    Left = 160
+    Height = 23
+    Top = 336
+    Width = 89
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 18
+  end
+  object eVGNL_cargo: TEdit[28]
+    Left = 624
+    Height = 23
+    Top = 296
+    Width = 64
+    TabOrder = 19
+  end
+  object LV_GNLcargo: TLabel[29]
+    Left = 528
+    Height = 13
+    Top = 304
+    Width = 107
+    Caption = 'V_GNL cargo [m3]:'
+    ParentColor = False
+  end
+  object ePrecioAgenda: TEdit[30]
+    Left = 624
+    Height = 23
+    Top = 368
+    Width = 64
+    TabOrder = 20
+  end
+  object LPrecioAgenda: TLabel[31]
+    Left = 483
+    Height = 13
+    Top = 368
+    Width = 157
+    Caption = 'Precio Agenda [USD/MBTU]:'
+    ParentColor = False
+  end
+  object ePrecioSpot: TEdit[32]
+    Left = 624
+    Height = 23
+    Top = 320
+    Width = 64
+    TabOrder = 21
+  end
+  object LPrecioSpot: TLabel[33]
+    Left = 498
+    Height = 13
+    Top = 324
+    Width = 139
+    Caption = 'Precio Spot [USD/MBTU]:'
+    ParentColor = False
+  end
+  object ePrecioDesvio: TEdit[34]
+    Left = 624
+    Height = 23
+    Top = 344
+    Width = 64
+    TabOrder = 22
+  end
+  object LPrecioDesvio: TLabel[35]
+    Left = 488
+    Height = 13
+    Top = 344
+    Width = 152
+    Caption = 'Precio Desvio [USD/MBTU]:'
+    ParentColor = False
+  end
+  object eAgenda: TMemo[36]
+    Left = 24
+    Height = 80
+    Top = 392
+    Width = 666
+    TabOrder = 23
+  end
+  object lblAgenda: TLabel[37]
+    Left = 24
+    Height = 13
+    Top = 368
+    Width = 47
+    Caption = 'Agenda:'
+    ParentColor = False
+  end
+  object eX_SpotYDesvios: TMemo[38]
+    Left = 232
+    Height = 33
+    Top = 512
+    Width = 225
+    TabOrder = 24
+  end
+  object lblAgendaSpot: TLabel[39]
+    Left = 96
+    Height = 13
+    Top = 512
+    Width = 159
+    Caption = 'Estado inicial de decisiones:'
+    ParentColor = False
+  end
+  object ePASOS_X_SpotYDesvios: TLabeledEdit[40]
+    Left = 232
+    Height = 23
+    Top = 480
+    Width = 32
+    EditLabel.AnchorSideTop.Control = ePASOS_X_SpotYDesvios
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = ePASOS_X_SpotYDesvios
+    EditLabel.AnchorSideBottom.Control = ePASOS_X_SpotYDesvios
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = -19
+    EditLabel.Height = 13
+    EditLabel.Top = 485
+    EditLabel.Width = 248
+    EditLabel.Caption = 'N pasos preaviso Decisiones Spot y Desvío:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 25
+    Text = '6'
+  end
+  inherited iconos: TImageList[41]
+    top = 65528
+  end
+  inherited iconos2: TImageList[42]
+    top = 65528
+  end
+  object OpenDialog1: TOpenDialog[43]
+    left = 648
+    top = 8
+  end
+end

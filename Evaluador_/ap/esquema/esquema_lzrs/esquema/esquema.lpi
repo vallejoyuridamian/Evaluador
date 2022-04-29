@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="7"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=".exe"/>
+      <Icon Value="0"/>
+      <UseXPManifest Value="True"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="esquema.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="esquema"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uesquema.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uesquema"/>
+        <CursorPos X="23" Y="90"/>
+        <TopLine Value="79"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\lazarus\lcl\lclintf.pas"/>
+        <UnitName Value="LCLIntf"/>
+        <CursorPos X="1" Y="82"/>
+        <TopLine Value="82"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\winapih.inc"/>
+        <CursorPos X="10" Y="116"/>
+        <TopLine Value="111"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="71" Column="4" TopLine="54"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="90" Column="26" TopLine="72"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="79" Column="5" TopLine="70"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="9" Column="14" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="81" Column="22" TopLine="73"/>
+      </Position5>
+      <Position6>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="72" Column="21" TopLine="72"/>
+      </Position6>
+      <Position7>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="9" Column="7" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="87" Column="30" TopLine="74"/>
+      </Position8>
+      <Position9>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="82" Column="46" TopLine="73"/>
+      </Position9>
+      <Position10>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="85" Column="37" TopLine="73"/>
+      </Position10>
+      <Position11>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="84" Column="86" TopLine="76"/>
+      </Position11>
+      <Position12>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="85" Column="22" TopLine="75"/>
+      </Position12>
+      <Position13>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="91" Column="22" TopLine="75"/>
+      </Position13>
+      <Position14>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="81" Column="3" TopLine="78"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\winapih.inc"/>
+        <Caret Line="10" Column="28" TopLine="1"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\winapih.inc"/>
+        <Caret Line="105" Column="33" TopLine="96"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\winapih.inc"/>
+        <Caret Line="1" Column="20" TopLine="1"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\winapih.inc"/>
+        <Caret Line="136" Column="48" TopLine="120"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\winapih.inc"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position19>
+      <Position20>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="111" Column="41" TopLine="99"/>
+      </Position20>
+      <Position21>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position21>
+      <Position22>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="28" Column="1" TopLine="19"/>
+      </Position22>
+      <Position23>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="62" Column="37" TopLine="61"/>
+      </Position23>
+      <Position24>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="63" Column="37" TopLine="61"/>
+      </Position24>
+      <Position25>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="62" Column="37" TopLine="61"/>
+      </Position25>
+      <Position26>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="64" Column="37" TopLine="61"/>
+      </Position26>
+      <Position27>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="80" Column="16" TopLine="66"/>
+      </Position27>
+      <Position28>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="81" Column="16" TopLine="66"/>
+      </Position28>
+      <Position29>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="82" Column="70" TopLine="70"/>
+      </Position29>
+      <Position30>
+        <Filename Value="uesquema.pas"/>
+        <Caret Line="63" Column="57" TopLine="54"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)\"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

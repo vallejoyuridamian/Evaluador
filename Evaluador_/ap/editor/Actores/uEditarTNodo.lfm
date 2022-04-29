@@ -1,0 +1,124 @@
+inherited EditarTNodo: TEditarTNodo
+  Left = 261
+  Height = 275
+  Top = 121
+  Width = 618
+  AutoSize = True
+  Caption = 'EditarTNodo'
+  ClientHeight = 275
+  ClientWidth = 618
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited base_editores_panel_top: TPanel
+    Width = 618
+    ClientWidth = 618
+    TabOrder = 8
+  end
+  object LNombre: TLabel[1]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 99
+    Caption = 'Nombre del Nodo'
+    ParentColor = False
+  end
+  object LFNac: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 27
+    Width = 117
+    Caption = 'Fecha de Nacimiento'
+    ParentColor = False
+  end
+  object LFMuerte: TLabel[3]
+    Left = 0
+    Height = 13
+    Top = 51
+    Width = 93
+    Caption = 'Fecha de Muerte'
+    ParentColor = False
+  end
+  object EditNombre: TEdit[4]
+    Left = 89
+    Height = 23
+    Top = 0
+    Width = 241
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 0
+  end
+  object EFNac: TEdit[5]
+    Left = 177
+    Height = 23
+    Top = 24
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 1
+  end
+  object EFMuerte: TEdit[6]
+    Left = 177
+    Height = 23
+    Top = 48
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+  end
+  object BGuardar: TButton[7]
+    Left = 57
+    Height = 25
+    Top = 152
+    Width = 97
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 3
+  end
+  object BCancelar: TButton[8]
+    Left = 233
+    Height = 25
+    Top = 152
+    Width = 97
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 4
+  end
+  object BEditorDeUnidades: TButton[9]
+    Left = 16
+    Height = 25
+    Top = 80
+    Width = 354
+    Caption = 'Editar Unidades Disponibles'
+    OnClick = BEditorDeUnidadesClick
+    TabOrder = 5
+  end
+  object BAyuda: TButton[10]
+    Left = 333
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 6
+  end
+  object Label1: TLabel[11]
+    Left = 140
+    Height = 13
+    Top = 117
+    Width = 67
+    Caption = 'ZonaFlucar:'
+    ParentColor = False
+  end
+  object eZonaFlucar: TEdit[12]
+    Left = 200
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 7
+    Text = '0'
+  end
+  inherited iconos: TImageList[13]
+  end
+  inherited iconos2: TImageList[14]
+  end
+end

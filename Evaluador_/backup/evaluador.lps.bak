@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="28">
+      <Unit0>
+        <Filename Value="evaluador.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="6" Y="13"/>
+        <UsageCount Value="140"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uevaluadormatches.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="18" Y="27"/>
+        <UsageCount Value="71"/>
+        <Bookmarks Count="6">
+          <Item0 Y="1206" ID="2"/>
+          <Item1 Y="1240" ID="3"/>
+          <Item2 Y="1265" ID="4"/>
+          <Item3 X="12" Y="442" ID="5"/>
+          <Item4 Y="299" ID="9"/>
+          <Item5 X="16" Y="669" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="base\uconstantessimsee.pas"/>
+        <UnitName Value="uConstantesSimSEE"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11" Y="10"/>
+        <UsageCount Value="7"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="base\uopencalc.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="3" Y="25"/>
+        <UsageCount Value="15"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="uevaluador.pas"/>
+        <UnitName Value="uevaluadormatches"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="48" Y="27"/>
+        <UsageCount Value="7"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\freepascal\fpc\3.0.1\rtl\win32\classes.pp"/>
+        <UnitName Value="Classes"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="7"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="rchlib\mat\xmatdefs.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1081"/>
+        <CursorPos Y="1097"/>
+        <UsageCount Value="12"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="rchlib\mat\uevaluador.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="663"/>
+        <CursorPos Y="680"/>
+        <UsageCount Value="12"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="fpspreadsheet\source\common\fpspreadsheet.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="749"/>
+        <CursorPos X="3" Y="678"/>
+        <UsageCount Value="28"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\freepascal\laz\components\lazutils\laz2_dom.pas"/>
+        <UnitName Value="Laz2_DOM"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2619"/>
+        <CursorPos Y="2636"/>
+        <UsageCount Value="7"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="fpspreadsheet\source\common\fpsopendocument.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2324"/>
+        <CursorPos Y="2440"/>
+        <UsageCount Value="7"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="fpspreadsheet\source\common\fpsreaderwriter.pas"/>
+        <UnitName Value="fpsReaderWriter"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="769"/>
+        <CursorPos Y="784"/>
+        <UsageCount Value="16"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="excel\uExcelFile.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="110"/>
+        <CursorPos X="54" Y="128"/>
+        <UsageCount Value="7"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="excel\Excel_TLB.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="65" Y="2908"/>
+        <UsageCount Value="7"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="fpspreadsheet\source\common\uvirtuallayer_stream.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="78"/>
+        <CursorPos Y="97"/>
+        <UsageCount Value="16"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="fpspreadsheet\source\common\uvirtuallayer.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="810"/>
+        <CursorPos Y="827"/>
+        <UsageCount Value="16"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="fpspreadsheet\source\common\fpolebasic.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="116"/>
+        <CursorPos X="52" Y="123"/>
+        <UsageCount Value="16"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="fpspreadsheet\source\common\xlsbiff5.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="922"/>
+        <UsageCount Value="16"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="fpspreadsheet\source\common\fpstypes.pas"/>
+        <UnitName Value="fpsTypes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="51" Y="19"/>
+        <UsageCount Value="16"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="fpspreadsheet\source\common\xlscommon.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2884"/>
+        <CursorPos Y="2901"/>
+        <UsageCount Value="16"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\freepascal\fpc\3.0.1\packages\rtl-objpas\src\inc\strutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="202"/>
+        <UsageCount Value="1"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="fpspreadsheet\source\common\fpsxmlcommon.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="285"/>
+        <CursorPos X="53" Y="288"/>
+        <UsageCount Value="3"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="fpspreadsheet\source\common\xlsxooxml.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2154"/>
+        <CursorPos X="62" Y="2156"/>
+        <UsageCount Value="3"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="176"/>
+        <CursorPos X="23" Y="193"/>
+        <UsageCount Value="1"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:\freepascal\fpc\3.0.1\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="179"/>
+        <CursorPos X="23" Y="193"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="182"/>
+        <CursorPos X="23" Y="194"/>
+        <UsageCount Value="1"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="rchlib\mat\matreal.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3196"/>
+        <CursorPos Y="3212"/>
+        <UsageCount Value="5"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:\freepascal\fpc\3.0.1\rtl\objpas\sysutils\filutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos X="3" Y="80"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="86" Column="13" TopLine="73"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1677" Column="3" TopLine="1663"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="99" Column="42" TopLine="84"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1688" Column="19" TopLine="1665"/>
+      </Position4>
+      <Position5>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1524" Column="14" TopLine="1511"/>
+      </Position5>
+      <Position6>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="98" Column="5" TopLine="84"/>
+      </Position6>
+      <Position7>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1520" Column="66" TopLine="1508"/>
+      </Position7>
+      <Position8>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1524" Column="18" TopLine="1508"/>
+      </Position8>
+      <Position9>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="98" Column="31" TopLine="84"/>
+      </Position9>
+      <Position10>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1524" TopLine="1511"/>
+      </Position10>
+      <Position11>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1518" Column="37" TopLine="1505"/>
+      </Position11>
+      <Position12>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="2101" Column="56" TopLine="2088"/>
+      </Position12>
+      <Position13>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1524" Column="18" TopLine="1460"/>
+      </Position13>
+      <Position14>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="98" Column="32" TopLine="84"/>
+      </Position14>
+      <Position15>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1524" TopLine="1511"/>
+      </Position15>
+      <Position16>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1537" TopLine="1515"/>
+      </Position16>
+      <Position17>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1542" TopLine="1529"/>
+      </Position17>
+      <Position18>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1517" Column="16" TopLine="1475"/>
+      </Position18>
+      <Position19>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="88" Column="33" TopLine="84"/>
+      </Position19>
+      <Position20>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1518" Column="20" TopLine="1504"/>
+      </Position20>
+      <Position21>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="98" Column="31" TopLine="84"/>
+      </Position21>
+      <Position22>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1688" Column="18" TopLine="1664"/>
+      </Position22>
+      <Position23>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1524" TopLine="1511"/>
+      </Position23>
+      <Position24>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1688" Column="19" TopLine="1666"/>
+      </Position24>
+      <Position25>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1684" Column="49" TopLine="1659"/>
+      </Position25>
+      <Position26>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1521" TopLine="1508"/>
+      </Position26>
+      <Position27>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="637" Column="40" TopLine="637"/>
+      </Position27>
+      <Position28>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="1534" TopLine="1521"/>
+      </Position28>
+      <Position29>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="667" Column="30" TopLine="644"/>
+      </Position29>
+      <Position30>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="598" Column="71" TopLine="586"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,31 @@
+object FormImportarMatrizNReal: TFormImportarMatrizNReal
+  Left = 0
+  Height = 434
+  Top = 0
+  Width = 706
+  AutoSize = True
+  Caption = 'Importar Matriz de Números'
+  ClientHeight = 434
+  ClientWidth = 706
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  LCLVersion = '0.9.30'
+  object Memo1: TMemo
+    Left = 0
+    Height = 399
+    Top = 0
+    Width = 689
+    TabOrder = 0
+  end
+  object Importar: TButton
+    Left = 300
+    Height = 25
+    Top = 405
+    Width = 75
+    Caption = 'Importar'
+    OnClick = ImportarClick
+    TabOrder = 1
+  end
+end

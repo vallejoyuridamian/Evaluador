@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="10">
+      <Unit0>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="20" Y="17"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="upruebaseriesv3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="13"/>
+        <UsageCount Value="35"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\useriestemporales.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="37"/>
+        <CursorPos X="47" Y="66"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\rchlib\mat\xmatdefs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1079"/>
+        <CursorPos Y="1097"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\Users\dvallejo\Desktop\useriestemporales(nuevo).pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="35"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\Users\dvallejo\Desktop\useriestemporales2.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10"/>
+        <CursorPos Y="22"/>
+        <UsageCount Value="14"/>
+        <Bookmarks Count="3">
+          <Item0 X="3" Y="1055" ID="3"/>
+          <Item1 X="19" Y="1355" ID="1"/>
+          <Item2 Y="1380" ID="2"/>
+        </Bookmarks>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\rchlib\mat\matreal.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1829"/>
+        <CursorPos X="3" Y="1842"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\freepascal\fpc\3.0.1\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="757"/>
+        <CursorPos X="14" Y="774"/>
+        <UsageCount Value="8"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\rchlib\mat\uevaluador.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="651"/>
+        <CursorPos Y="680"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\uauxiliares.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1224"/>
+        <CursorPos Y="1242"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+    </Units>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <Caret Line="69" TopLine="38"/>
+      </Position1>
+      <Position2>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <Caret Line="67" TopLine="38"/>
+      </Position2>
+      <Position3>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <Caret Line="73" TopLine="42"/>
+      </Position3>
+      <Position4>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <Caret Line="68" Column="32" TopLine="42"/>
+      </Position4>
+      <Position5>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <Caret Line="73" TopLine="42"/>
+      </Position5>
+      <Position6>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <Caret Line="73" TopLine="42"/>
+      </Position6>
+      <Position7>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <Caret Line="67" Column="37" TopLine="42"/>
+      </Position7>
+      <Position8>
+        <Filename Value="pruebasseriesv3.lpr"/>
+        <Caret Line="59" Column="87" TopLine="37"/>
+      </Position8>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="C:\Users\dvallejo\Desktop\useriestemporales2.pas"/>
+        <Line Value="1381"/>
+      </Item1>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

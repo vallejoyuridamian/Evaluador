@@ -1,0 +1,13 @@
+flock -n ~/public_html/damian/phantomjs/locks timeout 360 php /home3/vallejoyurid/public_html/damian/phantomjs/get-eventos.php
+flock -n ~/public_html/damian/phantomjs/locks timeout 180 php ~/public_html/damia$
+flock -n /home3/vallejoyurid/public_html/damian/phantomjs/locks timeout 360 php /home3/vallejoyurid/public_html/damian/phantomjs/get-eventos.php
+
+Comandos vegansups
+ 
+ # Correr así nomás el get-eventos
+ php /home3/vallejoyurid/public_html/damian/phantomjs/get-eventos.php
+  
+ # Con flock (sin timeout)
+  
+ flock -n /home3/vallejoyurid/public_html/damian/phantomjs/locks php /home3/vallejoyurid/public_html/damian/phantomjs/get-eventos.php
+ 

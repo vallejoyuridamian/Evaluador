@@ -1,0 +1,127 @@
+inherited EditarSerie: TEditarSerie
+  Left = 131
+  Height = 193
+  Top = 57
+  Width = 313
+  AutoSize = True
+  Caption = 'Editar Serie'
+  ClientHeight = 193
+  ClientWidth = 313
+  OnCloseQuery = FormCloseQuery
+  object LNombre_Y_Clase: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 24
+    Width = 166
+    Caption = 'Actor a Monitorear (Clase, Nombre)'
+    ParentColor = False
+  end
+  object LNVar: TLabel[1]
+    Left = 0
+    Height = 14
+    Top = 80
+    Width = 105
+    Caption = 'Nombre de la Variable'
+    ParentColor = False
+  end
+  object LNSerieY: TLabel[2]
+    Left = 0
+    Height = 14
+    Top = 3
+    Width = 91
+    Caption = 'Nombre de la Serie'
+    ParentColor = False
+  end
+  object LCSY: TLabel[3]
+    Left = 0
+    Height = 14
+    Top = 131
+    Width = 25
+    Caption = 'Color'
+    ParentColor = False
+  end
+  object CBNombre_Y_Clase: TComboBox[4]
+    Left = 0
+    Height = 21
+    Top = 43
+    Width = 297
+    ItemHeight = 13
+    OnChange = CBNombre_Y_ClaseChange
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object CBVariable: TComboBox[5]
+    Left = 0
+    Height = 21
+    Top = 99
+    Width = 297
+    ItemHeight = 13
+    OnChange = CBVariableChange
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object BColor: TButton[6]
+    Left = 73
+    Height = 25
+    Top = 126
+    Width = 75
+    Caption = 'Elegir Color'
+    OnClick = BColorClick
+    TabOrder = 3
+  end
+  object ENSerie: TEdit[7]
+    Left = 97
+    Height = 21
+    Top = 0
+    Width = 200
+    OnChange = CambiosForm
+    TabOrder = 0
+  end
+  object BGuardar: TButton[8]
+    Left = 40
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = BGuardarClick
+    TabOrder = 4
+  end
+  object BCancelar: TButton[9]
+    Left = 184
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 5
+  end
+  inherited iconos: TImageList[10]
+  end
+  object ColorDialog1: TColorDialog[11]
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 160
+    top = 120
+  end
+end

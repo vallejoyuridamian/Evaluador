@@ -1,0 +1,100 @@
+inherited AltaEdicionTPostOper_potenciaFirmeHidraulica: TAltaEdicionTPostOper_potenciaFirmeHidraulica
+  Height = 241
+  Width = 328
+  AutoSize = True
+  Caption = 'AltaEdicionTPostOper_potenciaFirmeHidraulica'
+  ClientHeight = 241
+  ClientWidth = 328
+  OnCloseQuery = FormCloseQuery
+  object lResultado: TLabel[0]
+    Left = 0
+    Height = 14
+    Top = 27
+    Width = 53
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+  object lCronVar: TLabel[1]
+    Left = 0
+    Height = 14
+    Top = 54
+    Width = 44
+    Caption = 'CronVar:'
+    ParentColor = False
+  end
+  object cbRes: TComboBox[2]
+    Left = 80
+    Height = 21
+    Top = 24
+    Width = 219
+    ItemHeight = 13
+    OnChange = CBCronVarResultadoChange
+    TabOrder = 0
+  end
+  object cbParam1: TComboBox[3]
+    Left = 80
+    Height = 21
+    Top = 51
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBCronVarParam1Change
+    TabOrder = 1
+  end
+  object bGuardar: TButton[4]
+    Left = 56
+    Height = 25
+    Top = 201
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[5]
+    Left = 166
+    Height = 25
+    Top = 201
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[6]
+    Left = 307
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  object sgParams: TStringGrid[7]
+    Left = 0
+    Height = 120
+    Top = 78
+    Width = 299
+    ColCount = 2
+    DefaultRowHeight = 25
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 1
+    TabOrder = 5
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnDrawCell = sgParamsDrawCell
+    OnMouseDown = sgParamsMouseDown
+    OnMouseMove = sgParamsMouseMove
+    OnMouseUp = sgParamsMouseUp
+  end
+  object BAgregar: TButton[8]
+    Left = 226
+    Height = 21
+    Top = 51
+    Width = 73
+    Caption = 'Agregar'
+    OnClick = BAgregarClick
+    TabOrder = 6
+  end
+  inherited iconos: TImageList[9]
+  end
+end

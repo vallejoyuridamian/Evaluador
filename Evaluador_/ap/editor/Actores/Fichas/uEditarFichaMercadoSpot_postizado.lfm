@@ -1,0 +1,378 @@
+inherited EditarFichaMercadoSpot_postizado: TEditarFichaMercadoSpot_postizado
+  Left = 525
+  Height = 624
+  Top = 109
+  Width = 979
+  AutoSize = True
+  Caption = 'EditarFichaMercadoSpot_postizado'
+  ClientHeight = 624
+  ClientWidth = 979
+  Font.Name = 'Tahoma'
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  inherited base_editores_panel_top: TPanel
+    Width = 979
+    ClientWidth = 979
+    TabOrder = 16
+    inherited lbo_capa: TLabel
+      Width = 29
+    end
+  end
+  object LFIni: TLabel[1]
+    Left = 1
+    Height = 13
+    Top = 3
+    Width = 70
+    Caption = 'Fecha de inicio'
+    ParentColor = False
+  end
+  object Label1: TLabel[2]
+    Left = 1
+    Height = 13
+    Top = 128
+    Width = 99
+    Caption = 'Potencias por poste:'
+    ParentColor = False
+  end
+  object Label2: TLabel[3]
+    Left = 1
+    Height = 13
+    Top = 280
+    Width = 132
+    Caption = 'Costos variables por poste:'
+    ParentColor = False
+  end
+  object BGuardar: TButton[4]
+    Left = 456
+    Height = 25
+    Top = 504
+    Width = 105
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 0
+  end
+  object BCancelar: TButton[5]
+    Left = 584
+    Height = 25
+    Top = 504
+    Width = 105
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 1
+  end
+  object EFIni: TEdit[6]
+    Left = 145
+    Height = 21
+    Top = 0
+    Width = 217
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+    Text = 'EFIni'
+  end
+  object CBPeriodicidad: TCheckBox[7]
+    Left = 0
+    Height = 19
+    Top = 24
+    Width = 68
+    Caption = 'Periodica?'
+    OnClick = CBPeriodicidadClick
+    TabOrder = 3
+  end
+  object PPeriodicidad: TPanel[8]
+    Left = 2
+    Height = 81
+    Top = 48
+    Width = 423
+    AutoSize = True
+    ClientHeight = 81
+    ClientWidth = 423
+    TabOrder = 4
+    object LFinPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 26
+      Width = 74
+      Caption = 'Fin del Periodo:'
+      ParentColor = False
+    end
+    object LIniPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 2
+      Width = 85
+      Caption = 'Inicio del Periodo:'
+      ParentColor = False
+    end
+    object LLargoPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 56
+      Width = 87
+      Caption = 'Largo del Período:'
+      ParentColor = False
+    end
+    object EFFinPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 23
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 1
+      Text = '0'
+    end
+    object EFIniPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 2
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 0
+      Text = '0'
+    end
+    object sgPeriodicidad: TStringGrid
+      Left = 221
+      Height = 79
+      Top = 1
+      Width = 201
+      ColCount = 2
+      DefaultRowHeight = 25
+      FixedRows = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goTabs]
+      RowCount = 3
+      TabOrder = 4
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      OnClick = sgChequearCambios
+      OnExit = sgChequearCambios
+      OnGetEditText = sgGetEditText
+    end
+    object ELargoPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 53
+      Width = 41
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 2
+      Text = '1'
+    end
+    object CBLargoPeriodo: TComboBox
+      Left = 140
+      Height = 21
+      Top = 53
+      Width = 75
+      ItemHeight = 13
+      Items.Strings = (
+        'Años'
+        'Meses'
+        'Semanas'
+        'Días'
+      )
+      OnChange = cambiosForm
+      Style = csDropDownList
+      TabOrder = 3
+    end
+  end
+  object BAyuda: TButton[9]
+    Left = 368
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 5
+  end
+  object ComboFuentes: TComboBox[10]
+    Left = 136
+    Height = 21
+    Top = 24
+    Width = 145
+    ItemHeight = 13
+    OnCloseUp = ComboFuentesCloseUp
+    TabOrder = 6
+    Text = 'ComboFuentes'
+    Visible = False
+  end
+  object IntFicha: TStringGrid[11]
+    Left = 448
+    Height = 51
+    Top = 424
+    Width = 329
+    ColCount = 2
+    DefaultColWidth = 180
+    DefaultRowHeight = 25
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goTabs]
+    RowCount = 2
+    TabOrder = 7
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnClick = sgChequearCambios
+    OnExit = sgChequearCambios
+    OnGetEditText = sgGetEditText
+    ColWidths = (
+      180
+      87
+    )
+  end
+  object GrillaCostosVariables: TStringGrid[12]
+    Left = 8
+    Height = 152
+    Top = 304
+    Width = 403
+    ColCount = 4
+    DefaultRowHeight = 25
+    RowCount = 4
+    TabOrder = 8
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnDrawCell = GrillaPotenciasDrawCell
+    OnMouseDown = GrillaPotenciasMouseDown
+    OnMouseMove = GrillaPotenciasMouseMove
+    OnMouseUp = GrillaPotenciasMouseUp
+    ColWidths = (
+      64
+      145
+      164
+      26
+    )
+  end
+  object PMins: TLabel[13]
+    Left = 8
+    Height = 13
+    Top = 160
+    Width = 31
+    Caption = 'PMins:'
+    ParentColor = False
+  end
+  object PMaxs: TLabel[14]
+    Left = 8
+    Height = 13
+    Top = 184
+    Width = 35
+    Caption = 'PMaxs:'
+    ParentColor = False
+  end
+  object EditPMins: TEdit[15]
+    Left = 56
+    Height = 21
+    Top = 160
+    Width = 272
+    TabOrder = 9
+  end
+  object EditPMaxs: TEdit[16]
+    Left = 56
+    Height = 21
+    Top = 184
+    Width = 272
+    TabOrder = 10
+  end
+  object Label3: TLabel[17]
+    Left = 12
+    Height = 13
+    Top = 216
+    Width = 242
+    Caption = 'Tope para Extraccciones del mercado [USD/MWh]:'
+    ParentColor = False
+  end
+  object eTopeSale: TEdit[18]
+    Left = 256
+    Height = 21
+    Top = 214
+    Width = 80
+    TabOrder = 11
+    Text = 'eTopeSale'
+  end
+  object Label4: TLabel[19]
+    Left = 12
+    Height = 13
+    Top = 248
+    Width = 293
+    Caption = 'Tope del vendedor para Inyecciones al mercado [USD/MWh]:'
+    ParentColor = False
+  end
+  object eTopeEntra: TEdit[20]
+    Left = 312
+    Height = 21
+    Top = 244
+    Width = 80
+    TabOrder = 12
+    Text = 'eTopeEntra'
+  end
+  object cbTopeSaleActivo: TCheckBox[21]
+    Left = 344
+    Height = 19
+    Top = 208
+    Width = 147
+    Caption = 'Activar tope Extracciones.'
+    TabOrder = 13
+  end
+  object cbTopeEntraActivo: TCheckBox[22]
+    Left = 400
+    Height = 19
+    Top = 240
+    Width = 143
+    Caption = 'Activar tope Inyecciones.'
+    TabOrder = 14
+  end
+  object GroupBox1: TGroupBox[23]
+    Left = 456
+    Height = 136
+    Top = 280
+    Width = 328
+    Caption = 'Deltas para intercambios'
+    ClientHeight = 118
+    ClientWidth = 324
+    TabOrder = 15
+    object eDeltaExpo_USD_MWh: TEdit
+      Left = 190
+      Height = 21
+      Top = 32
+      Width = 80
+      TabOrder = 0
+      Text = 'eDeltaExpo_USD_MWh'
+    end
+    object Label5: TLabel
+      Left = 30
+      Height = 13
+      Top = 39
+      Width = 147
+      Caption = 'Delta Exportaciones USD/MWh'
+      ParentColor = False
+    end
+    object cbActivarDeltas: TCheckBox
+      Left = 16
+      Height = 19
+      Top = 8
+      Width = 91
+      Caption = 'Activar Deltas.'
+      TabOrder = 1
+    end
+    object Label6: TLabel
+      Left = 30
+      Height = 13
+      Top = 63
+      Width = 147
+      Caption = 'Delta Importaciones USD/MWh'
+      ParentColor = False
+    end
+    object eDeltaImpo_USD_MWh: TEdit
+      Left = 190
+      Height = 21
+      Top = 56
+      Width = 80
+      TabOrder = 2
+      Text = 'eDeltaImpo_USD_MWh'
+    end
+  end
+  inherited iconos: TImageList[24]
+  end
+  inherited iconos2: TImageList[25]
+  end
+end

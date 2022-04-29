@@ -1,0 +1,183 @@
+unit urscampos;
+
+interface
+
+resourcestring
+  rsFecha = 'Fecha';
+  rsNombre = 'Nombre';
+  rsPeaje = 'Peaje';
+  rsRendimiento = 'Rendimiento';
+  rsRend = 'Rend';
+  rsCoeficienteDeDisponibildadFortuita = 'Coeficiente de disponibildad fortuita';
+  rsDisp = 'Disp';
+  rsTiempoDeReparacion = 'Tiempo de reparación';
+  rsTrep = 'TRep';
+  rsPotenciaMinima = 'Potencia mínima';
+  rsPMin = 'PMín';
+  rsPotenciaMaxima = 'Potencia máxima';
+  rsPMax = 'PMáx';
+  rsCostoVariableEnElMinimoTecnico = 'Costo variable en el mínimo técnico';
+  rsCVmin = 'CVMín';
+  rsCostoVariable = 'Costo variable';
+  rsCV = 'CV';
+  rsPagoPorPotencia = 'Pago por potencia';
+  rsPagoPot = 'Pago pot';
+  rsPagoPorEnergia = 'Pago por energía';
+  rsPagoEnerg = 'Pago energ';
+  rsHayRestriccionEmaxPorPasoDeTiempoQ = 'Hay restricción E. máx por paso de tiempo?';
+  rsRestrEmaxPasoTQ = 'Restr EMáx paso t?';
+  rsEnergiaMaximaPorPasoDeTiempo = 'Energía máxima por paso de tiempo';
+  rsEmaxPasoT = 'EMáx paso t';
+  rsEncendidoAlInicioQ = 'Encendido al inicio?';
+  rsEncendidoIniQ = 'Encendido ini?';
+  rsCostoDeArranque = 'Costo de arranque';
+  rsCArranque = 'C arranque';
+  rsCostoDeParada = 'Costo de parada';
+  rsCParada = 'C parada';
+  rsCreditoInicialDeEnergia = 'Crédito inicial de energía';
+  rsCredIniEnerg = 'Cred ini energ';
+  rsNumeroDeDiscretizaciones = 'Número de discretizaciones';
+  rsNDisc = 'Nº disc';
+  rsFechaDeInicioDeImportacion = 'Fecha de inicio de importación';
+  rsIniImport = 'Ini import';
+  rsFechaDeFinDeImportacion = 'Fecha de fin de importación';
+  rsFinImport = 'Fin import';
+  rsFechaDeInicioDeDevolucion = 'Fecha de inicio de devolución';
+  rsIniDevol = 'Ini devol';
+  rsFechaDeFinDeDevolucion = 'Fecha de fin de devolución';
+  rsFinDevol = 'Fin devol';
+  rsEnergiaMaximaDeImportacion = 'Energía máxima de importación';
+  rsEMaxImp = 'EMáx imp';
+  rsPotenciaMaximaDeImportacion = 'Potencia máxima de importación';
+  rsPMaxImp = 'PMáx imp';
+  rsCostoVariableDeImportacion = 'Costo variable de importación';
+  rsCVImp = 'CV imp';
+  rsRendimientoDeImportacion = 'Rendimiento de importación';
+  rsRendImp = 'Rend imp';
+  rsFactorDeDisponibilidadDeImportacion = 'Factor de disponibilidad de importación';
+  rsFDispImp = 'FDisp imp';
+  rsFactorDeIncremento = 'Factor de incremento';
+  rsFInc = 'F inc';
+  rsPotenciaMaximaDeExportacion = 'Potencia máxima de exportación';
+  rsPMaxExp = 'PMáx exp';
+  rsCostoVariableDeExportacion = 'Costo variable de exportación';
+  rsCVExp = 'CV exp';
+  rsRendimientoDeExportacion = 'Rendimiento de exportación';
+  rsRendExp = 'Rend exp';
+  rsCostoVariableDeDevolucion = 'Costo variable de devolución';
+  rsCVDev = 'CV dev';
+  rsFactorDeDisponibilidadDeExportacion = 'Factor de disponibilidad de exportación';
+  rsFDispExp = 'FDisp exp';
+  rsMaquinasDisponiblesAlInicio = 'Maquinas disponibles al inicio';
+  rsMaqsDispInicio = 'Maqs disp inicio';
+  rsMinimoNumeroDePasosOn = 'Mínimo número de pasos On';
+  rsMinNPasosOn = 'Mín Nº pasos On';
+  rsMinimoNumeroDePasosOff = 'Mínimo número de pasos Off';
+  rsMinNPasosOff = 'Mín Nº pasos Off';
+  rsDecidirOnOffPorCiclosQ = 'Decidir (On->Off) por cíclos?';
+  rsOnOffPorCiclosQ = '(On->Off) por Cíclos?';
+  rsDecidirOffOnPorCiclosQ = 'Decidir (Off->On) por cíclos?';
+  rsOffOnPorCiclosQ = '(Off->On) por cíclos?';
+  rsAlturaInicial = 'Altura inicial';
+  rsHIni = 'h ini';
+  rsNumeroDePuntosDeDiscretizacionDeLaAltura =
+    'Numero de puntos de discretización de la altura';
+  rsNPuntosDicsH = 'Nº puntos disc h';
+  rsCotaMinimaDeOperacion = 'Cota mínima de operación';
+  rsCotaMinOp = 'Cota mín op';
+  rsCotaMaximaDeOperacion = 'Cota máxima de operación';
+  rsCotaMaxOp = 'Cota máx op';
+  rsPuntosCotaVolumenH = 'Puntos cota-volumen h';
+  rsPuntosCotaVolumenV = 'Puntos cota-volumen V';
+  rsCotaDeDescargaParaCalculoDelSalto = 'Cota de descarga para cálculo del salto';
+  rsCotaDescargaCalcSalto = 'Cota descarga cálc salto';
+  rsCoeficienteDeAfectacionDelSaltoPorCaudalErogadoCAQE =
+    'Coeficiente de afectación del salto por caudal erogado(caQE)';
+  rsCAQE = 'caQE';
+  rsCoeficienteDeAfectacionDelSaltoPorCaudalErogadoCBQE =
+    'Coeficiente de afectación del salto por caudal erogado(cbQE)';
+  rsCBQE = 'cbQE';
+  rsPotenciaMaximaGenerable = 'Potencia máxima generable';
+  rsPMaxGen = 'PMáx gen';
+  rsCaudalMaximoTurbinable = 'Caudal máximo turbinable';
+  rsQMaxTurb = 'QMáx Turb';
+  rsCaFiltracion = 'Ca filtración';
+  rsCaFilt = 'Ca filt';
+  rsCbFiltracion = 'Cb filtración';
+  rsCbFilt = 'Cb filt';
+  rsQaMuySeco = 'Qa muy seco';
+  rsCotaMinimaParaVertimiento = 'Cota mínima para vertimiento';
+  rsCotaMinVert = 'Cota mín vert';
+  rsCotaMaximaParaVertimiento = 'Cota máxima para vertimiento';
+  rsCotaMaxVert = 'Cota máx vert';
+  rsCaudalVertidoCotaMaxima = 'Caudal vertido con la cota máxima';
+  rsQVertCotaMax = 'QVert cota máx';
+  rsSaltoMinimoOperativo = 'Salto mínimo operativo';
+  rsSaltoMinOp = 'Salto mín op';
+  rsHayRestriccionDeCaudalTurbinadoMinimoQ = 'Hay restricción de caudal turbinado mínimo?';
+  rsRestrQTMinQ = 'Restr QTMín?';
+  rsCaudalTurbinadoMinimo = 'Caudal turbinado mínimo';
+  rsQTMin = 'QTMín';
+  rsImponerCaudalTurbinadoMinimoPorPosteQ = 'Imponer caudal turbinado mínimo por poste?';
+  rsQTMinPPosteQ = 'QTMín p poste?';
+  rsControlarSiEstaPorDebajoDelObjetivoQ = 'Controlar si está por debajo del objetivo?';
+  rsControlDebajoObjQ = 'Control debajo obj?';
+  rsControlarSiEstaPorEncimaDelObjetivoQ = 'Controlar si está por encima del objetivo?';
+  rsControlEncimaObjQ = 'Control encima obj?';
+  rsCotaObjetivo = 'Cota objetivo';
+  rsCotaObj = 'Cota obj';
+  rsVariacionDeCostoVariableDelAguaParaControlDeCota =
+    'Variación de costo variable del agua para control de cota';
+  rsVariacCVAguaPControlCota = 'Variac CVAgua p Control Cota';
+  rsCostoVariableValorizadoManual = 'Costo variable valorizado manual';
+  rsCVValManual = 'CV Val Manual';
+  rsControlDeCrecidaCotaDeInicio = 'Control de crecida cota de inicio';
+  rsControlCrecidaCotaIni = 'Control crecida cota ini';
+  rsControlDeCrecidaCotaDeErogadoAPleno = 'Control de crecida cota de erogado a pleno';
+  rsControlCrecidaCotaErogadoPleno = 'Control crecida cota erogado pleno';
+  rsCotaDeDescarga = 'Cota de descarga';
+  rsCotaDescarga = 'Cota descarga';
+  rsCotaDeToma = 'Cota de toma';
+  rsCotaToma = 'Cota toma';
+  rsCostoVariableDelAgua = 'Costo variable del agua';
+  rsCVAgua = 'CV agua';
+  rsValor = 'Valor';
+  rsValorEsperado = 'Valor esperado';
+  rsVE = 'VE';
+  rsVarianza = 'Varianza';
+  rsVar = 'Var';
+  rsMinimo = 'Mínimo';
+  rsMin = 'Mín';
+  rsMaximo = 'Máximo';
+  rsMax = 'Máx';
+  rsConstanteK = 'Constante K';
+  rsK = 'K';
+  rsPotenciaMaximaDeBombeo = 'Potencia máxima de bombeo';
+  rsPMaxBombeo = 'PMáx bombeo';
+  rsCaudalMaximoDeBombeo = 'Caudal máximo de bombeo';
+  rsQMaxBombeo = 'QMáx bombeo';
+  rsRendimientoDeBombeo = 'Rendimiento de bombeo';
+  rsRendBombeo = 'Rend bombeo';
+
+  rsMinHorasON = 'Mín. horas ON';
+  rsMinHorasOFF = 'Mín. horas OFF';
+  rsPenalidadONOFF = 'PenalidadONOFF';
+
+  rsVacio = '';
+
+  // Unidades
+  rsuUSDPorMWh = '[USD/MWh]';
+  rsuUSDPorHm3 = '[USD/Hm^3]';
+  rsupu = '[p.u.]';
+  rsuhoras = '[h]';
+  rsuMW = '[MW]';
+  rsuMWh = '[MWh]';
+  rsuUSD = '[USD]';
+  rsum = '[m]';
+  rsum3Pors = '[m^3/s]';
+  rsum2Pors = '[m^2/s]';
+
+
+implementation
+
+end.

@@ -1,0 +1,315 @@
+inherited EditarTDemandaDetallada: TEditarTDemandaDetallada
+  Left = 292
+  Height = 435
+  Top = 185
+  Width = 850
+  AutoSize = True
+  Caption = 'EditarTDemandaDetallada'
+  ClientHeight = 435
+  ClientWidth = 850
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  inherited e_Capa: TEdit
+    TabOrder = 18
+  end
+  object LNombre: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 0
+    Width = 111
+    Caption = 'Nombre de la Demanda'
+    ParentColor = False
+  end
+  object LFNac: TLabel[3]
+    Left = 0
+    Height = 13
+    Top = 24
+    Width = 99
+    Caption = 'Fecha de Nacimiento'
+    ParentColor = False
+  end
+  object LFMuerte: TLabel[4]
+    Left = 0
+    Height = 13
+    Top = 48
+    Width = 81
+    Caption = 'Fecha de Muerte'
+    ParentColor = False
+  end
+  object LNodo: TLabel[5]
+    Left = 0
+    Height = 13
+    Top = 72
+    Width = 83
+    Caption = 'Asignado al Nodo'
+    ParentColor = False
+  end
+  object LEscalonesdeFalla: TLabel[6]
+    Left = 0
+    Height = 13
+    Top = 144
+    Width = 87
+    Caption = 'Escalones de Falla'
+    ParentColor = False
+  end
+  object LNEscalones: TLabel[7]
+    Left = 0
+    Height = 13
+    Top = 171
+    Width = 102
+    Caption = 'Numero de Escalones'
+    ParentColor = False
+  end
+  object LNarch: TLabel[8]
+    Left = 5
+    Height = 13
+    Top = 299
+    Width = 86
+    Caption = 'Archivo de Datos:'
+    ParentColor = False
+  end
+  object LFuenteDeAportes: TLabel[9]
+    Left = 0
+    Height = 13
+    Top = 96
+    Width = 213
+    Caption = 'Componente Aleatoria[p.u. de la Demanda]:'
+    ParentColor = False
+  end
+  object LBorne: TLabel[10]
+    Left = 176
+    Height = 13
+    Top = 120
+    Width = 32
+    Caption = 'Borne:'
+    ParentColor = False
+  end
+  object LIndicePreciosPorCombustible: TLabel[11]
+    Left = 488
+    Height = 13
+    Top = 219
+    Width = 186
+    Caption = 'Índice Multiplicador de Costos de Falla:'
+    ParentColor = False
+  end
+  object LBornePreciosPorCombustible: TLabel[12]
+    Left = 640
+    Height = 13
+    Top = 246
+    Width = 32
+    Caption = 'Borne:'
+    ParentColor = False
+  end
+  object BGuardar: TButton[13]
+    Left = 85
+    Height = 25
+    Top = 363
+    Width = 137
+    Caption = 'Salvar Demanda'
+    OnClick = BGuardarClick
+    TabOrder = 0
+  end
+  object BCancelar: TButton[14]
+    Left = 261
+    Height = 25
+    Top = 363
+    Width = 129
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 1
+  end
+  object EditNombre: TEdit[15]
+    Left = 120
+    Height = 21
+    Top = 0
+    Width = 193
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 2
+    Text = 'Ingrese el Nombre de la Nueva Demanda'
+  end
+  object EFNac: TEdit[16]
+    Left = 184
+    Height = 21
+    Top = 24
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 3
+  end
+  object EFMuerte: TEdit[17]
+    Left = 184
+    Height = 21
+    Top = 48
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 4
+  end
+  object CBNodo: TComboBox[18]
+    Left = 96
+    Height = 21
+    Top = 72
+    Width = 358
+    ItemHeight = 13
+    OnChange = CBNodoChange
+    Style = csDropDownList
+    TabOrder = 5
+  end
+  object sgFalla: TStringGrid[19]
+    Left = 8
+    Height = 79
+    Top = 192
+    Width = 449
+    DefaultColWidth = 89
+    DefaultRowHeight = 25
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goTabs]
+    RowCount = 3
+    TabOrder = 6
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object EditTamTablaFalla: TEdit[20]
+    Left = 112
+    Height = 21
+    Top = 168
+    Width = 81
+    OnEnter = EditEnter
+    OnExit = EditTamTablaFallaExit
+    TabOrder = 7
+  end
+  object ENarch: TEdit[21]
+    Left = 96
+    Height = 21
+    Top = 296
+    Width = 363
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 8
+  end
+  object BExaminar: TButton[22]
+    Left = 460
+    Height = 21
+    Top = 296
+    Width = 75
+    Caption = 'Buscar'
+    OnClick = BExaminarClick
+    TabOrder = 9
+  end
+  object BEditorDeUnidades: TButton[23]
+    Left = 5
+    Height = 25
+    Top = 331
+    Width = 190
+    Caption = 'Editar Unidades Disponibles'
+    OnClick = BEditorDeUnidadesClick
+    TabOrder = 10
+  end
+  object BCrear: TButton[24]
+    Left = 540
+    Height = 21
+    Top = 296
+    Width = 110
+    Caption = 'Crear/Exportar'
+    OnClick = BCrearClick
+    TabOrder = 11
+  end
+  object CBFuente: TComboBox[25]
+    Left = 216
+    Height = 21
+    Top = 96
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBFuenteChange
+    Style = csDropDownList
+    TabOrder = 12
+  end
+  object CBBorne: TComboBox[26]
+    Left = 216
+    Height = 21
+    Top = 120
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBBorneChange
+    Style = csDropDownList
+    TabOrder = 13
+  end
+  object BAyuda: TButton[27]
+    Left = 460
+    Height = 21
+    Top = 5
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 14
+  end
+  object CBFuenteIndicePreciosPorCombustible: TComboBox[28]
+    Left = 696
+    Height = 21
+    Top = 216
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBFuenteIndicePreciosPorCombustibleChange
+    Style = csDropDownList
+    TabOrder = 15
+  end
+  object CBBorneIndicePreciosCombustible: TComboBox[29]
+    Left = 696
+    Height = 21
+    Top = 243
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBBorneIndicePreciosCombustibleChange
+    Style = csDropDownList
+    TabOrder = 16
+  end
+  object chkSumarFuentePotencia: TCheckBox[30]
+    Left = 379
+    Height = 19
+    Top = 96
+    Width = 77
+    Caption = 'Sumar ruido'
+    TabOrder = 17
+  end
+  object cbSumarParaPostizar: TCheckBox[31]
+    Left = 480
+    Height = 19
+    Top = 144
+    Width = 120
+    Caption = 'Sumar para postizar.'
+    Checked = True
+    State = cbChecked
+    TabOrder = 19
+  end
+  object eFactorReserva: TLabeledEdit[32]
+    Left = 594
+    Height = 21
+    Top = 171
+    Width = 56
+    EditLabel.AnchorSideTop.Control = eFactorReserva
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eFactorReserva
+    EditLabel.AnchorSideBottom.Control = eFactorReserva
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 481
+    EditLabel.Height = 13
+    EditLabel.Top = 175
+    EditLabel.Width = 110
+    EditLabel.Caption = 'Factor de reserva[pu]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 20
+    Text = '0'
+  end
+  inherited iconos: TImageList[33]
+    left = 544
+    top = 16
+  end
+  inherited iconos2: TImageList[34]
+  end
+  object OpenDialog1: TOpenDialog[35]
+    left = 624
+    top = 16
+  end
+end

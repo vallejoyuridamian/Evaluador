@@ -1,0 +1,511 @@
+inherited EditarFichaGTer_ArranqueParada: TEditarFichaGTer_ArranqueParada
+  Left = 270
+  Height = 559
+  Top = 117
+  Width = 915
+  AutoSize = True
+  Caption = 'EditarFichaGTer_ArranqueParada'
+  ClientHeight = 559
+  ClientWidth = 915
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  inherited lbo_capa: TLabel
+    Height = 13
+  end
+  inherited e_Capa: TEdit
+    TabOrder = 11
+  end
+  object LFIni: TLabel[2]
+    Left = 0
+    Height = 13
+    Top = 3
+    Width = 72
+    Caption = 'Fecha de inicio'
+    ParentColor = False
+  end
+  object LIndicePreciosPorCombustible: TLabel[3]
+    Left = 0
+    Height = 13
+    Top = 362
+    Width = 236
+    Caption = 'Indice de Precios por Combustible[p.u. del precio]:'
+    ParentColor = False
+  end
+  object LBornePreciosPorCombustible: TLabel[4]
+    Left = 0
+    Height = 13
+    Top = 387
+    Width = 31
+    Caption = 'Borne:'
+    ParentColor = False
+  end
+  object EFIni: TEdit[5]
+    Left = 145
+    Height = 21
+    Top = 0
+    Width = 188
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 0
+    Text = 'EFIni'
+  end
+  object BGuardar: TButton[6]
+    Left = 120
+    Height = 25
+    Top = 517
+    Width = 105
+    Caption = 'Guardar Cambios'
+    OnClick = BGuardarClick
+    TabOrder = 1
+  end
+  object BCancelarFicha: TButton[7]
+    Left = 240
+    Height = 25
+    Top = 512
+    Width = 105
+    Caption = 'Cancelar'
+    OnClick = BCancelarClick
+    TabOrder = 2
+  end
+  object CBPeriodicidad: TCheckBox[8]
+    Left = 0
+    Height = 29
+    Top = 24
+    Width = 80
+    Caption = 'Periodica?'
+    OnClick = CBPeriodicidadClick
+    TabOrder = 3
+  end
+  object PPeriodicidad: TPanel[9]
+    Left = 0
+    Height = 81
+    Top = 45
+    Width = 423
+    AutoSize = True
+    ClientHeight = 81
+    ClientWidth = 423
+    TabOrder = 4
+    object LFinPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 26
+      Width = 73
+      Caption = 'Fin del Periodo:'
+      ParentColor = False
+    end
+    object LIniPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 2
+      Width = 84
+      Caption = 'Inicio del Periodo:'
+      ParentColor = False
+    end
+    object LLargoPeriodo: TLabel
+      Left = 1
+      Height = 13
+      Top = 56
+      Width = 88
+      Caption = 'Largo del Período:'
+      ParentColor = False
+    end
+    object EFFinPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 23
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 0
+      Text = '0'
+    end
+    object EFIniPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 1
+      Width = 120
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 1
+      Text = '0'
+    end
+    object sgPeriodicidad: TStringGrid
+      Left = 221
+      Height = 79
+      Top = 1
+      Width = 201
+      ColCount = 2
+      DefaultRowHeight = 25
+      FixedRows = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goTabs]
+      RowCount = 3
+      TabOrder = 2
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      OnClick = sgChequearCambios
+      OnExit = sgChequearCambios
+      OnGetEditText = sgGetEditText
+      OnKeyDown = sgChequearCambiosKeyDown
+    end
+    object ELargoPeriodo: TEdit
+      Left = 94
+      Height = 21
+      Top = 53
+      Width = 41
+      OnEnter = EditEnter
+      OnExit = EditExit
+      TabOrder = 3
+      Text = '1'
+    end
+    object CBLargoPeriodo: TComboBox
+      Left = 140
+      Height = 21
+      Top = 53
+      Width = 75
+      ItemHeight = 13
+      Items.Strings = (
+        'Años'
+        'Meses'
+        'Semanas'
+        'Días'
+      )
+      OnChange = cambiosForm
+      Style = csDropDownList
+      TabOrder = 4
+    end
+  end
+  object CBRestrEMax: TCheckBox[10]
+    Left = 1
+    Height = 29
+    Hint = 'Restricción a la Energía Máxima Generada En Un Paso[MWh]'
+    Top = 336
+    Width = 116
+    Caption = 'EMaxPaso[MWh]:'
+    OnClick = CBRestrEMaxClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+  end
+  object ERestrEMax: TEdit[11]
+    Left = 242
+    Height = 21
+    Top = 335
+    Width = 145
+    OnEnter = EditEnter
+    OnExit = EditExit
+    TabOrder = 6
+  end
+  object BAyuda: TButton[12]
+    Left = 339
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 7
+  end
+  object CBFuenteIndicePreciosPorCombustible: TComboBox[13]
+    Left = 242
+    Height = 21
+    Top = 359
+    Width = 145
+    ItemHeight = 13
+    OnChange = CBFuenteIndicePreciosPorCombustibleChange
+    Style = csDropDownList
+    TabOrder = 8
+  end
+  object CBBorneIndicePreciosCombustible: TComboBox[14]
+    Left = 242
+    Height = 21
+    Top = 384
+    Width = 145
+    ItemHeight = 13
+    OnChange = cambiosForm
+    Style = csDropDownList
+    TabOrder = 9
+  end
+  object GroupBox1: TGroupBox[15]
+    Left = 17
+    Height = 88
+    Top = 416
+    Width = 367
+    Caption = 'Restricciones temporales'
+    ClientHeight = 66
+    ClientWidth = 363
+    TabOrder = 10
+    object Label1: TLabel
+      Left = 29
+      Height = 13
+      Top = 7
+      Width = 155
+      Caption = 'Mínimo de horas en estado OFF:'
+      ParentColor = False
+    end
+    object eMinHorasOFF: TEdit
+      Left = 189
+      Height = 21
+      Top = 0
+      Width = 40
+      TabOrder = 0
+      Text = '0'
+    end
+    object Label2: TLabel
+      Left = 33
+      Height = 13
+      Top = 26
+      Width = 151
+      Caption = 'Mínimo de horas en estado ON:'
+      ParentColor = False
+    end
+    object eMinHorasON: TEdit
+      Left = 189
+      Height = 21
+      Top = 24
+      Width = 40
+      TabOrder = 1
+      Text = '0'
+    end
+    object Label3: TLabel
+      Left = 102
+      Height = 13
+      Top = 48
+      Width = 82
+      Caption = 'Penalidad [USD]:'
+      ParentColor = False
+    end
+    object ePenalidad: TEdit
+      Left = 189
+      Height = 21
+      Top = 48
+      Width = 72
+      TabOrder = 2
+      Text = '0'
+    end
+  end
+  object GroupBox2: TGroupBox[16]
+    Left = 392
+    Height = 104
+    Top = 408
+    Width = 448
+    Caption = 'Pagos (no considerados en el despacho)'
+    ClientHeight = 82
+    ClientWidth = 444
+    TabOrder = 12
+    object Label4: TLabel
+      Left = 14
+      Height = 13
+      Top = 12
+      Width = 175
+      Caption = 'Pago por disponibilidad [USD/MWh):'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 14
+      Height = 13
+      Top = 48
+      Width = 150
+      Caption = 'Pago por energia  [USD/MWh]:'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 254
+      Height = 13
+      Top = 48
+      Width = 165
+      Caption = '(Adicional al CV e igual indexación)'
+      ParentColor = False
+    end
+    object ePagoPorPotencia: TEdit
+      Left = 198
+      Height = 21
+      Top = 8
+      Width = 72
+      TabOrder = 0
+      Text = '0'
+    end
+    object ePagoPorEnergia: TEdit
+      Left = 174
+      Height = 21
+      Top = 42
+      Width = 72
+      TabOrder = 1
+      Text = '0'
+    end
+  end
+  object ePMin: TLabeledEdit[17]
+    Left = 153
+    Height = 21
+    Top = 136
+    Width = 48
+    EditLabel.AnchorSideTop.Control = ePMin
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = ePMin
+    EditLabel.AnchorSideBottom.Control = ePMin
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 45
+    EditLabel.Height = 13
+    EditLabel.Top = 140
+    EditLabel.Width = 105
+    EditLabel.Caption = 'Mínimo técnico [MW]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 13
+  end
+  object ePMax: TLabeledEdit[18]
+    Left = 152
+    Height = 21
+    Top = 160
+    Width = 48
+    EditLabel.AnchorSideTop.Control = ePMax
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = ePMax
+    EditLabel.AnchorSideBottom.Control = ePMax
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 37
+    EditLabel.Height = 13
+    EditLabel.Top = 164
+    EditLabel.Width = 112
+    EditLabel.Caption = 'Potencia máxima [MW]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 14
+  end
+  object eCVmin: TLabeledEdit[19]
+    Left = 496
+    Height = 21
+    Top = 136
+    Width = 48
+    EditLabel.AnchorSideTop.Control = eCVmin
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eCVmin
+    EditLabel.AnchorSideBottom.Control = eCVmin
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 259
+    EditLabel.Height = 13
+    EditLabel.Top = 140
+    EditLabel.Width = 234
+    EditLabel.Caption = 'Costo variable en el mínimo técnico [USD/MWh]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 15
+  end
+  object eCV: TLabeledEdit[20]
+    Left = 496
+    Height = 21
+    Top = 160
+    Width = 48
+    EditLabel.AnchorSideTop.Control = eCV
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eCV
+    EditLabel.AnchorSideBottom.Control = eCV
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 303
+    EditLabel.Height = 13
+    EditLabel.Top = 164
+    EditLabel.Width = 190
+    EditLabel.Caption = 'Costo variable incremental [USD/MWh]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 16
+  end
+  object eFD: TLabeledEdit[21]
+    Left = 152
+    Height = 21
+    Top = 184
+    Width = 48
+    EditLabel.AnchorSideTop.Control = eFD
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eFD
+    EditLabel.AnchorSideBottom.Control = eFD
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 105
+    EditLabel.Height = 13
+    EditLabel.Top = 188
+    EditLabel.Width = 44
+    EditLabel.Caption = 'FD [p.u.]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 17
+  end
+  object eTMR: TLabeledEdit[22]
+    Left = 152
+    Height = 21
+    Top = 208
+    Width = 48
+    EditLabel.AnchorSideTop.Control = eTMR
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eTMR
+    EditLabel.AnchorSideBottom.Control = eTMR
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 107
+    EditLabel.Height = 13
+    EditLabel.Top = 212
+    EditLabel.Width = 42
+    EditLabel.Caption = 'TMR [h]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 18
+  end
+  object eCV_NoCombustible: TLabeledEdit[23]
+    Left = 496
+    Height = 21
+    Top = 184
+    Width = 48
+    EditLabel.AnchorSideTop.Control = eCV_NoCombustible
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eCV_NoCombustible
+    EditLabel.AnchorSideBottom.Control = eCV_NoCombustible
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 286
+    EditLabel.Height = 13
+    EditLabel.Top = 188
+    EditLabel.Width = 207
+    EditLabel.Caption = 'Costo variable no combustible [USD/MWh]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 19
+  end
+  object eCostoArranque: TLabeledEdit[24]
+    Left = 496
+    Height = 21
+    Top = 208
+    Width = 48
+    EditLabel.AnchorSideTop.Control = eCostoArranque
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eCostoArranque
+    EditLabel.AnchorSideBottom.Control = eCostoArranque
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 371
+    EditLabel.Height = 13
+    EditLabel.Top = 212
+    EditLabel.Width = 122
+    EditLabel.Caption = 'Costo de arranque [USD]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 20
+  end
+  object eCostoParada: TLabeledEdit[25]
+    Left = 496
+    Height = 21
+    Top = 232
+    Width = 48
+    EditLabel.AnchorSideTop.Control = eCostoParada
+    EditLabel.AnchorSideTop.Side = asrCenter
+    EditLabel.AnchorSideRight.Control = eCostoParada
+    EditLabel.AnchorSideBottom.Control = eCostoParada
+    EditLabel.AnchorSideBottom.Side = asrBottom
+    EditLabel.Left = 380
+    EditLabel.Height = 13
+    EditLabel.Top = 236
+    EditLabel.Width = 113
+    EditLabel.Caption = 'Costo de parada [USD]:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 21
+  end
+  inherited iconos: TImageList[26]
+  end
+  inherited iconos2: TImageList[27]
+  end
+end

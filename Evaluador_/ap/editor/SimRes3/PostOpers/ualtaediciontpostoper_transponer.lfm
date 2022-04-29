@@ -1,0 +1,77 @@
+inherited AltaEdicionTPostOper_Transponer: TAltaEdicionTPostOper_Transponer
+  Height = 193
+  Top = 1
+  Width = 380
+  Caption = 'AltaEdicionTPostOper_Transponer'
+  ClientHeight = 193
+  ClientWidth = 380
+  OnCloseQuery = FormCloseQuery
+  object lResultado: TLabel[0]
+    Left = 24
+    Height = 13
+    Top = 54
+    Width = 52
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+  object lCronVar: TLabel[1]
+    Left = 24
+    Height = 13
+    Top = 81
+    Width = 43
+    Caption = 'CronVar:'
+    ParentColor = False
+  end
+  object cbRes: TComboBox[2]
+    Left = 87
+    Height = 21
+    Top = 51
+    Width = 210
+    ItemHeight = 13
+    OnChange = CBCronVarResultadoChange
+    TabOrder = 0
+  end
+  object cbParam1: TComboBox[3]
+    Left = 87
+    Height = 21
+    Top = 78
+    Width = 210
+    ItemHeight = 13
+    OnChange = CBCronVarCronVarChange
+    TabOrder = 1
+  end
+  object bGuardar: TButton[4]
+    Left = 64
+    Height = 25
+    Top = 129
+    Width = 75
+    Caption = 'Guardar'
+    OnClick = bGuardarClick
+    TabOrder = 2
+  end
+  object bCancelar: TButton[5]
+    Left = 174
+    Height = 25
+    Top = 129
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = bCancelarClick
+    TabOrder = 3
+  end
+  object BAyuda: TButton[6]
+    Left = 288
+    Height = 21
+    Top = 0
+    Width = 21
+    Caption = '?'
+    OnClick = BAyudaClick
+    TabOrder = 4
+  end
+  inherited iconos: TImageList[7]
+    left = 328
+  end
+  inherited iconos2: TImageList[8]
+    left = 336
+    top = 24
+  end
+end
