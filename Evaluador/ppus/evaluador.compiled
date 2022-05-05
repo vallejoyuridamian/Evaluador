@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="C:\freepascal\fpc\3.0.1\bin\i386-win32\fpc.exe" Date="1246188410"/>
-  <Params Value=" -MDelphi -Scaghi -Cirot -g -gl -l -vewnhibq -FiC:\Damian\Evaluador\ppus -FiC:\freepascal\fpc\3.0.1\rtl\inc -FiC:\freepascal\fpc\3.0.1\rtl\objpas\sysutils -FuC:\Damian\Evaluador\base -FuC:\Damian\Evaluador\rchlib\mat -FuC:\Damian\Evaluador\ap\esquema -FuC:\Damian\Evaluador\ -FUC:\Damian\Evaluador\ppus\ -dxpq_direct -dPROXY_ENABLED_ROS -dxheapt -dupgsql -dconlib -dSVG_CANVAS -dpq_direct -dxMODELO_TEORICO -dMODELO_A_ALFA_VM -dxAJUSTE_VEL_POR_DIRECCION -dAPLICACION_CONSOLA evaluador.lpr"/>
-  <Complete Value="False"/>
-</CONFIG>

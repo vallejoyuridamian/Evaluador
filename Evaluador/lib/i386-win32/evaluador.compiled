@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="C:\freepascal\fpc\3.0.1\bin\i386-win32\fpc.exe" Date="1246188410"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq -FuC:\Damian\Evaluador\ -FUC:\Damian\Evaluador\lib\i386-win32\ evaluador.lpr"/>
-  <Complete Value="False"/>
-</CONFIG>

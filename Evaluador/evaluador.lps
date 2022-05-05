@@ -4,28 +4,28 @@
     <PathDelim Value="\"/>
     <Version Value="12"/>
     <BuildModes Active="Debug"/>
-    <Units Count="28">
+    <Units Count="29">
       <Unit0>
         <Filename Value="evaluador.lpr"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <CursorPos Y="13"/>
         <UsageCount Value="142"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="uevaluadormatches.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="1985"/>
-        <CursorPos Y="1992"/>
+        <TopLine Value="1961"/>
+        <CursorPos X="7" Y="1969"/>
         <UsageCount Value="72"/>
         <Bookmarks Count="6">
-          <Item0 Y="1214" ID="2"/>
-          <Item1 Y="1248" ID="3"/>
-          <Item2 Y="1273" ID="4"/>
-          <Item3 X="12" Y="444" ID="5"/>
-          <Item4 Y="301" ID="9"/>
-          <Item5 X="16" Y="671" ID="1"/>
+          <Item0 Y="1216" ID="2"/>
+          <Item1 Y="1250" ID="3"/>
+          <Item2 Y="1275" ID="4"/>
+          <Item3 X="12" Y="446" ID="5"/>
+          <Item4 Y="303" ID="9"/>
+          <Item5 X="16" Y="673" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
       </Unit1>
@@ -38,10 +38,11 @@
       </Unit2>
       <Unit3>
         <Filename Value="base\uopencalc.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="13"/>
-        <CursorPos X="3" Y="25"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="119"/>
+        <CursorPos Y="129"/>
         <UsageCount Value="15"/>
+        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="uevaluador.pas"/>
@@ -210,128 +211,120 @@
         <CursorPos X="3" Y="80"/>
         <UsageCount Value="10"/>
       </Unit27>
+      <Unit28>
+        <Filename Value="C:\Users\Damian\Desktop\base\uconstantessimsee.pas"/>
+        <UnitName Value="uConstantesSimSEE"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="148"/>
+        <CursorPos Y="163"/>
+        <UsageCount Value="10"/>
+      </Unit28>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="26" HistoryIndex="25">
       <Position1>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1524" Column="18" TopLine="1460"/>
+        <Caret Line="667" Column="30" TopLine="644"/>
       </Position1>
       <Position2>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="98" Column="32" TopLine="84"/>
+        <Caret Line="598" Column="71" TopLine="586"/>
       </Position2>
       <Position3>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1524" TopLine="1511"/>
+        <Filename Value="evaluador.lpr"/>
+        <Caret Line="13" Column="6"/>
       </Position3>
       <Position4>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1537" TopLine="1515"/>
+        <Caret Line="12" Column="11"/>
       </Position4>
       <Position5>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1542" TopLine="1529"/>
+        <Caret Line="214" Column="3" TopLine="206"/>
       </Position5>
       <Position6>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1517" Column="16" TopLine="1475"/>
+        <Caret Line="13" Column="10"/>
       </Position6>
       <Position7>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="88" Column="33" TopLine="84"/>
+        <Caret Line="267" Column="36" TopLine="248"/>
       </Position7>
       <Position8>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1518" Column="20" TopLine="1504"/>
+        <Caret Line="1982" TopLine="1974"/>
       </Position8>
       <Position9>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="98" Column="31" TopLine="84"/>
+        <Caret Line="219" Column="17" TopLine="217"/>
       </Position9>
       <Position10>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1688" Column="18" TopLine="1664"/>
+        <Filename Value="evaluador.lpr"/>
+        <Caret Line="13"/>
       </Position10>
       <Position11>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1524" TopLine="1511"/>
+        <Caret Line="223" Column="28" TopLine="213"/>
       </Position11>
       <Position12>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1688" Column="19" TopLine="1666"/>
+        <Caret Line="24" Column="34" TopLine="18"/>
       </Position12>
       <Position13>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1684" Column="49" TopLine="1659"/>
+        <Caret Line="1056" Column="18" TopLine="1053"/>
       </Position13>
       <Position14>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1521" TopLine="1508"/>
+        <Caret Line="24" Column="41" TopLine="16"/>
       </Position14>
       <Position15>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="637" Column="40" TopLine="637"/>
+        <Caret Line="1680"/>
       </Position15>
       <Position16>
         <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1534" TopLine="1521"/>
+        <Caret Line="9" Column="26"/>
       </Position16>
       <Position17>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="667" Column="30" TopLine="644"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="15" Column="5" TopLine="7"/>
       </Position17>
       <Position18>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="598" Column="71" TopLine="586"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="712" TopLine="712"/>
       </Position18>
       <Position19>
-        <Filename Value="evaluador.lpr"/>
-        <Caret Line="13" Column="6"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="121" TopLine="106"/>
       </Position19>
       <Position20>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="12" Column="11"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="739" Column="3" TopLine="723"/>
       </Position20>
       <Position21>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="214" Column="3" TopLine="206"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="733" TopLine="725"/>
       </Position21>
       <Position22>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="13" Column="10"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="123" TopLine="112"/>
       </Position22>
       <Position23>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="267" Column="36" TopLine="248"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="122" Column="3" TopLine="112"/>
       </Position23>
       <Position24>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1982" TopLine="1974"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="743" TopLine="743"/>
       </Position24>
       <Position25>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="219" Column="17" TopLine="217"/>
+        <Filename Value="base\uopencalc.pas"/>
+        <Caret Line="129" TopLine="119"/>
       </Position25>
       <Position26>
-        <Filename Value="evaluador.lpr"/>
-        <Caret Line="13"/>
+        <Filename Value="uevaluadormatches.pas"/>
+        <Caret Line="10" Column="23" TopLine="2"/>
       </Position26>
-      <Position27>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="223" Column="28" TopLine="213"/>
-      </Position27>
-      <Position28>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="24" Column="34" TopLine="18"/>
-      </Position28>
-      <Position29>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="1056" Column="18" TopLine="1053"/>
-      </Position29>
-      <Position30>
-        <Filename Value="uevaluadormatches.pas"/>
-        <Caret Line="24" Column="41" TopLine="16"/>
-      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

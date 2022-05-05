@@ -12,7 +12,7 @@ uses
   Dialogs,
   {$ENDIF}
   Classes, SysUtils,
-  uConstantesSimSEE,
+  //uConstantesSimSEE,
   xmatdefs,
   matreal,
   fpstypes, fpspreadsheet, fpsallformats;
@@ -118,6 +118,15 @@ type
     function NroColToStrCol(nroCol: cardinal): string;
 end;
 
+var
+  tmp_rundir: string;
+
+
+
+function getDir_Tmp: string;
+function getDir_Bin: string;
+procedure subirDirectorio(var path: string);
+
   // forma el string de formato numérico
 function xf_formatoStr(ndecimales: integer): shortstring;
 
@@ -192,7 +201,7 @@ begin
     if not flgForWrite then
       showmessage( 'ATENCIÓN!! para que la importación funcione debe asegurarse de haber GUARDADO los cambios en el archivo primero. Si no lo hizo, GUARDE ahora y después de aceptar a este mensaje.' );
     {$ENDIF}
-    archi:= getDir_Tmp+ 'opendocxlt.ods';
+    archi:= getDir_Tmp + 'opendocxlt.ods';
   end;
   self.archi:= archi;
 
@@ -710,6 +719,61 @@ begin
   celda1:= copy(rango, 1, i-1 );
   celda2:= copy(rango, i+1, length( rango ) - i );
 end;
+
+function getDir_Tmp: string;
+var
+  res: string;
+begin
+  if tmp_rundir = '' then
+  begin
+    res := getDir_Bin;
+    subirDirectorio(res);
+    res := res + 'tmp' + DirectorySeparator;
+  end
+  else
+  if tmp_rundir[length(tmp_rundir)] = DirectorySeparator then
+    res := tmp_rundir
+  else
+    res := tmp_rundir + DirectorySeparator;
+
+  Result := res;
+end;
+
+
+function getDir_Bin: string;
+begin
+  Result := ExtractFileDir(ParamStr(0)) + DirectorySeparator;
+end;
+
+
+
+procedure subirDirectorio(var path: string);
+var
+  i, N: integer;
+  buscando: boolean;
+begin
+  N := length(path);
+  if N < 1 then
+  begin
+    path := DirectorySeparator; // cubre el caso path=''  y path='x'
+    exit;
+  end;
+
+  buscando := True;
+  i := N - 1; // me salteo el último caracter pues si es una barra quiero ignorarla
+
+  while buscando and (i > 0) do
+    if path[i] = DirectorySeparator then
+      buscando := False
+    else
+      Dec(i);
+  if buscando then
+    path := DirectorySeparator
+  else
+    Delete(path, i + 1, N - i);
+end;
+
+
 
 
 end.

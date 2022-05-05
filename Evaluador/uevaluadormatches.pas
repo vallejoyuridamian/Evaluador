@@ -7,7 +7,7 @@ interface
 
 uses
   Classes, SysUtils, uopencalc, LazUTF8, fpspreadsheet, fpsTypes, fpsUtils, xlsxml,
-  strutils, xmatdefs, umemoryusage, Math;
+  strutils, xmatdefs, Math;
 
 procedure evaluar(metodo: integer);
 function getPartidos(): TStringList;
@@ -31,6 +31,8 @@ const
   PODERFAVORITOMAX = 3; // 5
   UMBRALSUMADEAPUESTASMAXIMA = 500; // 200
   SIDUMBRALINICIALMIN = 99999;
+
+
 
 type
 
@@ -1964,7 +1966,7 @@ begin
       dividendos[kDividendo].Free;
     SetLength(dividendos, 0);
 
-    WriteHeapStatus('Memoria: ');
+    //WriteHeapStatus('Memoria: ');
     if estado = 'Finalizado' then
     begin
       resultadoFinal := resultadoParcial;

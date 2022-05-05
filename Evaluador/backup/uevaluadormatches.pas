@@ -7,7 +7,7 @@ interface
 
 uses
   Classes, SysUtils, uopencalc, LazUTF8, fpspreadsheet, fpsTypes, fpsUtils, xlsxml,
-  strutils, xmatdefs, umemoryusage, Math;
+  strutils, xmatdefs, Math;
 
 procedure evaluar(metodo: integer);
 function getPartidos(): TStringList;
@@ -21,7 +21,7 @@ function getMinuto(tiempo, estado: string): integer;
 function getSegundo(tiempo: string): integer;
 
 
-procedure crearSiNoExiste(dirName);
+procedure crearSiNoExiste(dirName:String);
 
 const
   // Perillas
@@ -31,6 +31,8 @@ const
   PODERFAVORITOMAX = 3; // 5
   UMBRALSUMADEAPUESTASMAXIMA = 500; // 200
   SIDUMBRALINICIALMIN = 99999;
+
+
 
 type
 
@@ -1050,7 +1052,7 @@ begin
   end;
 end;
 
-procedure crearSiNoExiste(dirName);
+procedure crearSiNoExiste(dirName: String);
 begin
   if not DirectoryExists(dirName) then
     MkDir(dirName);
