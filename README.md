@@ -1,6 +1,6 @@
 # Evaluador ⚽️🏆💵 #
 
-Real time soccer bets stategy evaluator in Object Pascal.
+Real time soccer bets stategy evaluator.
 
 This program evaluates a betting strategy over a set of soccer games.
 The soccer games are saved as xls files with the dividends sampled periodically.
